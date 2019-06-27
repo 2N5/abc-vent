@@ -1,0 +1,28 @@
+{
+  "name": "multiengine",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://CurlyMaple@bitbucket.org/VelikProk/multiengine.git"
+  },
+  "author": "KLEN",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/VelikProk/multiengine#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-uglify": "^3.0.1"
+  }
+}
