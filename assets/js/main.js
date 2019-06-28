@@ -81,7 +81,7 @@ $(document).ready(function () {
     autoHeight: true,
     dotsClass: 'owl-dots slider-dots slider-banner-dots',
     dotClass: 'owl-dot slider-dot slider-banner-dot',
-    navClass: ['slider-arrow slider-banner-prev', 'slider-arrow slider-banner-next'],
+    navClass: ['owl-prev slider-arrow slider-banner-prev', 'owl-next slider-arrow slider-banner-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       1330: {
@@ -100,7 +100,7 @@ $(document).ready(function () {
     dotClass: 'owl-dot slider-dot',
     stageClass: 'owl-stage slider-cards-stage',
     stageOuterClass: 'owl-stage-outer slider-cards-stage-outer',
-    navClass: ['slider-arrow slider-prev', 'slider-arrow slider-next'],
+    navClass: ['owl-prev slider-arrow slider-prev', 'owl-next slider-arrow slider-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       420: {
@@ -128,14 +128,12 @@ $(document).ready(function () {
     }
   });
 
-
   $('.slider-compare').owlCarousel({
-    loop: false,
     nav: true,
     dots: false,
     items: 1,
     navContainer: '.slider-compare-nav',
-    navClass: ['slider-arrow slider-compare-arrow slider-prev', 'slider-arrow slider-compare-arrow slider-next'],
+    navClass: ['owl-prev slider-arrow slider-compare-arrow slider-prev', 'owl-next slider-arrow slider-compare-arrow slider-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       480: {
@@ -168,7 +166,7 @@ $(document).ready(function () {
     margin: 20,
     dotsClass: 'owl-dots slider-dots',
     dotClass: 'owl-dot slider-dot',
-    navClass: ['slider-arrow slider-prev', 'slider-arrow slider-next'],
+    navClass: ['owl-prev slider-arrow slider-prev', 'owl-next slider-arrow slider-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       576: {
@@ -193,7 +191,7 @@ $(document).ready(function () {
     nav: false,
     dots: false,
     items: 1,
-    navClass: ['slider-arrow slider-reviews-arrow slider-reviews-prev', 'slider-arrow slider-reviews-arrow slider-reviews-next'],
+    navClass: ['owl-prev slider-arrow slider-reviews-arrow slider-reviews-prev', 'owl-next slider-arrow slider-reviews-arrow slider-reviews-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       576: {
@@ -211,7 +209,7 @@ $(document).ready(function () {
     margin: 20,
     dotsClass: 'owl-dots slider-dots',
     dotClass: 'owl-dot slider-dot',
-    navClass: ['slider-arrow slider-prev', 'slider-arrow slider-next'],
+    navClass: ['owl-prev slider-arrow slider-prev', 'owl-next slider-arrow slider-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       576: {
@@ -234,7 +232,7 @@ $(document).ready(function () {
     loop: true,
     dotsClass: 'owl-dots slider-dots',
     dotClass: 'owl-dot slider-dot',
-    navClass: ['slider-arrow slider-prev', 'slider-arrow slider-next'],
+    navClass: ['owl-prev slider-arrow slider-prev', 'owl-next slider-arrow slider-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       0: {
@@ -261,5 +259,129 @@ $(document).ready(function () {
       }
     }
   });
+
+  $('.slider-view-controls').owlCarousel({
+    nav: true,
+    dots: false,
+    items: 2,
+    itemElement: 'li',
+    stageElement: 'ul',
+    stageClass: 'owl-stage slider-view-controls-stage nav nav-tabs border-0',
+    navClass: ['owl-prev slider-arrow slider-view-controls-arrow slider-view-controls-prev', 'owl-next slider-arrow slider-view-controls-arrow slider-view-controls-next'],
+    navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
+    responsive: {
+      480: {
+        items: 3,
+      },
+      630: {
+        items: 4,
+      },
+      992: {
+        items: 5,
+      },
+      1200: {
+        nav: false,
+        items: 7
+      }
+    }
+  });
+
+  const sliderThumbnails = $('.slider-thumbnails').owlCarousel({
+    dots: false,
+    items: 4,
+    navClass: ['owl-prev slider-arrow slider-prev slider-thumbnails-arrow', 'owl-next slider-arrow slider-next slider-thumbnails-arrow'],
+    navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>']
+  });
+
+  const sliderImgs = $('.slider-imgs').owlCarousel({
+    nav: true,
+    dots: false,
+    items: 1,
+    URLhashListener: true,
+    navClass: ['owl-prev slider-arrow slider-prev slider-imgs-prev', 'owl-next slider-arrow slider-next slider-imgs-next'],
+    navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
+    onChanged: function (event) {
+      const currentItemId = $($(this.$stage).children()[this._current]).find('[data-href]').data('href');
+      const currentItem = $('.slider-thumbnails [data-id=' + currentItemId + ']');
+
+      $('.slider-thumbnail').removeClass('active');
+      currentItem.addClass('active');
+      sliderThumbnails.trigger('to.owl.carousel', currentItem.parent().index());
+    }
+  });
+
+  $('.slider-projects').owlCarousel({
+    dots: true,
+    nav: false,
+    items: 1,
+    margin: 20,
+    dotsClass: 'owl-dots slider-dots',
+    dotClass: 'owl-dot slider-dot',
+    navClass: ['owl-prev slider-arrow slider-prev', 'owl-next slider-arrow slider-next'],
+    navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
+    responsive: {
+      576: {
+        items: 2,
+      },
+      992: {
+        items: 3,
+        margin: 30,
+      },
+      1330: {
+        dots: false,
+        nav: true,
+        items: 3,
+        margin: 30,
+      }
+    }
+  });
+
+  $('.owl-carousel').each(function () {
+    $(this).find('.owl-next').each(function (index) {
+      $(this).attr('aria-label', 'Следующий слайд');
+    });
+    $(this).find('.owl-prev').each(function (index) {
+      $(this).attr('aria-label', 'Предыдущий слайд');
+    });
+    $(this).find('.owl-dot').each(function (index) {
+      $(this).attr('aria-label', index + 1);
+    });
+  });
+
+  ymaps.ready(init);
+
+  function init() {
+    const myMap = new ymaps.Map("map", {
+      center: [55.76, 37.64],
+      zoom: 15
+    });
+    const myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      hintContent: 'Наш адрес'
+    });
+
+    myMap.behaviors.disable('scrollZoom');
+    myMap.geoObjects.add(myPlacemark);
+  }
+
+  function appendCopyText() {
+    const istS = 'Источник:';
+    const copyR = '©';
+    const body_element = document.getElementsByTagName('body')[0];
+    const choose = window.getSelection();
+    const myLink = document.location.href;
+    const authorLink = "" + istS + ' ' + " " + myLink + " " + copyR;
+    const copytext = ((choose + '').length > 100) ? (choose + " " + authorLink) : choose;
+    const addDiv = document.createElement('div');
+    addDiv.style.position = 'absolute';
+    addDiv.style.left = '-99999px';
+    body_element.appendChild(addDiv);
+    addDiv.innerHTML = copytext;
+    choose.selectAllChildren(addDiv);
+    window.setTimeout(function () {
+      body_element.removeChild(addDiv);
+    }, 0);
+  }
+
+  document.oncopy = appendCopyText;
 
 });

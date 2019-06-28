@@ -29,7 +29,7 @@ $categories = Category::themeCats();
         <div class="mr-3">
           <span>Продажа и монтаж бризеров в</span>
           <div class="d-inline-block dropdown align-top">
-            <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-link link-light">Москве и МО</button>
+            <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-link link-light link-dashed">Москве и МО</button>
             <ul class="dropdown-menu">
               <li>
                 <a href="" class="dropdown-item">Санкт-Петербурге</a>
@@ -44,9 +44,9 @@ $categories = Category::themeCats();
           </div>
         </div>
         <ul class="nav flex-nowrap">
-          <li class="mr-3"><a href="" class="link-light text-decoration-none"><span class="icon-facebook"></span></a></li>
-          <li class="mr-3"><a href="" class="link-light text-decoration-none"><span class="icon-instagram"></span></a></li>
-          <li><a href="" class="link-light text-decoration-none"><span class="icon-youtube"></span></a></li>
+          <li class="mr-3"><a href="" class="link-light"><span class="icon-facebook"></span></a></li>
+          <li class="mr-3"><a href="" class="link-light"><span class="icon-instagram"></span></a></li>
+          <li><a href="" class="link-light"><span class="icon-youtube"></span></a></li>
         </ul>
       </div>
     </div>
@@ -82,7 +82,7 @@ $categories = Category::themeCats();
               <span>Ваша корзина</span>
               <br>
               <span class="cart-check-digits">0</span>
-              <span class="cart-check-currency"> &#8381;</span>
+              <span class="cart-check-currency">&#8381;</span>
             </span>
           </button>
         </div>
