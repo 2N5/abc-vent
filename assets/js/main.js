@@ -29,7 +29,7 @@ $(document).ready(function () {
     }
   });
 
-  const instant = $('.img-lazy').Lazy({
+  const instance = $('.img-lazy').Lazy({
     effect: 'fadeIn',
     effectTime: 200,
     visibleOnly: false,
@@ -81,7 +81,7 @@ $(document).ready(function () {
     autoHeight: true,
     dotsClass: 'owl-dots slider-dots slider-banner-dots',
     dotClass: 'owl-dot slider-dot slider-banner-dot',
-    navClass: ['owl-prev slider-arrow slider-banner-prev', 'owl-next slider-arrow slider-banner-next'],
+    navClass: ['slider-arrow slider-prev slider-banner-prev', 'slider-arrow slider-next slider-banner-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       1330: {
@@ -98,9 +98,9 @@ $(document).ready(function () {
     margin: 20,
     dotsClass: 'owl-dots slider-dots',
     dotClass: 'owl-dot slider-dot',
-    stageClass: 'owl-stage slider-cards-stage',
     stageOuterClass: 'owl-stage-outer slider-cards-stage-outer',
-    navClass: ['owl-prev slider-arrow slider-prev', 'owl-next slider-arrow slider-next'],
+    stageClass: 'owl-stage slider-cards-stage slider-stage-flex',
+    navClass: ['slider-arrow slider-prev', 'slider-arrow slider-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       420: {
@@ -133,7 +133,7 @@ $(document).ready(function () {
     dots: false,
     items: 1,
     navContainer: '.slider-compare-nav',
-    navClass: ['owl-prev slider-arrow slider-compare-arrow slider-prev', 'owl-next slider-arrow slider-compare-arrow slider-next'],
+    navClass: ['slider-arrow slider-prev slider-compare-arrow', 'slider-arrow slider-next slider-compare-arrow'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       480: {
@@ -141,9 +141,6 @@ $(document).ready(function () {
       },
       640: {
         items: 3,
-      },
-      768: {
-        items: 2,
       },
       992: {
         items: 4,
@@ -166,7 +163,7 @@ $(document).ready(function () {
     margin: 20,
     dotsClass: 'owl-dots slider-dots',
     dotClass: 'owl-dot slider-dot',
-    navClass: ['owl-prev slider-arrow slider-prev', 'owl-next slider-arrow slider-next'],
+    navClass: ['slider-arrow slider-prev', 'slider-arrow slider-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       576: {
@@ -191,7 +188,7 @@ $(document).ready(function () {
     nav: false,
     dots: false,
     items: 1,
-    navClass: ['owl-prev slider-arrow slider-reviews-arrow slider-reviews-prev', 'owl-next slider-arrow slider-reviews-arrow slider-reviews-next'],
+    navClass: ['slider-arrow slider-prev slider-reviews-arrow slider-reviews-prev', 'slider-arrow slider-next slider-reviews-arrow slider-reviews-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       576: {
@@ -209,7 +206,7 @@ $(document).ready(function () {
     margin: 20,
     dotsClass: 'owl-dots slider-dots',
     dotClass: 'owl-dot slider-dot',
-    navClass: ['owl-prev slider-arrow slider-prev', 'owl-next slider-arrow slider-next'],
+    navClass: ['slider-arrow slider-prev', 'slider-arrow slider-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       576: {
@@ -232,7 +229,8 @@ $(document).ready(function () {
     loop: true,
     dotsClass: 'owl-dots slider-dots',
     dotClass: 'owl-dot slider-dot',
-    navClass: ['owl-prev slider-arrow slider-prev', 'owl-next slider-arrow slider-next'],
+    stageClass: 'owl-stage slider-stage-flex',
+    navClass: ['slider-arrow slider-prev', 'slider-arrow slider-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       0: {
@@ -267,7 +265,7 @@ $(document).ready(function () {
     itemElement: 'li',
     stageElement: 'ul',
     stageClass: 'owl-stage slider-view-controls-stage nav nav-tabs border-0',
-    navClass: ['owl-prev slider-arrow slider-view-controls-arrow slider-view-controls-prev', 'owl-next slider-arrow slider-view-controls-arrow slider-view-controls-next'],
+    navClass: ['slider-arrow slider-prev slider-view-controls-arrow slider-view-controls-prev', 'slider-arrow slider-next slider-view-controls-arrow slider-view-controls-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       480: {
@@ -288,9 +286,7 @@ $(document).ready(function () {
 
   const sliderThumbnails = $('.slider-thumbnails').owlCarousel({
     dots: false,
-    items: 4,
-    navClass: ['owl-prev slider-arrow slider-prev slider-thumbnails-arrow', 'owl-next slider-arrow slider-next slider-thumbnails-arrow'],
-    navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>']
+    items: 4
   });
 
   const sliderImgs = $('.slider-imgs').owlCarousel({
@@ -298,7 +294,7 @@ $(document).ready(function () {
     dots: false,
     items: 1,
     URLhashListener: true,
-    navClass: ['owl-prev slider-arrow slider-prev slider-imgs-prev', 'owl-next slider-arrow slider-next slider-imgs-next'],
+    navClass: ['slider-arrow slider-prev slider-imgs-prev', 'slider-arrow slider-next slider-imgs-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     onChanged: function (event) {
       const currentItemId = $($(this.$stage).children()[this._current]).find('[data-href]').data('href');
@@ -317,7 +313,7 @@ $(document).ready(function () {
     margin: 20,
     dotsClass: 'owl-dots slider-dots',
     dotClass: 'owl-dot slider-dot',
-    navClass: ['owl-prev slider-arrow slider-prev', 'owl-next slider-arrow slider-next'],
+    navClass: ['slider-arrow slider-prev', 'slider-arrow slider-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       576: {
@@ -337,10 +333,15 @@ $(document).ready(function () {
   });
 
   $('.owl-carousel').each(function () {
-    $(this).find('.owl-next').each(function (index) {
+    $(this).on('changed.owl.carousel', function (event) {
+      instance.addItems('.img-lazy');
+      instance.force(instance.getItems());
+      instance.destroy();
+    });
+    $(this).find('.slider-next').each(function (index) {
       $(this).attr('aria-label', 'Следующий слайд');
     });
-    $(this).find('.owl-prev').each(function (index) {
+    $(this).find('.slider-prev').each(function (index) {
       $(this).attr('aria-label', 'Предыдущий слайд');
     });
     $(this).find('.owl-dot').each(function (index) {
@@ -348,7 +349,7 @@ $(document).ready(function () {
     });
   });
 
-  ymaps.ready(init);
+  // ymaps.ready(init);
 
   function init() {
     const myMap = new ymaps.Map("map", {

@@ -30,18 +30,16 @@ gulp.task('css', function () {
       }
     }))
     .pipe(gulp.dest('./assets/css'))
-    .pipe(browserSync.stream())
+    .pipe(browserSync.stream());
 });
 
 gulp.task('js', function () {
   return gulp.src([
       './assets/libs/js/jquery-3.3.1.min.js',
-      './assets/libs/js/popper.min.js',
       './assets/libs/js/bootstrap.min.js',
       './assets/libs/js/owl.carousel.min.js',
       './assets/libs/js/jquery.lazy.min.js',
       './assets/libs/js/jquery.lazy.plugins.min.js',
-      './assets/libs/js/jquery.fancybox.min.js',
       './assets/libs/js/jquery.maskedinput.min.js',
       './assets/js/main.js'
     ])
@@ -50,7 +48,7 @@ gulp.task('js', function () {
     .pipe(gulp.dest('./assets/js'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
 });
 
 gulp.task('img', function () {

@@ -26,7 +26,7 @@ $categories = Category::themeCats();
     </div>
     <div class="bg-main text-white d-none d-lg-block py-2">
       <div class="container d-flex align-items-center justify-content-between">
-        <div class="mr-3">
+        <div class="small mr-3">
           <span>Продажа и монтаж бризеров в</span>
           <div class="d-inline-block dropdown align-top">
             <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-link link-light link-dashed">Москве и МО</button>
@@ -66,11 +66,11 @@ $categories = Category::themeCats();
         <div class="col-auto d-none d-md-block">
           <ul class="nav">
             <li class="nav-item mr-4">
-              <a href="tel:88005002712" class="link-truncate link-dark h3 mb-0">8 800 500 27 12</a>
+              <a href="tel:88005002712" class="link-truncate link-dark h3 h3-lg mb-0">8 800 500 27 12</a>
               <div class="small">Звонок бесплатный</div>
             </li>
             <li class="nav-item">
-              <a href="tel:+74991106343" class="link-truncate link-dark h3 mb-0">+7 (499) 110 63 43</a>
+              <a href="tel:+74991106343" class="link-truncate link-dark h3 h3-lg mb-0">+7 (499) 110 63 43</a>
               <div class="small">Москва</div>
             </li>
           </ul>
@@ -121,11 +121,11 @@ $categories = Category::themeCats();
           </ul>
           <ul class="nav flex-column d-lg-none">
             <li class="nav-item mb-3">
-              <a href="tel:88005002712" class="link-truncate link-dark h3 mb-0">8 800 500 27 12</a>
+              <a href="tel:88005002712" class="link-truncate link-dark h3 h3-lg mb-0">8 800 500 27 12</a>
               <div class="small">Звонок бесплатный</div>
             </li>
             <li class="nav-item">
-              <a href="tel:+74991106343" class="link-truncate link-dark h3 mb-0">+7 (499) 110 63 43</a>
+              <a href="tel:+74991106343" class="link-truncate link-dark h3 h3-lg mb-0">+7 (499) 110 63 43</a>
               <div class="small">Москва</div>
             </li>
           </ul>
@@ -148,9 +148,9 @@ $categories = Category::themeCats();
       <div class="row justify-content-between align-items-center text-center text-sm-left">
         <div class="col-sm-auto mb-3 mb-sm-0">
           <span>&copy;</span>
-          <a href="<?= absoluteLink(); ?>">ABC Vent</a>
+          <a href="<?= absoluteLink(); ?>" class="link-dark">ABC Vent</a>
           <span class="mr-1"><?= date('Y', time()); ?></span>
-          <a href="">Политика конфиденциальности</a>
+          <a href="" class="link-dark">Политика конфиденциальности</a>
         </div>
         <div class="col-sm-auto">WebCanape — разработка сайтов и маркетинг</div>
       </div>

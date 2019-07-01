@@ -137,33 +137,6 @@ a,
     color: $text
     text-decoration: none
 
-.link
-  &-dashed
-    border-bottom: 1px dashed !important
-  &-light
-    color: $white
-    &:hover,
-    &:focus,
-    &:active
-      color: darken($white, 5%)
-      text-decoration: none
-  &-dark
-    color: $text
-    &:hover,
-    &:focus,
-    &:active
-      color: $link
-      text-decoration: none
-  &-lg
-    font-size: 1.25rem
-  &-truncate
-    display: inline-block
-    max-width: 100%
-    vertical-align: top
-    white-space: nowrap
-    text-overflow: ellipsis
-    overflow: hidden
-
 .text
   &-access
     color: $green !important
@@ -212,14 +185,14 @@ h1,
   +md-down
     font-size: 2.77rem
   +xs
-    font-size: 1.5rem
+    font-size: 1.875rem
 
 h2,
 .h2
   margin-bottom: 1rem
   font-size: 2.77rem
   +md-down
-    margin-bottom: 1.22rem
+    margin-bottom: 1.125rem
     font-size: 2.22rem
     text-align: center
   +xs
@@ -230,24 +203,36 @@ h3,
   margin-bottom: 2.5rem
   font-size: 1.66rem
   +md-down
-    font-size: 1.22rem
+    font-size: 1.33rem
   +xs
-    margin-bottom: 2.37rem
+    margin-bottom: 1.625rem
+  &-lg
+    +md-down
+      font-size: 1.66rem
+    +xs
+      font-size: 1.5rem
 
 h4,
 .h4
+  margin-bottom: 2.5rem
   font-weight: 300
   font-size: 1.44rem
   +md-down
-    font-size: 1.33rem
+    font-size: 1.22em
+    text-align: center
   +xs
-    font-size: 1.22rem
+    font-size: 1.25rem
 
 h5,
 .h5
   font-size: 1.33rem
   +md-down
-    font-size:  1.22rem
+    font-size: 1rem
+  &-lg
+    +md-down
+      font-size: 1.33rem
+    +xs
+      font-size: 1.25rem
 
 h6,
 .h6
@@ -318,12 +303,6 @@ h6,
   display: block
   visibility: hidden
   +inertial-scroll
-  &-catalog
-    .modal-dialog
-      padding: 0
-    .modal-content
-      background-color: $lining
-      border-radius: 0
   &-dialog
     max-width: 60%
     width: 100%
@@ -431,11 +410,27 @@ button.close
   +md-down
     width: calc(100% + 1.66rem)
     &:after
-      width: 10rem
+      width: 5rem
 
 .pagination
+  max-width: 100%
+  display: block
   padding: 0 0 0.5rem
-  border-radius: 0
+  overflow-x: auto
+  overflow-y: hidden
+  +md-down
+    white-space: nowrap
+  +xs
+    text-align: center
+  &-wrap
+    @extend .overflow-overlay
+    position: relative
+    max-width: 100%
+    &:after
+      background-image: linear-gradient(to right, rgba(245, 246, 248, 0), $white)
+    +lg-up
+      &:after
+        display: none
 
 .map
   min-height: 27.22rem
@@ -529,9 +524,6 @@ button.close
       background-color: transparent
 
 .btn
-  display: inline-flex
-  align-items: center
-  justify-content: space-between
   max-width: 100%
   min-width: 11.11rem
   padding: 1.15rem
@@ -600,6 +592,36 @@ button.close
       color: $main
       background-color: darken($white, 5%)
       border-color: $white
+
+.link
+  &-dashed
+    border-bottom: 1px dashed
+    &:hover,
+    &:focus
+      border-color: transparent
+  &-light
+    color: $white
+    &:hover,
+    &:focus,
+    &:active
+      color: darken($white, 5%)
+      text-decoration: none
+  &-dark
+    color: $text
+    &:hover,
+    &:focus,
+    &:active
+      color: $link
+      text-decoration: none
+  &-lg
+    font-size: 1.25rem
+  &-truncate
+    display: inline-block
+    max-width: 100%
+    vertical-align: top
+    white-space: nowrap
+    text-overflow: ellipsis
+    overflow: hidden
 
 .form
   &-group
@@ -708,6 +730,47 @@ button.close
   &-quantity
     &-field
       text-align: center
+  &-group
+    +xs
+      flex-direction: column
+    & > .input-group
+      &-prepend,
+      &-append
+        & > .btn
+          min-width: auto
+          color: $main
+          border: 1px solid $border-color
+          +xs
+            width: 100%
+      &-prepend
+        +xs
+          margin-right: 0
+          margin-bottom: -1px
+        & > .btn
+          +xs
+            border-radius: $border-radius $border-radius 0 0
+      &-append
+        +xs
+          margin-left: 0
+          margin-top: -1px
+        & > .btn
+          +xs
+            border-radius: 0 0 $border-radius $border-radius
+    & > .form-control,
+    & > .custom-select,
+    & > .custom-file,
+    & > .form-control-plaintext
+      padding: 1.22rem
+      font-size: 1rem
+      color: $text
+      border: 1px solid $border-color
+      border-radius: 0.55rem
+      +xs
+        width: 100%
+        &:first-child
+          border-radius: $border-radius $border-radius 0 0
+        &:last-child
+          border-radius: 0 0 $border-radius $border-radius
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button
@@ -719,8 +782,8 @@ textarea.form-control
   max-height: 15rem
 
 select.form-control
-  padding-right: 1.5rem
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right .5rem center / 0.5rem no-repeat, linear-gradient(to bottom, darken($white, 5%) 0%, darken($white, 0%) 100%)
+  padding-right: 2.5rem
+  background: transparent url(../img/svg/angle-down.svg) right 2rem center / 0.5rem no-repeat
 
 .card
   border-color: $border-color
@@ -774,6 +837,7 @@ select.form-control
     height: 100%
     color: $text
     text-align: center
+    border: none
     background-color: $gray
     box-shadow: none
     overflow: hidden
@@ -817,9 +881,11 @@ select.form-control
     [class*=" icon-"],
     [class^=icon-]
       font-size: 1.55rem
-      opacity: 0.4
+      opacity: 0.2
   &-product
+    max-width: 15rem
     height: 100%
+    margin: 0 auto
     border: 1px solid $border-color
     box-shadow: none
     +transition
@@ -830,8 +896,9 @@ select.form-control
         @extend .btn-main
         &:after
           border-radius: 0 0 $border-radius $border-radius
+    +xs
+      max-width: 16.875rem
     &-btn
-      justify-content: center
       min-width: auto
       width: 100%
       color: $link
@@ -896,11 +963,23 @@ select.form-control
         +xs
           &:after
             border-radius: 0
+        &-show,
+        &-hide
+          margin-right: 0.5rem
+          +xs
+            display: none
+        &-hide
+          display: none
         [class*=" icon-"],
         [class^=icon-]
           transition: transform 0.35s
-        &[aria-expanded="true"]
+        &:not(.collapsed)
           color: #c1c6cb
+          +md-up
+            .btn-collapse-toggler-show
+              display: none
+            .btn-collapse-toggler-hide
+              display: inline
           &:after
             opacity: 0
           [class*=" icon-"],
@@ -1012,7 +1091,7 @@ select.form-control
   &-footer
     padding: 2rem 0
     margin-top: auto
-    +xs
+    +md-down
       font-size: 0.875rem
   &-section
     &:not(:last-child)
@@ -1046,7 +1125,7 @@ select.form-control
           background-size: 100% auto
       &-3
         padding-top: 8.88rem
-        background: $gray url(../img/page-bg-3.png) center top no-repeat
+        background: $gray url(../img/page-bg-3.jpg) center top / cover no-repeat
         +md-down
           padding-top: 4.5rem
           padding-bottom: 43%
@@ -1065,8 +1144,10 @@ select.form-control
     &-title
       margin: 0
       padding: 0 1.66rem
+      margin-left: -1.66rem
       font-weight: 600
       font-size: 0.88em
+      letter-spacing: 1.6px
       text-transform: uppercase
       background-color: $white
       &-wrap
@@ -1074,6 +1155,7 @@ select.form-control
         display: flex
         z-index: 0
         margin-bottom: 2rem
+        overflow: hidden
         &:after,
           content: ""
           position: absolute
@@ -1089,63 +1171,51 @@ select.form-control
           margin-bottom: 1.66rem
           text-align: center
   &-item
-    margin-bottom: 1rem
-    &:first-child,
-    &:last-child
-      .page-link
-        border-radius: $border-radius
-    &:not(:last-child)
-      margin-right: 1rem
+    display: inline-block
     &.active
       .page-link
-        color: $white
-        background-color: $main
+        color: $main
+        background-color: transparent
+    &.disabled
+      .page-link
+        color: $text
+        background-color: transparent
+        opacity: 0.7
   &-link
-    +transition
-    width: 2rem
-    height: 2rem
-    padding: 0
-    line-height: 2
+    @extend .text-truncate
+    font-weight: 600
     color: $text
     text-align: center
     text-overflow: ellipsis
-    background-color: darken($white, 10%)
     border: none
-    box-shadow: $shadow
     overflow: hidden
     &:hover
-      color: $text
-      box-shadow: $shadow-hover
+      color: $main
+      background-color: transparent
     &:focus
-      z-index: 1
-      color: $text
-      text-decoration: none
-      box-shadow: 0 0 0 0.1rem transparentize($link, 0.25)
+      color: $main
+      background-color: transparent
+      box-shadow: none
+      outline: 1px solid $outline-color
     &:active
       color: $text
-      text-decoration: none
-      box-shadow: $shadow-active
-      text-decoration: none
     +xs
-      width: 1.5rem
-      height: 1.5rem
-      font-size: 0.75rem
 
 .breadcrumb
-  position: relative
-  align-items: center
+  max-width: 100%
+  display: block
   padding: 0 0 0.5rem
   margin-bottom: 0
-  font-size: 0.77rem
   background-color: rgba(0,0,0,0)
   overflow-x: auto
   overflow-y: hidden
   +md-down
-    flex-wrap: nowrap
+    white-space: nowrap
     font-size: 0.885rem
   &-wrap
     @extend .overflow-overlay
     position: relative
+    max-width: 100%
     padding: 1rem 0 0.5rem
     margin-bottom: 1rem
     background-color: $gray
@@ -1155,7 +1225,7 @@ select.form-control
       &:after
         display: none
   &-item
-    white-space: nowrap
+    display: inline-block
     &:not(:last-child)
       margin-right: 0.5rem
     & + .breadcrumb-item
@@ -1433,6 +1503,8 @@ select.form-control
     &:hover,
     &:focus
       opacity: 1
+    +xs
+      font-size: 2.125rem
     &.disabled
       opacity: 0.2
     [class*=" icon-"],
@@ -1463,6 +1535,9 @@ select.form-control
       height: 0.27rem
       border-radius: 50%
       background-color: $text
+  &-stage
+    &-flex
+      display: flex
   &-banner
     &-prev
       left: 2rem
@@ -1483,7 +1558,6 @@ select.form-control
     +md-down
       margin-top: 0
     &-stage
-      display: flex
       +md-down
         left: -79px
       +xs
@@ -1532,8 +1606,8 @@ select.form-control
       +lg-down
         padding: 0 2rem
       &-arrow
-        font-size: 0.77rem
         color: $link
+        font-size: 0.77rem
         opacity: 1
         &:hover,
         &:focus
@@ -1610,7 +1684,12 @@ select.form-control
     margin-bottom: 2.16rem
     line-height: 1
     +md-down
+      max-width: 70%
+      margin-left: auto
+      margin-right: auto
       margin-bottom: 1.83rem
+    +xs
+      max-width: 100%
   &-subtitle
     margin-bottom: 2.44rem
     +md-down
@@ -1686,6 +1765,9 @@ select.form-control
       cursor: text
       box-shadow: 0 0.5rem 2rem transparentize($black, 0.85)
       opacity: 1
+      &:hover
+        & ~ .search-btn
+          color: $text
       & ~ .search-btn
         position: absolute
         top: 0
@@ -1768,7 +1850,6 @@ select.form-control
 
 .chart
   position: relative
-  min-width: 65rem
   &-outer
     overflow-x: auto
     padding-bottom: 0.75rem
@@ -1784,6 +1865,7 @@ select.form-control
     position: absolute
     top: 3.9rem
     left: 0
+    min-width: 60rem
     width: 100%
     height: 0.55rem
     border-radius: 0.25rem
@@ -1799,19 +1881,23 @@ select.form-control
   &-steps
     display: flex
   &-step
+    &:not(:last-child)
+      padding-right: 1rem
     &-1
-      min-width: 6.72rem
+      min-width: 7rem
     &-2
-      min-width: 7.11rem
+      min-width: 7rem
     &-3
-      min-width: 14.33rem
+      min-width: 15rem
     &-4
-      min-width: 16.61rem
+      min-width: 15rem
     &-5
+      min-width: 15rem
       flex-grow: 1
 
 .compare
   &-section
+    +sm-down
       background-color: $white
   &-status
     display: flex
@@ -1850,8 +1936,8 @@ select.form-control
     +sm-down
       padding: 0
     +xs
-      margin-left: -0.55rem
-      margin-right: -0.55rem
+      margin-left: -1.11rem
+      margin-right: -1.11rem
     &-characteristics
       flex-grow: 1
       display: flex

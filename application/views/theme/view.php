@@ -130,7 +130,7 @@
           <div class="d-flex align-items-center">
             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-wallet.svg" alt="кошелек" class="d-none d-sm-block img-responsive img-lazy mr-3 flex-shrink-0">
             <div>
-              <h2 class="h4 font-weight-normal text-left mb-2 mb-sm-0">Лучшая цена в Рунете</h2>
+              <h2 class="h5 h5-lg text-left mb-2 mb-sm-0">Лучшая цена в Рунете</h2>
               <span>Нашли дешевле? Cнизим цену!</span>
             </div>
           </div>
@@ -149,7 +149,7 @@
                     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="Бризер 3S Special" class="img-responsive img-lazy">
                   </a>
                   <div>
-                    <h4 class="h6 mb-0"><a href="" class="link-dark">Бризер 3S Special</a></h4>
+                    <h4 class="h6 text-left mb-0"><a href="" class="link-dark">Бризер 3S Special</a></h4>
                     <a href="" class="font-weight-normal small">Посмотреть комплект</a>
                   </div>
                 </div>
@@ -171,7 +171,7 @@
                     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="Бризер 3S Standart" class="img-responsive img-lazy">
                   </a>
                   <div>
-                    <h4 class="h6 mb-0"><a href="" class="link-dark">Бризер 3S Standart</a></h4>
+                    <h4 class="h6 text-left mb-0"><a href="" class="link-dark">Бризер 3S Standart</a></h4>
                     <a href="" class="font-weight-normal small">Посмотреть комплект</a>
                   </div>
                 </div>
@@ -192,7 +192,7 @@
                     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="Бризер 3S Smart" class="img-responsive img-lazy">
                   </a>
                   <div>
-                    <h4 class="h6 mb-0"><a href="" class="link-dark">Бризер 3S Smart</a></h4>
+                    <h4 class="h6 text-left mb-0"><a href="" class="link-dark">Бризер 3S Smart</a></h4>
                     <a href="" class="font-weight-normal small">Посмотреть комплект</a>
                   </div>
                 </div>
@@ -222,7 +222,7 @@
                     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="Tion Magicair" class="img-responsive img-lazy">
                   </a>
                   <div>
-                    <h4 class="h6 mb-0"><a href="" class="link-dark">Tion Magicair</a></h4>
+                    <h4 class="h6 text-left mb-0"><a href="" class="link-dark">Tion Magicair</a></h4>
                     <span class="font-weight-normal small">Базовая станция</span>
                   </div>
                 </div>
@@ -243,7 +243,7 @@
                     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="ИК-модуль" class="img-responsive img-lazy">
                   </a>
                   <div>
-                    <h4 class="h6 mb-0"><a href="" class="link-dark">ИК-модуль</a></h4>
+                    <h4 class="h6 text-left mb-0"><a href="" class="link-dark">ИК-модуль</a></h4>
                     <span class="font-weight-normal small">+ Управление кондиционером</span>
                   </div>
                 </div>
@@ -262,7 +262,7 @@
                 <div class="d-flex mb-3 mb-sm-0">
                   <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/install-img.png" alt="Монтаж" class="img-responsive img-lazy mr-4 flex-shrink-0">
                   <div>
-                    <h4 class="h6 mb-0">Монтаж</h4>
+                    <h4 class="h6 text-left mb-0">Монтаж</h4>
                     <a href="" class="font-weight-normal small">Посмотреть видео</a>
                   </div>
                 </div>
@@ -284,7 +284,7 @@
 </div>
 <section class="page-section page-section-colored page-section-colored-main">
   <div class="container">
-    <h2 class="h3 mb-4 text-center text-lg-left">Получите консультацию или закажите замер</h2>
+    <h2 class="h3 h3-lg mb-4 text-center text-lg-left">Получите консультацию или закажите замер</h2>
     <form>
       <div class="row justify-content-center mb-4">
         <div class="col-sm-6 col-lg form-group">
@@ -295,7 +295,7 @@
           <input type="text" id="callback-phone" class="form-control phone" name="callback[phone]" required="required">
           <label for="callback-phone" class="form-control-placeholder">Телефон</label>
         </div>
-        <div class="col-md-6 col-lg form-group text-center">
+        <div class="col-md-5 col-lg form-group text-center">
           <button class="btn btn-lg w-100 btn-outline" aria-label="Отправить заявку">
             <span>Отправить заявку</span>
             <span class="icon-angle-right"></span>
@@ -313,28 +313,28 @@
       <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
         <div class="d-flex align-items-center mb-4">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-delivery.svg" alt="Бесплатная доставка" class="img-responsive img-lazy mr-3 flex-shrink-0" width="60" height="60">
-          <h5 class="mb-0">Бесплатная доставка</h5>
+          <h5 class="h5-lg mb-0">Бесплатная доставка</h5>
         </div>
         <p>Просто оставьте заявку и мы все сделаем</p>
       </div>
       <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
         <div class="d-flex align-items-center mb-4">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-installment.svg" alt="Беспроцентная рассрочка" class="img-responsive img-lazy mr-3 flex-shrink-0" width="60" height="60">
-          <h5 class="mb-0">Беспроцентная рассрочка</h5>
+          <h5 class="h5-lg mb-0">Беспроцентная рассрочка</h5>
         </div>
         <p>0% на 4 месяца, без участия банка и переплат</p>
       </div>
       <div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
         <div class="d-flex align-items-center mb-4">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-alarm-clock.svg" alt="Монтаж в день заказа 24/7" class="img-responsive img-lazy mr-3 flex-shrink-0" width="60" height="60">
-          <h5 class="mb-0">Монтаж в день заказа 24/7</h5>
+          <h5 class="h5-lg mb-0">Монтаж в день заказа 24/7</h5>
         </div>
         <p>Без праздников и выходных</p>
       </div>
       <div class="col-sm-6 col-lg-3">
         <div class="d-flex align-items-center mb-4">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-warranty.svg" alt="Гарантия 10 лет на монтаж" class="img-responsive img-lazy mr-3 flex-shrink-0" width="60" height="60">
-          <h5 class="mb-0">Гарантия 10 лет на монтаж</h5>
+          <h5 class="h5-lg mb-0">Гарантия 10 лет на монтаж</h5>
         </div>
         <p>Уникальное предложение на рынке</p>
       </div>
@@ -436,17 +436,17 @@
             </section>
             <p>Все работы производятся исключительно с помощью профессиональной техники «Hilti», «Messer» «Husqvarna».</p>
             <section class="mb-5">
-              <h3 class="h5 font-weight-semibold mb-4">Четыре правила составляющих основу наших принципов</h3>
+              <h3 class="h5 h5-lg font-weight-semibold mb-4">Четыре правила составляющих основу наших принципов</h3>
               <div class="column-count-lg-2">
                 <section class="mb-4">
-                  <h4 class="h6 font-weight-semibold">
+                  <h4 class="h6 text-left font-weight-semibold">
                     <span class="icon-check mr-2"></span>
                     <span>Оперативность</span>
                   </h4>
                   <p>В нашей команде есть три собственные монтажные бригады, поэтому только мы предлагаем начать монтаж, через два часа после заказа. Наши мастера – профессионалы с многолетним опытом в сфере монтажа вентиляции.</p>
                 </section>
                 <section class="mb-4">
-                  <h4 class="h6 font-weight-semibold">
+                  <h4 class="h6 text-left font-weight-semibold">
                     <span class="icon-check mr-2"></span>
                     <span>Оперативность</span>
                   </h4>
@@ -454,14 +454,14 @@
                     дизайнерами Фамилия инстаграм, Фамилия инстаграм ...</p>
                 </section>
                 <section class="mb-4">
-                  <h4 class="h6 font-weight-semibold">
+                  <h4 class="h6 text-left font-weight-semibold">
                     <span class="icon-check mr-2"></span>
                     <span>Чистота</span>
                   </h4>
                   <p>Наши мастера-монтажники отличаются высоким уровнем профессионализма. После монтажа в квартире не останется мусора, пыли и грязи, даже нет необходимости делать влажную уборку.</p>
                 </section>
                 <section class="mb-4">
-                  <h4 class="h6 font-weight-semibold">
+                  <h4 class="h6 text-left font-weight-semibold">
                     <span class="icon-check mr-2"></span>
                     <span>Не бросаем наших клиентов</span>
                   </h4>
@@ -479,7 +479,7 @@
               </div>
             </section>
             <section class="mb-5">
-              <h3 class="h5 font-weight-semibold mb-4">Предварительный выезд</h3>
+              <h3 class="h5 h5-lg font-weight-semibold mb-4">Предварительный выезд</h3>
               <p>Закажите предварительный выезд, и специалист по монтажу приедет к Вам, чтобы:</p>
               <ul class="list-dashed">
                 <li>помочь с выбором места для монтажа;</li>
@@ -492,7 +492,7 @@
             <div class="p-3 mb-5 bg-main-transparent rounded">Более детальную информацию по монтажу любой приточной системы Вы сможете получить у консультанта в нашем <a href="" class="text-uppercase">шоуруме</a> или по телефону <a href="tel:88005002191" class="link-dark font-weight-semibold">8 800 500 21 91</a></div>
             <section class="mb-5">
               <div class="d-flex flex-column flex-sm-row justify-content-between mb-4">
-                <h3 class="h5 font-weight-semibold mb-2 mb-sm-0 mr-sm-3">Фото наших объектов</h3>
+                <h3 class="h5 h5-lg font-weight-semibold mb-2 mb-sm-0 mr-sm-3">Фото наших объектов</h3>
                 <a href="" class="font-weight-semibold">Смотреть все</a>
               </div>
               <div class="slider-projects owl-carousel mb-4">
@@ -512,7 +512,7 @@
               <p>* гарантийный монтаж сохраняет все гарантийные обязательства компании производителя на оборудование</p>
             </section>
             <section>
-              <h3 class="h5 font-weight-semibold mb-4">Карта наших монтажей</h3>
+              <h3 class="h5 h5-lg font-weight-semibold mb-4">Карта наших монтажей</h3>
               <div id="map" class="map"></div>
             </section>
           </div>
@@ -528,7 +528,7 @@
     <div class="row">
       <div class="col-lg-6 text-left text-sm-center text-lg-left">
         <h2 class="text-left text-sm-center text-lg-left">ABC Vent — полный цикл обслуживания</h2>
-        <div class="h4 mb-4">Продажа, доставка, монтаж, сервис</div>
+        <h4 class="mb-4">Продажа, доставка, монтаж, сервис</h4>
         <p>Мы не забываем про клиента. Со временем подхода замены фильтров, напомним Вам и доставим бесплатно с максимально скидкой на комплект.</p>
       </div>
     </div>
@@ -538,22 +538,22 @@
   <div class="container">
     <div class="row justify-content-lg-between align-items-center">
       <div class="col-lg-auto mb-4 mb-lg-0">
-        <h2 class="h3 mb-0">Есть вопросы? Звоните 24/7</h2>
+        <h2 class="h3 h3-lg mb-0">Есть вопросы? Звоните 24/7</h2>
       </div>
-      <div class="col-lg col-xl-6">
+      <div class="col-lg-7 col-xl-6">
         <div class="row align-items-center justify-content-around justify-content-lg-between">
           <div class="col-sm-auto text-center text-sm-left mb-4 mb-sm-0">
             <a href="tel:88005002712" class="link-truncate link-light">
               <span class="icon-call-ring h2 mb-0 mr-2 mr-sm-3 align-middle"></span>
               <span class="d-inline-block align-middle text-left">
-                <span class="h3 mb-0">8 800 500 27 12</span>
+                <span class="h3 h3-lg mb-0 font-weight-semibold">8 800 500 27 12</span>
                 <br>
                 <span class="small">Звонок бесплатный</span>
               </span>
             </a>
           </div>
           <div class="col-sm-auto text-center text-sm-left">
-            <button class="btn btn-outline" aria-label="Написать нам">
+            <button class="btn btn-outline d-inline-flex align-items-center justify-content-between" aria-label="Написать нам">
               <span>Написать нам</span>
               <span class="icon-angle-right"></span>
             </button>

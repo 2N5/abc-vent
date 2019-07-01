@@ -1,116 +1,182 @@
-<div class="banner" style="background-image: url(/assets/img/bg-header.jpg);">
+<nav class="breadcrumb-wrap mb-4">
   <div class="container">
-    <div class="banner-inner">
-      <h1 class="mb-0"><?=($this->page->h1 !== '') ? $this->page->h1 : $this->page->title; ?></h1>
-    </div>
+    <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+      <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="/" class="link-dark" title="Главная" itemprop="item">
+          <span itemprop="name">Главная</span>
+          <meta itemprop="position" content="1">
+        </a>
+      </li>
+      <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="" class="link-dark" title="Каталог" itemprop="item">
+          <span itemprop="name">Каталог</span>
+          <meta itemprop="position" content="2">
+        </a>
+      </li>
+    </ul>
   </div>
-</div>
-<?php echo BreadCrumb::links(); ?>
-<div class="container">
-  <div class="row">
-    <div class="col-md-4 d-none d-md-block">
-      <?php echo Sidebar::printSidebar(); ?>
+</nav>
+<section class="container page-section">
+  <h1>Очистители воздуха</h1>
+  <section class="page-section">
+    <div class="page-section-title-wrap">
+      <h3 class="page-section-title">с Активным проветриванием</h3>
     </div>
-    <div class="col-md-8">
-      <?php foreach($this->themeObjects as $parent) { ?>
-        <section class="mb-4">
-          <h2><a href="<?= absoluteLink($this->controllerUrl('', array($parent->url))); ?>"><?=$parent->title; ?></a></h2>
-          <?php if (count($parent->docs)) { ?>
-            <div class="row mb-2">
-              <?php foreach($parent->docs as $object) { ?>
-                <div class="col-6 col-sm-4 mb-3">
-                  <div class="object-card card h-100">
-                    <a class="object-img-wrap card-img-overlay img-proportion rectangle-1x2" href="<?=$this->controllerUrl('view', array($object->url), true); ?>">
-                      <span class="img-proportion-inner">
-                        <?php if ($object->picture) { ?>
-                          <img src="<?= Picture::UPLOAD_DIR . Picture::NO_IMG; ?>" data-src="<?=$object->picture->path.'/500'; ?>" class="img-responsive img-lazy" alt="<?=$object->picture->alt ? $object->picture->alt : $object->title; ?>"
-                          title="<?= $object->picture->title; ?>">
-                        <?php } else { ?>
-                          <img src="<?= Picture::UPLOAD_DIR . Picture::NO_IMG; ?>" class="img-responsive" alt="Нет фото" title="Нет фото">
-                        <?php } ?>
-                      </span>
-                    </a>
-                    <div class="object-body">
-                      <a href="<?=$this->controllerUrl('view', array($object->url), true); ?>" class="object-title"><?=$object->title; ?></a>
-                      <div class="object-price-wrap">
-                        <span class="object-price"><?=$object->price; ?> р.</span>
-                        <span class="object-price-old"><?=$object->price; ?> р.</span>
-                      </div>
-                    </div>
-                    <button class="btn" data-target="#order-modal" data-toggle="modal" data-name="<?=$object->title;?>" data-id="<?=$object->id; ?>" data-price="<?=$object->price;?>">Заказать</button>
-                  </div>
-                </div>
-              <?php } ?>
-            </div>
-          <?php } if (count($parent->childs)) {
-            foreach($parent->childs as $child) { ?>
-              <section class="mb-4">
-                <h3><a href="<?= absoluteLink($this->controllerUrl('', array($child->url))); ?>"><?=$child->title; ?></a></h3>
-                <div class="row">
-                  <?php foreach($child->docs as $object) { ?>
-                    <div class="col-6 col-sm-4 mb-3">
-                      <div class="object-card card h-100">
-                        <a class="object-img-wrap card-img-overlay img-proportion rectangle-1x2" href="<?=$this->controllerUrl('view', array($object->url), true); ?>">
-                          <span class="img-proportion-inner">
-                            <?php if ($object->picture) { ?>
-                              <img src="<?= Picture::UPLOAD_DIR . Picture::NO_IMG; ?>" data-src="<?=$object->picture->path.'/500'; ?>" class="img-responsive img-lazy" alt="<?=$object->picture->alt ? $object->picture->alt : $object->title; ?>"
-                              title="<?= $object->picture->title; ?>">
-                            <?php } else { ?>
-                              <img src="<?= Picture::UPLOAD_DIR . Picture::NO_IMG; ?>" class="img-responsive" alt="Нет фото" title="Нет фото">
-                            <?php } ?>
-                          </span>
-                        </a>
-                        <div class="object-body">
-                          <a href="<?=$this->controllerUrl('view', array($object->url), true); ?>" class="object-title"><?=$object->title; ?></a>
-                          <div class="object-price-wrap">
-                            <span class="object-price"><?=$object->price; ?> р.</span>
-                            <span class="object-price-old"><?=$object->price; ?> р.</span>
-                          </div>
-                        </div>
-                        <button class="btn" data-target="#order-modal" data-toggle="modal" data-name="<?=$object->title;?>" data-id="<?=$object->id; ?>" data-price="<?=$object->price;?>">Заказать</button>
-                      </div>
-                    </div>
-                  <?php } ?>
-                </div>
-              </section>
-            <?php }
-          } ?>
-        </section>
-      <?php } if(count($this->otherObjects)) { ?>
-        <section class="<?php if($this->page->content || $this->page->seo_text){ echo "mb-4"; } ?>">
-          <h2>Другие</h2>
-          <div class="row">
-            <?php foreach($this->otherObjects as $object) { ?>
-              <div class="col-6 col-sm-4 mb-3">
-                <div class="object-card card h-100">
-                  <a class="object-img-wrap card-img-overlay img-proportion rectangle-1x2" href="<?=$this->controllerUrl('view', array($object->url), true); ?>">
-                    <span class="img-proportion-inner">
-                      <?php if ($object->picture) { ?>
-                        <img src="<?= Picture::UPLOAD_DIR . Picture::NO_IMG; ?>" data-src="<?=$object->picture->path.'/500'; ?>" class="img-responsive img-lazy" alt="<?=$object->picture->alt ? $object->picture->alt : $object->title; ?>"
-                        title="<?= $object->picture->title; ?>">
-                      <?php } else { ?>
-                        <img src="<?= Picture::UPLOAD_DIR . Picture::NO_IMG; ?>" class="img-responsive" alt="Нет фото" title="Нет фото">
-                      <?php } ?>
-                    </span>
-                  </a>
-                  <div class="object-body">
-                    <a href="<?=$this->controllerUrl('view', array($object->url), true); ?>" class="object-title"><?=$object->title; ?></a>
-                    <div class="object-price-wrap">
-                      <span class="object-price"><?=$object->price; ?> р.</span>
-                      <span class="object-price-old"><?=$object->price; ?> р.</span>
-                    </div>
-                  </div>
-                  <button class="btn" data-target="#order-modal" data-toggle="modal" data-name="<?=$object->title;?>" data-id="<?=$object->id; ?>" data-price="<?=$object->price;?>">Заказать</button>
-                </div>
-              </div>
-            <?php } ?>
+    <h4>Очищает воздух с медицинским классом фильтрации!</h4>
+    <ul class="row list-unstyled mb-0">
+      <li class="col-sm-6 col-lg-4 mb-3 mb-lg-4">
+        <a href="" class="card card-catalog">
+          <div class="card-body">
+            <span class="icon-plug text-muted"></span>
+            <span class="img-proportion square">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </span>
+            <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
           </div>
-        </section>
-      <?php } if($this->page->content) { ?>
-        <section class="page-content"><?php echo $this->page->content; ?></section>
-      <?php } if($this->page->seo_text) { ?>
-        <section class="page-seo-text"><?php echo $this->page->seo_text; ?></section>
-      <?php } ?>
+        </a>
+      </li>
+      <li class="col-sm-6 col-lg-4 mb-3 mb-lg-4">
+        <a href="" class="card card-catalog">
+          <div class="card-body">
+            <span class="icon-plug text-muted"></span>
+            <span class="img-proportion square">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </span>
+            <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
+          </div>
+        </a>
+      </li>
+      <li class="col-sm-6 col-lg-4 mb-3 mb-lg-4">
+        <a href="" class="card card-catalog">
+          <div class="card-body">
+            <span class="icon-plug text-muted"></span>
+            <span class="img-proportion square">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </span>
+            <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
+          </div>
+        </a>
+      </li>
+      <li class="col-sm-6 col-lg-4 mb-3 mb-lg-4">
+        <a href="" class="card card-catalog">
+          <div class="card-body">
+            <span class="icon-plug text-muted"></span>
+            <span class="img-proportion square">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </span>
+            <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section class="page-section">
+    <div class="page-section-title-wrap">
+      <h3 class="page-section-title">с рекуперацией тепла</h3>
+    </div>
+    <h4>Очищает воздух с медицинским классом фильтрации!</h4>
+    <ul class="row list-unstyled mb-0">
+      <li class="col-sm-6 mb-3 mb-lg-4">
+        <a href="" class="card card-catalog">
+          <div class="card-body">
+            <span class="icon-energy text-muted"></span>
+            <span class="img-proportion rectangle-1x2">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </span>
+            <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
+          </div>
+        </a>
+      </li>
+      <li class="col-sm-6 mb-3 mb-lg-4">
+        <a href="" class="card card-catalog">
+          <div class="card-body">
+            <span class="icon-energy text-muted"></span>
+            <span class="img-proportion rectangle-1x2">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </span>
+            <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
+          </div>
+        </a>
+      </li>
+      <li class="col-sm-6 mb-3 mb-lg-4">
+        <a href="" class="card card-catalog">
+          <div class="card-body">
+            <span class="icon-energy text-muted"></span>
+            <span class="img-proportion rectangle-1x2">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </span>
+            <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
+          </div>
+        </a>
+      </li>
+      <li class="col-sm-6 mb-3 mb-lg-4">
+        <a href="" class="card card-catalog">
+          <div class="card-body">
+            <span class="icon-energy text-muted"></span>
+            <span class="img-proportion rectangle-1x2">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </span>
+            <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+</section>
+<section class="page-section page-section-colored page-section-colored-main py-4 mb-0">
+  <div class="container">
+    <div class="row justify-content-lg-between align-items-center">
+      <div class="col-lg-auto mb-4 mb-lg-0">
+        <h2 class="h3 h3-lg mb-0">Есть вопросы? Звоните 24/7</h2>
+      </div>
+      <div class="col-lg-7 col-xl-6">
+        <div class="row align-items-center justify-content-around justify-content-lg-between">
+          <div class="col-sm-auto text-center text-sm-left mb-4 mb-sm-0">
+            <a href="tel:88005002712" class="link-truncate link-light">
+              <span class="icon-call-ring h2 mb-0 mr-2 mr-sm-3 align-middle"></span>
+              <span class="d-inline-block align-middle text-left">
+                <span class="h3 h3-lg mb-0 font-weight-semibold">8 800 500 27 12</span>
+                <br>
+                <span class="small">Звонок бесплатный</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-sm-auto text-center text-sm-left">
+            <button class="btn btn-outline d-inline-flex align-items-center justify-content-between" aria-label="Написать нам">
+              <span>Написать нам</span>
+              <span class="icon-angle-right"></span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
+<section class="page-section page-section-colored py-5">
+  <div class="container">
+    <h2 class="h4 font-weight-normal text-center">Принимаем к оплате</h2>
+    <ul class="list-unstyled d-flex justify-content-center align-items-center mb-0">
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-1.png" class="img-responsive img-lazy" alt="Mastercard" title="Mastercard"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-2.png" class="img-responsive img-lazy" alt="Visa" title="Visa"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-3.png" class="img-responsive img-lazy" alt="Яндекс Деньги" title="Яндекс Деньги"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-4.png" class="img-responsive img-lazy" alt="WebMoney" title="WebMoney"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-5.png" class="img-responsive img-lazy" alt="Qiwi" title="Qiwi"></li>
+    </ul>
+  </div>
+</section>
