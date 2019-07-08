@@ -12,8 +12,8 @@ $categories = Category::themeCats();
           <li class="col px-0 mobile-controls-list-item">
             <button class="navbar-toggler mobile-control" type="button" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Открыть главное меню"><span class="icon-bars"></span></button>
           </li>
-          <li class="col px-0 mobile-controls-list-item"><a href="" class="mobile-control" aria-label="Позвонить нам"><span class="icon-call-ring"></span></a></li>
-          <li class="col px-0 mobile-controls-list-item"><a href="" class="mobile-control" aria-label="Перейти в корзину"><span class="icon-cart"></span></a></li>
+          <li class="col px-0 mobile-controls-list-item"><a href="#" class="mobile-control" aria-label="Позвонить нам"><span class="icon-call-ring"></span></a></li>
+          <li class="col px-0 mobile-controls-list-item"><a href="#" class="mobile-control" aria-label="Перейти в корзину"><span class="icon-cart"></span></a></li>
           <li class="col px-0 mobile-controls-list-item">
             <form class="search search-mobile">
               <input type="text" name="search" placeholder="Поиск" class="search-input form-control mobile-control" aria-label="Поиск" required>
@@ -32,21 +32,21 @@ $categories = Category::themeCats();
             <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-link link-light link-dashed">Москве и МО</button>
             <ul class="dropdown-menu">
               <li>
-                <a href="" class="dropdown-item">Санкт-Петербурге</a>
+                <a href="#" class="dropdown-item">Санкт-Петербурге</a>
               </li>
               <li>
-                <a href="" class="dropdown-item">Воронеже</a>
+                <a href="#" class="dropdown-item">Воронеже</a>
               </li>
               <li>
-                <a href="" class="dropdown-item">Белгороде</a>
+                <a href="#" class="dropdown-item">Белгороде</a>
               </li>
             </ul>
           </div>
         </div>
         <ul class="nav flex-nowrap">
-          <li class="mr-3"><a href="" class="link-light"><span class="icon-facebook"></span></a></li>
-          <li class="mr-3"><a href="" class="link-light"><span class="icon-instagram"></span></a></li>
-          <li><a href="" class="link-light"><span class="icon-youtube"></span></a></li>
+          <li class="mr-3"><a href="#" class="link-light"><span class="icon-facebook"></span></a></li>
+          <li class="mr-3"><a href="#" class="link-light"><span class="icon-instagram"></span></a></li>
+          <li><a href="#" class="link-light"><span class="icon-youtube"></span></a></li>
         </ul>
       </div>
     </div>
@@ -100,13 +100,13 @@ $categories = Category::themeCats();
               <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-link link">Москве и МО</button>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="" class="dropdown-item">Санкт-Петербурге</a>
+                  <a href="#" class="dropdown-item">Санкт-Петербурге</a>
                 </li>
                 <li>
-                  <a href="" class="dropdown-item">Воронеже</a>
+                  <a href="#" class="dropdown-item">Воронеже</a>
                 </li>
                 <li>
-                  <a href="" class="dropdown-item">Белгороде</a>
+                  <a href="#" class="dropdown-item">Белгороде</a>
                 </li>
               </ul>
             </div>
@@ -150,7 +150,7 @@ $categories = Category::themeCats();
           <span>&copy;</span>
           <a href="<?= absoluteLink(); ?>" class="link-dark">ABC Vent</a>
           <span class="mr-1"><?= date('Y', time()); ?></span>
-          <a href="" class="link-dark">Политика конфиденциальности</a>
+          <a href="#" class="link-dark">Политика конфиденциальности</a>
         </div>
         <div class="col-sm-auto">WebCanape — разработка сайтов и маркетинг</div>
       </div>

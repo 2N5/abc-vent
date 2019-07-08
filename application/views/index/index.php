@@ -918,7 +918,7 @@
       <div class="col-sm-6 col-lg-3 mb-5 mb-sm-0">
         <div class="advantage-item-header">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-drop.svg" alt="Чистый монтаж" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
-          <h3 class="mb-0">Чистый монтаж</h3>
+          <h3 class="mb-0">Чистый<br>монтаж</h3>
         </div>
         <p>После нас нет необходимости делать уборку</p>
       </div>

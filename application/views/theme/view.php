@@ -284,7 +284,7 @@
 </div>
 <section class="page-section page-section-colored page-section-colored-main">
   <div class="container">
-    <h2 class="h3 h3-lg mb-4 text-center text-lg-left">Получите консультацию или закажите замер</h2>
+    <h2 class="h3 h3-lg mb-5 text-center text-lg-left">Получите консультацию или закажите замер</h2>
     <form>
       <div class="row justify-content-center mb-4">
         <div class="col-sm-6 col-lg form-group">
@@ -366,8 +366,8 @@
     <div class="card">
       <div class="card-body">
         <div class="tab-content">
-          <div class="tab-pane fade" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">...</div>
-          <div class="tab-pane fade" id="complectation" role="tabpanel" aria-labelledby="complectation-tab">...</div>
+          <div class="tab-pane fade" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">.1..</div>
+          <div class="tab-pane fade" id="complectation" role="tabpanel" aria-labelledby="complectation-tab">.2..</div>
           <div class="tab-pane fade show active" id="install" role="tabpanel" aria-labelledby="install-tab">
             <div class="img-proportion rectangle-1x1_8 mb-4">
               <div class="img-proportion-inner">
@@ -516,8 +516,8 @@
               <div id="map" class="map"></div>
             </section>
           </div>
-          <div class="tab-pane fade" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">...</div>
-          <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">...</div>
+          <div class="tab-pane fade" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">.4..</div>
+          <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">.5..</div>
         </div>
       </div>
     </div>

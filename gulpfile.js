@@ -36,6 +36,7 @@ gulp.task('css', function () {
 gulp.task('js', function () {
   return gulp.src([
       './assets/libs/js/jquery-3.3.1.min.js',
+      './assets/libs/js/popper.min.js',
       './assets/libs/js/bootstrap.min.js',
       './assets/libs/js/owl.carousel.min.js',
       './assets/libs/js/jquery.lazy.min.js',

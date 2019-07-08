@@ -740,6 +740,9 @@ button.close
           min-width: auto
           color: $main
           border: 1px solid $border-color
+          &:hover,
+          &:focus
+            color: $text
           +xs
             width: 100%
       &-prepend
@@ -1150,6 +1153,8 @@ select.form-control
       letter-spacing: 1.6px
       text-transform: uppercase
       background-color: $white
+      +md-down
+        margin-left: 0
       &-wrap
         position: relative
         display: flex
@@ -1692,6 +1697,7 @@ select.form-control
       max-width: 100%
   &-subtitle
     margin-bottom: 2.44rem
+    font-weight: 300
     +md-down
       font-size: 1.11rem
       margin-bottom: 1.44rem
@@ -1965,8 +1971,8 @@ select.form-control
       justify-content: center
       align-items: center
       flex-direction: column
-      min-height: 5rem
-      padding: 1.66rem 0
+      min-height: 3.66rem
+      padding: 1.11rem 0
       text-align: center
       border-top: 1px solid $border-color
       &:nth-child(2)
@@ -1979,7 +1985,7 @@ select.form-control
         border: none
       &-size
         &-lg
-          min-height: 6rem
+          min-height: 4.6rem
       &-disabled
         color: $border-color
   &-item
@@ -2046,7 +2052,7 @@ select.form-control
         background-color: $gray
         border-radius: $border-radius
     &-title
-      height: 2.9rem
+      height: 2.7rem
       margin-bottom: 0.66rem
       overflow: hidden
 
