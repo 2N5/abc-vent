@@ -173,7 +173,7 @@ $(document).ready(function () {
         items: 2,
       },
       992: {
-        items: 2,
+        item: 2,
         margin: 30,
       },
       1330: {
@@ -265,6 +265,7 @@ $(document).ready(function () {
     nav: true,
     dots: false,
     items: 2,
+    margin: 20,
     itemElement: 'li',
     stageElement: 'ul',
     stageClass: 'owl-stage slider-view-controls-stage nav nav-tabs border-0',
@@ -274,7 +275,7 @@ $(document).ready(function () {
       480: {
         items: 3,
       },
-      630: {
+      768: {
         items: 4,
       },
       992: {
@@ -285,6 +286,20 @@ $(document).ready(function () {
         items: 7
       }
     }
+  });
+
+  $('.slider-form').owlCarousel({
+    nav: true,
+    dots: false,
+    items: 1,
+    margin: 20,
+    touchDrag: false,
+    mouseDrag: false,
+    pullDrag: false,
+    freeDrag: false,
+    navContainer: '.slider-form-nav',
+    navClass: ['page-link', 'page-link'],
+    navText: ['<span class="icon-angle-left align-middle mr-sm-2"></span><span class="d-none d-sm-inline align-middle">Назад</span>', '  <span class="d-none d-sm-inline align-middle mr-sm-2">Далее</span><span class="icon-angle-right align-middle"></span>']
   });
 
   const sliderThumbnails = $('.slider-thumbnails').owlCarousel({

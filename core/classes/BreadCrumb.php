@@ -49,7 +49,7 @@ class BreadCrumb
     }
 
     private function getCrumbs(Registry $uri){
-        $this->links[] = '<nav class="breadcrumb-wrap" aria-label="breadcrumb"><ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">';
+        $this->links[] = '<nav class="breadcrumb-wrap" aria-label="breadcrumb"><div class="container"><ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">';
 
         switch($uri->controller){
             case Contr::CATALOG:
@@ -70,7 +70,7 @@ class BreadCrumb
                 $this->getPageLinks($uri);
         }
 
-        return implode(' ', $this->links).'</ul></nav>';
+        return implode(' ', $this->links).'</ul></div></nav>';
     }
 
     private function getNonPageLinks(ModelTable $catOrObj){
@@ -103,7 +103,7 @@ class BreadCrumb
     private function implodeLinks(array $links=array()){
         $count = count($links);
 
-        $this->links[] = '<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/" title="Главная" itemprop="item"><span itemprop="name" aria-label="Главная"><span class="fal fa-home"></span></span><meta itemprop="position" content="1"></a></li>';
+        $this->links[] = '<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/" title="Главная" itemprop="item"><span itemprop="name" aria-label="Главная">Главная</span><meta itemprop="position" content="1"></a></li>';
         $this->links[] = '<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/'.Contr::printUrl(Contr::CATALOG).'" title="Каталог" itemprop="item"><span itemprop="name">Каталог</span><meta itemprop="position" content="2"></a></li>';
 
         $i = 1;
@@ -144,7 +144,7 @@ class BreadCrumb
         }else{
             if(array_key_exists($controller, $this->rusController))
             {
-                $this->links[] = '<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/" title="Главная" itemprop="item"><span itemprop="name" aria-label="Главная"><span class="fal fa-home"></span></span><meta itemprop="position" content="1"></a></li>';
+                $this->links[] = '<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/" title="Главная" itemprop="item"><span itemprop="name" aria-label="Главная">Главная</span><meta itemprop="position" content="1"></a></li>';
                 if($action !== 'index')
                 {
                     $this->links[] = '<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/'.Contr::printUrl($controller).'" title="'.$this->rusController[$controller].'" itemprop="item"><span itemprop="name">'.$this->rusController[$controller].'</span><meta itemprop="position" content="3"></a></li>';

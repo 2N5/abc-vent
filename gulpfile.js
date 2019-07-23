@@ -22,13 +22,13 @@ gulp.task('css', function () {
       prefix: ''
     }))
     .pipe(autoprefixer(['last 15 versions']))
-    // .pipe(cleancss({
-    //   level: {
-    //     1: {
-    //       specialComments: 0
-    //     }
-    //   }
-    // }))
+    .pipe(cleancss({
+      level: {
+        1: {
+          specialComments: 0
+        }
+      }
+    }))
     .pipe(gulp.dest('./assets/css'))
     .pipe(browserSync.stream());
 });

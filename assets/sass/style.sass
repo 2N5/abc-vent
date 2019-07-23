@@ -138,6 +138,8 @@ a,
     text-decoration: none
 
 .text
+  &-main
+    color: $link
   &-access
     color: $green !important
   &-danger
@@ -471,6 +473,7 @@ button.close
         padding: 0 $border-radius
         margin-bottom: -1px
     .nav-item
+      margin-right: -1px
       &:last-child
         .nav-link
             &:after
@@ -592,6 +595,22 @@ button.close
       color: $main
       background-color: darken($white, 5%)
       border-color: $white
+    &-main
+      min-width: 7.77rem
+      padding-top: 0.88rem
+      padding-bottom: 0.88rem
+      color: $link
+      background-color: transparent
+      border: 1px solid
+      &:hover,
+      &:focus
+        color: $white
+        background-color: $link
+        border-color: $link
+      &:active
+        color: $white
+        background-color: darken($link, 5%)
+        border-color: $link
 
 .link
   &-dashed
@@ -700,31 +719,43 @@ button.close
 .custom
   &-control
     min-height: 0
+    padding-left: 2.5rem
+    font-weight: 400
     &-label
-      min-height: 1rem
+      &:before,
+      &:after
+        top: 50%
+        left: -2.5rem
+        width: 1.4rem
+        height: 1.4rem
+        transform: translateY(-50%)
+      &:before
+        border-color: $border-color
     &-input
+      &:disabled
+        & ~ .custom-control-label
+          &:before
+            background-color: lighten($border-color, 5%)
+      &:checked
+        & ~ .custom-control-label
+          &:before
+            color: $link
+            border-color: $border-color
+            background-color: $white
       &:focus
-        &:not(:checked)
-          & ~ .custom-control-label
-            &:before
-              border-color: $main
         & ~ .custom-control-label
           &:before
             box-shadow: none
             outline: 1px solid $outline-color
-      &:not(:disabled)
-        &:active
-          & ~ .custom-control-label
-            &:before
-              color: $text
-              background-color: lighten($main, 45%)
-              border-color: lighten($main, 45%)
-      &:not([type="radio"]):checked
+      &:not(:disabled):active
         & ~ .custom-control-label
           &:before
-            color: $white
-            background-color: $main
-            border-color: $main
+            color: $link
+            border-color: $link
+            background-color: $white
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='1024' height='1024' viewBox='0 0 1024 1024'%3E%3Ctitle%3E%3C/title%3E%3Cg id='icomoon-ignore'%3E%3C/g%3E%3Cpath fill='%2378a8ed' d='M950.992 143.016c-18.996 0.621-35.993 8.695-48.255 21.373l-0.019 0.019c-174.246 174.623-360.76 374.716-534.849 551.305l-248.499-204.616c-12.655-12.408-30.008-20.067-49.149-20.067-38.783 0-70.223 31.439-70.223 70.223 0 23.941 11.981 45.083 30.272 57.758l0.233 0.153 298.418 245.756c12.055 10.028 27.697 16.116 44.761 16.116 19.359 0 36.889-7.834 49.592-20.506l-0.002 0.002c188.68-189.084 393.477-410.628 579.282-596.836 13.231-12.788 21.444-30.692 21.444-50.516 0-38.783-31.439-70.223-70.223-70.223-0.981 0-1.954 0.021-2.925 0.060l0.139-0.005z'%3E%3C/path%3E%3C/svg%3E%0A")
 
 .input
   &-quantity
@@ -793,12 +824,17 @@ select.form-control
   border-radius: $border-radius
   & > *
     &:first-child
-      border-radius: $border-radius $border-radius 0 0
+      border-top-left-radius: $border-radius
+      border-top-right-radius: $border-radius
     &:last-child
-      border-radius: 0 0 $border-radius $border-radius
+      border-bottom-left-radius: $border-radius
+      border-bottom-right-radius: $border-radius
   &-header,
+  &-body,
   &-footer
-    padding: 1.25rem
+    padding: 1.66rem
+    +md-down
+      padding: 1rem
   &-badge
     width: 4.71rem
     height: 4.71rem
@@ -1192,6 +1228,7 @@ select.form-control
     color: $text
     text-align: center
     text-overflow: ellipsis
+    background-color: transparent
     border: none
     overflow: hidden
     &:hover
@@ -1204,6 +1241,10 @@ select.form-control
       outline: 1px solid $outline-color
     &:active
       color: $text
+    &.disabled
+      color: $text
+      background-color: transparent
+      opacity: 0.7
     +xs
 
 .breadcrumb
@@ -1655,6 +1696,9 @@ select.form-control
     &.active
       &:after
         opacity: 0.6
+  &-form
+    &-nav
+      display: flex
 
 .banner
   padding-top: 8.02%
@@ -1971,7 +2015,7 @@ select.form-control
       justify-content: center
       align-items: center
       flex-direction: column
-      min-height: 3.66rem
+      min-height: 3.7rem
       padding: 1.11rem 0
       text-align: center
       border-top: 1px solid $border-color
@@ -2073,6 +2117,18 @@ select.form-control
         margin-bottom: 0
         margin-right: 1rem
 
+.badge
+  padding: 0.22rem 0.44rem
+  font-weight: 300
+  font-size: 85%
+  line-height: 1
+  &-danger
+    background-color: #f07575
+  &-success
+    background-color: #65c279
+  &-warning
+    background-color: #efd619
+
 .mobile
   &-controls
     position: fixed
@@ -2131,9 +2187,30 @@ button.mobile-control
 
 .view
   &-control
+    position: relative
+    z-index: 0
     display: flex
     align-items: center
+    padding: 12px 8px
     font-weight: 400
+    background: $border-color
+    border-radius: $border-radius
+    &:after
+      content: ''
+      position: absolute
+      z-index: -1
+      top: 1px
+      right: 1px
+      bottom: 1px
+      left: 1px
+      background: $white
+      border-radius: calc(0.25rem + 4px)
+    &:hover,
+    &.active
+      background: $main-gradient
+      .view-control-icon-wrap
+        color: $white
+        background-image: $main-gradient
     +xs
       justify-content: center
     &-icon
@@ -2150,10 +2227,6 @@ button.mobile-control
     &-title
       font-size: 0.77rem
       text-transform: uppercase
-    &.active
-      .view-control-icon-wrap
-        color: $white
-        background-image: $main-gradient
     &-colored
       .view-control-icon-wrap
         color: $white
