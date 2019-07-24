@@ -73,37 +73,37 @@
             <div id="view-photos" class="tab-pane fade show active" role="tabpanel" aria-labelledby="view-photos-tab">
               <div class="slider-imgs owl-carousel">
                 <div class="slider-img" data-hash="view-photo-1" data-href="view-thumbnail-1">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy mx-auto">
+                  <img src="/assets/img/slider-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive mx-auto">
                 </div>
                 <div class="slider-img" data-hash="view-photo-2" data-href="view-thumbnail-2">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-2.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy mx-auto">
+                  <img src="/assets/img/slider-img-2.jpg" alt="Бризер Тион 3S" class="img-responsive mx-auto">
                 </div>
                 <div class="slider-img" data-hash="view-photo-3" data-href="view-thumbnail-3">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-3.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy mx-auto">
+                  <img src="/assets/img/slider-img-3.jpg" alt="Бризер Тион 3S" class="img-responsive mx-auto">
                 </div>
                 <div class="slider-img" data-hash="view-photo-4" data-href="view-thumbnail-4">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-4.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy mx-auto">
+                  <img src="/assets/img/slider-img-4.jpg" alt="Бризер Тион 3S" class="img-responsive mx-auto">
                 </div>
               </div>
               <div class="slider-thumbnails owl-carousel">
                 <a href="#view-photo-1" class="slider-thumbnail img-proportion square" data-id="view-thumbnail-1">
                   <span class="img-proportion-inner">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-1.jpg" class="img-responsive img-lazy" alt="Бризер Тион 3S">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-1.jpg" class="img-responsive owl-lazy" alt="Бризер Тион 3S">
                   </span>
                 </a>
                 <a href="#view-photo-2" class="slider-thumbnail img-proportion square" data-id="view-thumbnail-2">
                   <span class="img-proportion-inner">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-2.jpg" class="img-responsive img-lazy" alt="Бризер Тион 3S">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-2.jpg" class="img-responsive owl-lazy" alt="Бризер Тион 3S">
                   </span>
                 </a>
                 <a href="#view-photo-3" class="slider-thumbnail img-proportion square" data-id="view-thumbnail-3">
                   <span class="img-proportion-inner">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-3.jpg" class="img-responsive img-lazy" alt="Бризер Тион 3S">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-3.jpg" class="img-responsive owl-lazy" alt="Бризер Тион 3S">
                   </span>
                 </a>
                 <a href="#view-photo-4" class="slider-thumbnail img-proportion square" data-id="view-thumbnail-4">
                   <span class="img-proportion-inner">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-4.jpg" class="img-responsive img-lazy" alt="Бризер Тион 3S">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/slider-img-4.jpg" class="img-responsive owl-lazy" alt="Бризер Тион 3S">
                   </span>
                 </a>
               </div>
@@ -285,7 +285,7 @@
 <section class="page-section page-section-colored page-section-colored-main">
   <div class="container">
     <h2 class="h3 h3-lg mb-5 text-center text-lg-left">Получите консультацию или закажите замер</h2>
-    <form>
+    <form method="POST">
       <div class="row justify-content-center mb-4">
         <div class="col-sm-6 col-lg form-group">
           <input type="text" id="callback-name" class="form-control" name="callback[name]" required>
@@ -1317,7 +1317,7 @@
                 </div>
               </div>
             </section>
-            <section class="mb-5">
+            <section>
               <div class="bg-gray rounded p-3 pt-sm-5">
                 <div class="row">
                   <div class="col-md-7">

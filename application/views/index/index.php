@@ -3,7 +3,7 @@
     <div class="container">
       <div class="banner-inner">
         <h1 class="banner-title">Забудьте про головную боль и плохой сон</h1>
-        <h3 class="banner-subtitle">Бесплатное тестирование бризера</h3>
+        <h2 class="h4 banner-subtitle">Бесплатное тестирование бризера</h2>
         <a href="/asdf" class="btn btn-main d-inline-flex align-items-center justify-content-between" aria-label="Подробнее">
           <span>Подробнее</span>
           <span class="icon-angle-right"></span>
@@ -25,18 +25,18 @@
   </div>
 </div>
 <section class="container page-section">
-  <h2 class="mb-4 mb-sm-5">Очистители воздуха</h2>
+  <h2 class="page-section-title">Очистители воздуха</h2>
   <section class="page-section">
-    <div class="page-section-title-wrap">
-      <h3 class="page-section-title">с Активным проветриванием</h3>
+    <div class="page-section-subtitle-wrap">
+      <h3 class="page-section-subtitle">с Активным проветриванием</h3>
     </div>
     <h4>Очищает воздух с медицинским классом фильтрации!</h4>
     <ul class="row list-unstyled mb-0">
       <li class="col-sm-6 col-lg-4 mb-3 mb-lg-4">
         <a href="#" class="card card-catalog">
           <div class="card-body">
-            <span class="icon-plug text-muted"></span>
-            <span class="img-proportion square">
+            <span class="icon-plug"></span>
+            <span class="img-proportion rectangle-catalog">
               <span class="img-proportion-inner">
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
@@ -48,8 +48,8 @@
       <li class="col-sm-6 col-lg-4 mb-3 mb-lg-4">
         <a href="#" class="card card-catalog">
           <div class="card-body">
-            <span class="icon-plug text-muted"></span>
-            <span class="img-proportion square">
+            <span class="icon-plug"></span>
+            <span class="img-proportion rectangle-catalog">
               <span class="img-proportion-inner">
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
@@ -61,8 +61,8 @@
       <li class="col-sm-6 col-lg-4 mb-3 mb-lg-4">
         <a href="#" class="card card-catalog">
           <div class="card-body">
-            <span class="icon-plug text-muted"></span>
-            <span class="img-proportion square">
+            <span class="icon-plug"></span>
+            <span class="img-proportion rectangle-catalog">
               <span class="img-proportion-inner">
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
@@ -74,8 +74,8 @@
       <li class="col-sm-6 col-lg-4 mb-3 mb-lg-4">
         <a href="#" class="card card-catalog">
           <div class="card-body">
-            <span class="icon-plug text-muted"></span>
-            <span class="img-proportion square">
+            <span class="icon-plug"></span>
+            <span class="img-proportion rectangle-catalog">
               <span class="img-proportion-inner">
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
@@ -87,8 +87,8 @@
     </ul>
   </section>
   <section class="page-section">
-    <div class="page-section-title-wrap">
-      <h3 class="page-section-title">с рекуперацией тепла</h3>
+    <div class="page-section-subtitle-wrap">
+      <h3 class="page-section-subtitle">с рекуперацией тепла</h3>
     </div>
     <h4>Очищает воздух с медицинским классом фильтрации!</h4>
     <ul class="row list-unstyled mb-0">
@@ -148,7 +148,7 @@
   </section>
 </section>
 <section class="container page-section">
-  <h2 class="mb-4 mb-sm-5">Хиты продаж</h2>
+  <h2 class="page-section-title">Хиты продаж</h2>
   <div class="slider-cards owl-carousel">
     <div class="slider-cards-item">
       <div class="card card-product">
@@ -159,12 +159,61 @@
           <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
             <span class="icon-video-camera"></span>
           </a>
-          <a href="#" class="img-proportion square">
+          <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
-          <a href="#" class="link-dark h7 mb-2">Бризер Тион 3S</a>
+          <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
+          <span class="product-price">44 900 &#8381;</span>
+          <span class="product-price-old">48 000</span>
+        </div>
+        <div class="card-footer">
+          <button class="btn card-product-btn">В корзину</button>
+        </div>
+      </div>
+    </div>
+    <div class="slider-cards-item">
+      <div class="card card-product">
+        <div class="card-body card-badge-wrap">
+          <span class="card-badge card-badge-second card-badge-top-left">
+            <span class="font-weight-bold">-5<sup>%</sup></span>
+          </span>
+          <span class="card-badge card-badge-third card-badge-top-right">
+            <span class="icon-giftbox"></span>
+          </span>
+          <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
+            <span class="icon-video-camera"></span>
+          </a>
+          <a href="#" class="img-proportion rectangle-product-card">
+            <span class="img-proportion-inner">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+            </span>
+          </a>
+          <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
+          <span class="product-price product-price-new">19 000 &#8381;</span>
+          <span class="product-price-old">19 000 &#8381;</span>
+        </div>
+        <div class="card-footer">
+          <button class="btn card-product-btn">В корзину</button>
+        </div>
+      </div>
+    </div>
+    <div class="slider-cards-item">
+      <div class="card card-product">
+        <div class="card-body card-badge-wrap">
+          <span class="card-badge card-badge-third card-badge-top-right">
+            <span class="icon-giftbox"></span>
+          </span>
+          <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
+            <span class="icon-video-camera"></span>
+          </a>
+          <a href="#" class="img-proportion rectangle-product-card">
+            <span class="img-proportion-inner">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+            </span>
+          </a>
+          <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
           <span class="product-price">19 000 &#8381;</span>
         </div>
         <div class="card-footer">
@@ -184,12 +233,12 @@
           <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
             <span class="icon-video-camera"></span>
           </a>
-          <a href="#" class="img-proportion square">
+          <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
-          <a href="#" class="link-dark h7">Бризер Тион 3S</a>
+          <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
           <span class="product-price product-price-new">19 000 &#8381;</span>
           <span class="product-price-old">19 000 &#8381;</span>
         </div>
@@ -207,60 +256,12 @@
           <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
             <span class="icon-video-camera"></span>
           </a>
-          <a href="#" class="img-proportion square">
+          <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
-          <a href="#" class="link-dark h7 mb-2">Бризер Тион 3S</a>
-          <span class="product-price">19 000 &#8381;</span>
-        </div>
-        <div class="card-footer">
-          <button class="btn card-product-btn">В корзину</button>
-        </div>
-      </div>
-    </div>
-    <div class="slider-cards-item">
-      <div class="card card-product">
-        <div class="card-body card-badge-wrap">
-          <span class="card-badge card-badge-second card-badge-top-left">
-            <span class="font-weight-bold">-5<sup>%</sup></span>
-          </span>
-          <span class="card-badge card-badge-third card-badge-top-right">
-            <span class="icon-giftbox"></span>
-          </span>
-          <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
-            <span class="icon-video-camera"></span>
-          </a>
-          <a href="#" class="img-proportion square">
-            <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
-            </span>
-          </a>
-          <a href="#" class="link-dark h7">Бризер Тион 3S</a>
-          <span class="product-price product-price-new">19 000 &#8381;</span>
-          <span class="product-price-old">19 000 &#8381;</span>
-        </div>
-        <div class="card-footer">
-          <button class="btn card-product-btn">В корзину</button>
-        </div>
-      </div>
-    </div>
-    <div class="slider-cards-item">
-      <div class="card card-product">
-        <div class="card-body card-badge-wrap">
-          <span class="card-badge card-badge-third card-badge-top-right">
-            <span class="icon-giftbox"></span>
-          </span>
-          <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
-            <span class="icon-video-camera"></span>
-          </a>
-          <a href="#" class="img-proportion square">
-            <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
-            </span>
-          </a>
-          <a href="#" class="link-dark h7 mb-2">Бризер Тион 3S</a>
+          <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
           <span class="product-price">19 000 &#8381;</span>
         </div>
         <div class="card-footer">
@@ -286,23 +287,23 @@
           <div class="chart">
             <div class="chart-steps">
               <div class="chart-step chart-step-1">
-                <div class="h2 mb-5 chart-header">350</div>
+                <div class="h2 chart-header">350</div>
                 <span>Норма на улице</span>
               </div>
               <div class="chart-step chart-step-2">
-                <div class="h2 mb-5 chart-header">700</div>
+                <div class="h2 chart-header">700</div>
                 <span>Норма в помещении</span>
               </div>
               <div class="chart-step chart-step-3">
-                <div class="h2 mb-5 chart-header">1000</div>
+                <div class="h2 chart-header">1000</div>
                 <span>Снижается внимание, инициативность и уровень восприятия информации</span>
               </div>
               <div class="chart-step chart-step-4">
-                <div class="h2 mb-5 chart-header">1500</div>
+                <div class="h2 chart-header">1500</div>
                 <span>Усталость, нет желания принимать решения, работать с информаций</span>
               </div>
               <div class="chart-step chart-step-5">
-                <div class="h2 mb-5 chart-header">2000</div>
+                <div class="h2 chart-header">2000</div>
                 <span>«Мозги отключены», апатия, головная боль, отсутствует инициатива и стратегическое мышление, синдром хронической усталости</span>
               </div>
             </div>
@@ -324,7 +325,7 @@
           <div class="d-flex align-items-center mb-4 mb-sm-0 mr-sm-3">
             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/img-comparison-1.jpg" alt="Кондиционер" class="img-responsive img-lazy card-colored-img">
             <div>
-              <h4 class="h5 h5-lg text-left mb-2">Кондиционер</h4>
+              <h4 class="h5 h5-lg text-left card-colored-title">Кондиционер</h4>
               <div class="d-flex">
                 <span class="icon-time small pt-1 mr-2"></span>
                 <span>Используется в основном летом</span>
@@ -373,7 +374,7 @@
           <div class="d-flex align-items-center mb-4 mb-sm-0 mr-sm-3">
             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/img-comparison-2.jpg" alt="Кондиционер" class="img-responsive img-lazy card-colored-img">
             <div>
-              <h4 class="h5 h5-lg text-left mb-2">Очиститель (мойка воздуха)</h4>
+              <h4 class="h5 h5-lg text-left card-colored-title">Очиститель (мойка воздуха)</h4>
               <div class="d-flex">
                 <span class="icon-time small pt-1 mr-2"></span>
                 <span>Работает в периоды цветения растений и эпидемий ОРВИ и ГРИППА </span>
@@ -443,7 +444,7 @@
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
             <span class="compare-item-place compare-item-place-1">1</span>
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Тион 3S</a>
             <span class="h5 mb-0">36 900 &#8381;</span>
           </div>
@@ -505,7 +506,7 @@
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
             <span class="compare-item-place compare-item-place-2">2</span>
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Тион Lite</a>
             <span class="h5 mb-0">19 900 &#8381;</span>
           </div>
@@ -563,7 +564,7 @@
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
             <span class="compare-item-place compare-item-place-3">3</span>
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Тион О2</a>
             <span class="h5 mb-0">22 900 &#8381;</span>
           </div>
@@ -623,7 +624,7 @@
         </div>
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Ballu Air<br>Master 2</a>
             <span class="h5 mb-0">33 490 &#8381;</span>
           </div>
@@ -681,7 +682,7 @@
         </div>
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Vakio Base</a>
             <span class="h5 mb-0">16 900 &#8381;</span>
           </div>
@@ -736,7 +737,7 @@
         </div>
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Aeropac SN</a>
             <span class="h5 mb-0">19 900 &#8381;</span>
           </div>
@@ -791,7 +792,7 @@
         </div>
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/compare-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Клапан<br>КИВ-125</a>
             <span class="h5 mb-0">990 &#8381;</span>
           </div>
@@ -847,9 +848,9 @@
   <div class="container">
     <h2>Не знаете что выбрать?</h2>
     <h4>Оставьте заявку и мы перезвоним</h4>
-    <form>
+    <form method="POST">
       <div class="row justify-content-center mb-4">
-        <div class="col-sm-6 col-lg form-group">
+        <div class="col-sm-6 col-lg-5 form-group">
           <input type="text" id="callback-name" class="form-control" name="callback[name]" required>
           <label for="callback-name" class="form-control-placeholder">Ваше имя</label>
         </div>
@@ -857,10 +858,10 @@
           <input type="text" id="callback-phone" class="form-control phone" name="callback[phone]" required="required">
           <label for="callback-phone" class="form-control-placeholder">Телефон</label>
         </div>
-        <div class="col-md-5 col-lg form-group text-center">
+        <div class="col-md-5 col-lg-auto form-group text-center">
           <button class="btn btn-lg btn-outline d-inline-flex align-items-center justify-content-between w-100" aria-label="Отправить заявку">
             <span>Отправить заявку</span>
-            <span class="icon-angle-right"></span>
+            <small class="icon-angle-right"></small>
           </button>
         </div>
       </div>
@@ -974,71 +975,6 @@
         <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
       </figure>
     </div>
-    <h3>Наши проекты</h3>
-    <div class="row">
-      <div class="col-sm-6 mb-4">
-        <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
-          <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
-        </figure>
-      </div>
-      <div class="col-sm-6 mb-4">
-        <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-3.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
-          <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
-        </figure>
-      </div>
-      <div class="col-sm-6 col-md-4 mb-4">
-        <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
-          <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
-        </figure>
-      </div>
-      <div class="col-sm-6 col-md-4 mb-4">
-        <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-2.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
-          <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
-        </figure>
-      </div>
-      <div class="col-sm-6 col-md-4 mb-4">
-        <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
-          <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
-        </figure>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-        <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
-          <figcaption class="font-weight-normal mb-3">Монтаж бризера Тион О2 в частном доме</figcaption>
-          <h6 class="text-main">Офис страховой организации "Согласие"</h6>
-          <p>Офис страховой организации "Согласие" находится в центре города, что накладывает ограничения на частые проветривания рабочих кабинетов. Компания Согласие позаботилась о своих сотрудниках и после установки компактной приточной вентиляции в каждом кабинете офиса проблема духоты, сквозняков и шума была успешно решена. </p>
-        </figure>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-        <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-2.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
-          <figcaption class="font-weight-normal mb-3">Монтаж бризера Тион О2 в частном доме</figcaption>
-          <h6 class="text-main">Офис строительной организации</h6>
-          <p>Офис строительной организации находится в центре города, что накладывает ограничения на частые проветривания рабочих кабинетов. Компания Согласие позаботилась о своих сотрудниках и после установки компактной приточной вентиляции в каждом кабинете офиса проблема духоты, сквозняков и шума была успешно решена. </p>
-        </figure>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-        <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
-          <figcaption class="font-weight-normal mb-3">Монтаж бризера Тион О2 в частном доме</figcaption>
-          <h6 class="text-main">Установка бризера в школе</h6>
-          <p>Крупный проект по реализации приточной вентиляции в Новосибирском офисе "Все майки". Клиент выбрал вентиляцию Тион О2 с точки зрения высокого уровня очистки воздуха.</p>
-        </figure>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-        <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-2.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
-          <figcaption class="font-weight-normal mb-3">Монтаж бризера Тион О2 в частном доме</figcaption>
-          <h6 class="text-main">Установка бризера в квартире</h6>
-          <p>Крупный проект по реализации приточной вентиляции в Новосибирском офисе "Все майки". Клиент выбрал вентиляцию Тион О2 с точки зрения высокого уровня очистки воздуха.</p>
-        </figure>
-      </div>
-    </div>
   </div>
 </section>
 <section class="page-section page-section-colored page-section-bg-2">
@@ -1050,26 +986,26 @@
         <div class="card card-bordered">
           <div class="card-body">
             <div class="slider-reviews owl-carousel">
-              <div class="item">
-                <figure class="d-flex align-items-center mb-4 pr-sm-5">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/reviews-img-1.jpg" alt="Святослав Щербин" class="img-responsive img-lazy mr-4 border-rounded">
-                  <figcaption>
+              <blockquote class="item">
+                <cite class="review-header">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/reviews-img-1.jpg" alt="Святослав Щербин" class="img-responsive img-lazy review-img">
+                  <span>
                     <div class="font-weight-semibold">Святослав Щербин</div>
                     <div class="text-muted">Пермь</div>
-                  </figcaption>
-                </figure>
-                <p>Если у вас сквозняки или вы боитесь «грязного» воздуха за окном - покупайте не раздумывая. Если вы мечтаете спать в тишине и свежем воздухе, это устройство вам точно не поможет. Захотите воздух посвежее (т.е. понизить уровень CO2) - оно будет орать покруче всякого шоссе под окнами - проверял программным шумомером. </p>
-              </div>
-              <div class="item">
-                <figure class="d-flex align-items-center mb-4 pr-sm-5">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/reviews-img-1.jpg" alt="Святослав Щербин" class="img-responsive img-lazy mr-4 border-rounded">
-                  <figcaption>
+                  </span>
+                </cite>
+                <q class="review-text">Если у вас сквозняки или вы боитесь «грязного» воздуха за окном - покупайте не раздумывая. Если вы мечтаете спать в тишине и свежем воздухе, это устройство вам точно не поможет. Захотите воздух посвежее (т.е. понизить уровень CO2) - оно будет орать покруче всякого шоссе под окнами - проверял программным шумомером. </q>
+              </blockquote>
+              <blockquote class="item">
+                <cite class="review-header">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/reviews-img-1.jpg" alt="Святослав Щербин" class="img-responsive img-lazy review-img">
+                  <span>
                     <div class="font-weight-semibold">Святослав Щербин</div>
                     <div class="text-muted">Пермь</div>
-                  </figcaption>
-                </figure>
-                <p>Если у вас сквозняки или вы боитесь «грязного» воздуха за окном - покупайте не раздумывая. Если вы мечтаете спать в тишине и свежем воздухе, это устройство вам точно не поможет. Захотите воздух посвежее (т.е. понизить уровень CO2) - оно будет орать покруче всякого шоссе под окнами - проверял программным шумомером. </p>
-              </div>
+                  </span>
+                </cite>
+                <q class="review-text">Если у вас сквозняки или вы боитесь «грязного» воздуха за окном - покупайте не раздумывая. Если вы мечтаете спать в тишине и свежем воздухе, это устройство вам точно не поможет. Захотите воздух посвежее (т.е. понизить уровень CO2) - оно будет орать покруче всякого шоссе под окнами - проверял программным шумомером. </q>
+              </blockquote>
             </div>
             <div class="slider-reviews-nav"></div>
           </div>
@@ -1178,8 +1114,8 @@
               </span>
             </a>
           </div>
-          <div class="col-sm-auto text-center text-sm-left">
-            <button class="btn btn-outline d-inline-flex align-items-center justify-content-between" aria-label="Написать нам">
+          <div class="col-sm-5 text-center text-sm-left">
+            <button class="btn btn-outline btn-outline-mini w-100 d-inline-flex align-items-center justify-content-between" aria-label="Написать нам">
               <span>Написать нам</span>
               <span class="icon-angle-right"></span>
             </button>

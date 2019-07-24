@@ -1,76 +1,230 @@
-<div class="banner" style="background-image: url(/assets/img/bg-header.jpg);">
-  <div class="container">
-    <div class="banner-inner">
-      <h1 class="mb-0"><?=($this->page->h1 !== '') ? $this->page->h1 : $this->page->title; ?></h1>
-    </div>
-  </div>
-</div>
-<?php echo BreadCrumb::links(); ?>
 <div class="container">
-  <div class="row">
-    <div class="col-md-4 d-none d-md-block">
-      <?php echo Sidebar::printSidebar(); ?>
+  <div class="row align-items-center justify-content-between mb-4">
+    <div class="col-md-5 col-lg-7 mb-4 mb-md-0 text-center text-md-left">
+      <h1 class="mb-0">Наши проекты</h1>
     </div>
-    <div class="col-md-8">
-      <?php if(count($this->articles)) { ?>
-        <div class="mb-5" role="list">
-          <?php foreach ($this->articles as $article) { $article->takePicture(); ?>
-            <article itemscope itemtype="http://schema.org/Article" class="card mb-3">
-              <meta itemprop="author" content="<?= $_SERVER['SERVER_NAME']; ?>">
-              <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="<?= absoluteLink(); ?>" content="<?= absoluteLink(); ?>">
-              <meta itemprop="dateModified" content="<?= date('Y-m-d', $article->time); ?>">
-              <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization" hidden>
-                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                  <meta itemprop="streetAddress" content="<?= ADDRESS; ?>">
-                  <meta itemprop="postalCode" content="<?= PHONE; ?>">
-                  <meta itemprop="addressLocality" content="<?= ADDRESS; ?>">
-                  <meta itemprop="telephone" content="<?= ADDRESS; ?>">
-                  <meta itemprop="name" content="<?= absoluteLink(); ?>">
-                </div>
-                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                  <img itemprop="url image" src="/assets/img/logo.png" alt="<?= absoluteLink(); ?>" hidden>
-                </div>
-                <meta itemprop="name" content="<?= $_SERVER['SERVER_NAME'] ?>">
-              </div>
-              <?php if (is_object($article->picture)) { ?>
-                <img itemprop="image" src="<?= $article->picture->path; ?>" class="img-responsive" alt="<?= $article->picture->alt ? $article->picture->alt : $article->title; ?>" hidden>
-              <?php } else { ?>
-                <img itemprop="image" src="<?= Picture::UPLOAD_DIR . Picture::NO_IMG; ?>" alt="Нет фото" title="Нет фото" hidden>
-              <?php } ?>
-              <div class="card-body">
-                <h5><a itemprop="headline" href="<?= $this->controllerUrl($article->url); ?>"><?= $article->title; ?></a></h5>
-                <p itemprop="articleBody" class="card-text"><?= substr(str_replace('&nbsp;', ' ', strip_tags($article->description)), 0, 200); ?></p>
-              </div>
-              <div class="card-footer d-flex justify-content-between align-items-center">
-                <time itemprop="datePublished" class="text-muted font-italic"><?= date('Y-m-d', $article->time); ?></time>
-                <a href="<?= $this->controllerUrl($article->url); ?>" class="flex-grow-0">Подробнее</a>
-              </div>
-            </article>
-          <?php } ?>
+    <div class="col">
+      <form class="form-inline input-group">
+        <select id="sorting-field" class="sorting-field custom-select form-control" aria-label="Фильтрация">
+          <option selected="" disabled="" hidden="">Выберите параметр</option>
+          <option value="reviews-ascending">Отзывы, по возрастанию</option>
+          <option value="reviews-descending">Отзывы, по убыванию</option>
+          <option value="title-ascending">Название, порядок (А - Я)</option>
+          <option value="title-descending">Название, порядок (Я - А)</option>
+          <option value="price-ascending">Цена, по возрастанию</option>
+          <option value="price-descending">Цена, по убыванию</option>
+          <option value="rating-ascending">Рейтинг, по возрастанию</option>
+          <option value="rating-descending">Рейтинг, по убыванию</option>
+        </select>
+        <div class="input-group-append">
+          <button class="btn" type="submit">Подобрать</button>
         </div>
-      <?php } else {
-        echo '<p>Пока что нет новостей</p>';
-      }
-      if($this->navigationPages > 1){ ?>
-        <ul class="pagination <?php if($this->page->content || $this->page->seo_text){ echo "mb-4"; } ?>" role="group" aria-label="page navigation">
-          <?php for ($i = 0; $i < $this->navigationPages; $i++) {
-            $class = $this->currentPage == $i ? 'active' : '';
-            $value = $i + 1;
-            $href = ($i == 0) ? '/'.Contr::printUrl(Contr::BLOG) : '/'.Contr::printUrl(Contr::BLOG).'/'.$value; ?>
-            <li class="page-item <?= $class; ?>"><a class="page-link" href="<?= $href; ?>"><?= $value; ?></a></li>
-          <?php } ?>
-        </ul>
-      <?php } ?>
-      <?php if($this->page->content || $this->page->seo_text){ ?>
-        <div class="page-section">
-          <?php if($this->page->content) { ?>
-            <section class="page-content"><?php echo $this->page->content; ?></section>
-          <?php }
-          if($this->page->seo_text) { ?>
-            <section class="page-seo-text"><?php echo $this->page->seo_text; ?></section>
-          <?php } ?>
-        </div>
-      <?php } ?>
+      </form>
     </div>
   </div>
+  <div class="row page-section">
+    <div class="col-sm-6 mb-4">
+      <figure class="mb-0">
+        <a href="/assets/img/work-img-1.jpg" class="d-block" data-fancybox="gallery">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
+        </a>
+        <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 mb-4">
+      <figure class="mb-0">
+        <a href="/assets/img/work-img-3.jpg" class="d-block" data-fancybox="gallery">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-3.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
+        </a>
+        <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 mb-4">
+      <figure class="mb-0">
+        <a href="/assets/img/work-img-1.jpg" class="d-block" data-fancybox="gallery">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
+        </a>
+        <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 mb-4">
+      <figure class="mb-0">
+        <a href="/assets/img/work-img-2.jpg" class="d-block" data-fancybox="gallery">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-2.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
+        </a>
+        <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 mb-4">
+      <figure class="mb-0">
+        <a href="/assets/img/work-img-1.jpg" class="d-block" data-fancybox="gallery">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
+        </a>
+        <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <figure class="mb-0">
+        <a href="/assets/img/work-img-1.jpg" class="d-block" data-fancybox="gallery">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
+        </a>
+        <figcaption class="font-weight-normal mb-3">Монтаж бризера Тион О2 в частном доме</figcaption>
+        <h6 class="text-main">Офис страховой организации "Согласие"</h6>
+        <p>Офис страховой организации "Согласие" находится в центре города, что накладывает ограничения на частые проветривания рабочих кабинетов. Компания Согласие позаботилась о своих сотрудниках и после установки компактной приточной вентиляции в каждом кабинете офиса проблема духоты, сквозняков и шума была успешно решена. </p>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <figure class="mb-0">
+        <a href="/assets/img/work-img-2.jpg" class="d-block" data-fancybox="gallery">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-2.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
+        </a>
+        <figcaption class="font-weight-normal mb-3">Монтаж бризера Тион О2 в частном доме</figcaption>
+        <h6 class="text-main">Офис строительной организации</h6>
+        <p>Офис строительной организации находится в центре города, что накладывает ограничения на частые проветривания рабочих кабинетов. Компания Согласие позаботилась о своих сотрудниках и после установки компактной приточной вентиляции в каждом кабинете офиса проблема духоты, сквозняков и шума была успешно решена. </p>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <figure class="mb-0">
+        <a href="/assets/img/work-img-1.jpg" class="d-block" data-fancybox="gallery">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
+        </a>
+        <figcaption class="font-weight-normal mb-3">Монтаж бризера Тион О2 в частном доме</figcaption>
+        <h6 class="text-main">Установка бризера в школе</h6>
+        <p>Крупный проект по реализации приточной вентиляции в Новосибирском офисе "Все майки". Клиент выбрал вентиляцию Тион О2 с точки зрения высокого уровня очистки воздуха.</p>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <figure class="mb-0">
+        <a href="/assets/img/work-img-2.jpg" class="d-block" data-fancybox="gallery">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-2.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
+        </a>
+        <figcaption class="font-weight-normal mb-3">Монтаж бризера Тион О2 в частном доме</figcaption>
+        <h6 class="text-main">Установка бризера в квартире</h6>
+        <p>Крупный проект по реализации приточной вентиляции в Новосибирском офисе "Все майки". Клиент выбрал вентиляцию Тион О2 с точки зрения высокого уровня очистки воздуха.</p>
+      </figure>
+    </div>
+  </div>
+  <article class="container page-section">
+    <h2 class="mb-4 mb-sm-5">Хиты продаж</h2>
+    <div class="slider-cards owl-carousel">
+      <div class="slider-cards-item">
+        <div class="card card-product">
+          <div class="card-body card-badge-wrap">
+            <span class="card-badge card-badge-third card-badge-top-right">
+              <span class="icon-giftbox"></span>
+            </span>
+            <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
+              <span class="icon-video-camera"></span>
+            </a>
+            <a href="#" class="img-proportion square">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </a>
+            <a href="#" class="link-dark h7 mb-2">Бризер Тион 3S</a>
+            <span class="product-price">19 000 &#8381;</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn card-product-btn">В корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider-cards-item">
+        <div class="card card-product">
+          <div class="card-body card-badge-wrap">
+            <span class="card-badge card-badge-second card-badge-top-left">
+              <span class="font-weight-bold">-5<sup>%</sup></span>
+            </span>
+            <span class="card-badge card-badge-third card-badge-top-right">
+              <span class="icon-giftbox"></span>
+            </span>
+            <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
+              <span class="icon-video-camera"></span>
+            </a>
+            <a href="#" class="img-proportion square">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </a>
+            <a href="#" class="link-dark h7">Бризер Тион 3S</a>
+            <span class="product-price product-price-new">19 000 &#8381;</span>
+            <span class="product-price-old">19 000 &#8381;</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn card-product-btn">В корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider-cards-item">
+        <div class="card card-product">
+          <div class="card-body card-badge-wrap">
+            <span class="card-badge card-badge-third card-badge-top-right">
+              <span class="icon-giftbox"></span>
+            </span>
+            <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
+              <span class="icon-video-camera"></span>
+            </a>
+            <a href="#" class="img-proportion square">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </a>
+            <a href="#" class="link-dark h7 mb-2">Бризер Тион 3S</a>
+            <span class="product-price">19 000 &#8381;</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn card-product-btn">В корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider-cards-item">
+        <div class="card card-product">
+          <div class="card-body card-badge-wrap">
+            <span class="card-badge card-badge-second card-badge-top-left">
+              <span class="font-weight-bold">-5<sup>%</sup></span>
+            </span>
+            <span class="card-badge card-badge-third card-badge-top-right">
+              <span class="icon-giftbox"></span>
+            </span>
+            <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
+              <span class="icon-video-camera"></span>
+            </a>
+            <a href="#" class="img-proportion square">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </a>
+            <a href="#" class="link-dark h7">Бризер Тион 3S</a>
+            <span class="product-price product-price-new">19 000 &#8381;</span>
+            <span class="product-price-old">19 000 &#8381;</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn card-product-btn">В корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider-cards-item">
+        <div class="card card-product">
+          <div class="card-body card-badge-wrap">
+            <span class="card-badge card-badge-third card-badge-top-right">
+              <span class="icon-giftbox"></span>
+            </span>
+            <a href="#" class="card-product-icon link-dark mb-3" aria-label="Перейти к просмотру видео обзора">
+              <span class="icon-video-camera"></span>
+            </a>
+            <a href="#" class="img-proportion square">
+              <span class="img-proportion-inner">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              </span>
+            </a>
+            <a href="#" class="link-dark h7 mb-2">Бризер Тион 3S</a>
+            <span class="product-price">19 000 &#8381;</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn card-product-btn">В корзину</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
 </div>

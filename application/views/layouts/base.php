@@ -24,8 +24,8 @@ $categories = Category::themeCats();
         </ul>
       </nav>
     </div>
-    <div class="bg-main text-white d-none d-lg-block py-2">
-      <div class="container d-flex align-items-center justify-content-between">
+    <div class="bg-main text-white d-none d-lg-block" style="padding: 7px 0 10px;">
+      <div class="container d-flex justify-content-between">
         <div class="small mr-3">
           <span>Продажа и монтаж бризеров в</span>
           <div class="d-inline-block dropdown align-top">
@@ -43,14 +43,14 @@ $categories = Category::themeCats();
             </ul>
           </div>
         </div>
-        <ul class="nav flex-nowrap">
-          <li class="mr-3"><a href="#" class="link-light"><span class="icon-facebook"></span></a></li>
-          <li class="mr-3"><a href="#" class="link-light"><span class="icon-instagram"></span></a></li>
-          <li><a href="#" class="link-light"><span class="icon-youtube"></span></a></li>
+        <ul class="nav flex-nowrap align-items-center">
+          <li class="mr-3"><a href="#" class="link-light d-flex"><span class="icon-facebook"></span></a></li>
+          <li class="mr-3"><a href="#" class="link-light d-flex"><span class="icon-instagram"></span></a></li>
+          <li><a href="#" class="link-light d-flex"><span class="icon-youtube"></span></a></li>
         </ul>
       </div>
     </div>
-    <div class="container py-3">
+    <div class="container" style="padding-top: 29px;padding-bottom: 32px">
       <div class="row align-items-center justify-content-center justify-content-md-between">
         <div class="col-auto">
           <?php if ($controller === '' or $controller === 'index') { ?>
@@ -65,11 +65,11 @@ $categories = Category::themeCats();
         </div>
         <div class="col-auto d-none d-md-block">
           <ul class="nav">
-            <li class="nav-item mr-4">
+            <li class="nav-item d-flex flex-column" style="margin-right: 2rem;">
               <a href="tel:88005002712" class="link-truncate link-dark h3 h3-lg mb-0">8 800 500 27 12</a>
-              <div class="small">Звонок бесплатный</div>
+              <a href="#modal-callback" class="small" data-toggle="modal">Звонок бесплатный</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-flex flex-column">
               <a href="tel:+74991106343" class="link-truncate link-dark h3 h3-lg mb-0">+7 (499) 110 63 43</a>
               <div class="small">Москва</div>
             </li>
@@ -156,4 +156,35 @@ $categories = Category::themeCats();
       </div>
     </div>
   </footer>
+</div>
+
+<div id="modal-callback" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-block">
+        <h3 class="modal-title mb-0">Обратный звонок</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть окно с каталогом">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="POST">
+          <div class="form-group">
+            <input type="text" id="modal-callback-name" class="form-control" name="callback[name]" required>
+            <label for="modal-callback-name" class="form-control-placeholder">Ваше имя</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="modal-callback-phone" class="form-control phone" name="callback[phone]" required="required">
+            <label for="modal-callback-phone" class="form-control-placeholder">Телефон</label>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-lg btn-outline-main d-inline-flex align-items-center justify-content-between w-100" aria-label="Отправить заявку">
+              <span>Отправить заявку</span>
+              <span class="icon-angle-right"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>

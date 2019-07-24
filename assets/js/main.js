@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('html').removeClass('mobile-active');
   });
 
-  $('.phone').mask('+38(099)999-99-99');
+  $('.phone').mask('+7(999)999-99-99');
 
   $('[data-toggle="tab"], [data-toggle="pill"]').on('show.bs.tab', function (e) {
     const that = $(this);
@@ -303,6 +303,7 @@ $(document).ready(function () {
   });
 
   const sliderThumbnails = $('.slider-thumbnails').owlCarousel({
+    lazyLoad: true,
     dots: false,
     items: 4
   });

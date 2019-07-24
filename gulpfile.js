@@ -39,6 +39,7 @@ gulp.task('js', function () {
       './assets/libs/js/popper.min.js',
       './assets/libs/js/bootstrap.min.js',
       './assets/libs/js/owl.carousel.min.js',
+      './assets/libs/js/jquery.fancybox.min.js',
       './assets/libs/js/jquery.lazy.min.js',
       './assets/libs/js/jquery.lazy.plugins.min.js',
       './assets/libs/js/jquery.maskedinput.min.js',
