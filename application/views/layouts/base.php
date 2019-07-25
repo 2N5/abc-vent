@@ -24,7 +24,7 @@ $categories = Category::themeCats();
         </ul>
       </nav>
     </div>
-    <div class="bg-main text-white d-none d-lg-block" style="padding: 7px 0 10px;">
+    <div class="bar-main">
       <div class="container d-flex justify-content-between">
         <div class="small mr-3">
           <span>Продажа и монтаж бризеров в</span>
@@ -50,7 +50,7 @@ $categories = Category::themeCats();
         </ul>
       </div>
     </div>
-    <div class="container" style="padding-top: 29px;padding-bottom: 32px">
+    <div class="container page-header-content-inner">
       <div class="row align-items-center justify-content-center justify-content-md-between">
         <div class="col-auto">
           <?php if ($controller === '' or $controller === 'index') { ?>
@@ -64,12 +64,12 @@ $categories = Category::themeCats();
           <?php } ?>
         </div>
         <div class="col-auto d-none d-md-block">
-          <ul class="nav">
-            <li class="nav-item d-flex flex-column" style="margin-right: 2rem;">
+          <ul class="nav nav-contacts">
+            <li class="nav-item">
               <a href="tel:88005002712" class="link-truncate link-dark h3 h3-lg mb-0">8 800 500 27 12</a>
               <a href="#modal-callback" class="small" data-toggle="modal">Звонок бесплатный</a>
             </li>
-            <li class="nav-item d-flex flex-column">
+            <li class="nav-item">
               <a href="tel:+74991106343" class="link-truncate link-dark h3 h3-lg mb-0">+7 (499) 110 63 43</a>
               <div class="small">Москва</div>
             </li>

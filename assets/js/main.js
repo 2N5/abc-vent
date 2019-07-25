@@ -162,26 +162,29 @@ $(document).ready(function () {
     loop: true,
     dots: true,
     nav: false,
-    items: 1,
+    items: 2,
     margin: 20,
     dotsClass: 'owl-dots slider-dots',
     dotClass: 'owl-dot slider-dot',
     navClass: ['slider-arrow slider-prev', 'slider-arrow slider-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
+      0: {
+        items: 1
+      },
       576: {
-        items: 2,
+        items: 2
       },
       992: {
         item: 2,
-        margin: 30,
+        margin: 30
       },
       1330: {
+        items: 2,
         dots: false,
         nav: true,
-        items: 2,
         margin: 30,
-        stagePadding: 0,
+        stagePadding: 0
       }
     }
   });
@@ -189,13 +192,16 @@ $(document).ready(function () {
   $('.slider-reviews').owlCarousel({
     loop: true,
     nav: false,
-    dots: false,
+    dots: true,
     items: 1,
+    dotsClass: 'owl-dots slider-dots',
+    dotClass: 'owl-dot slider-dot',
     navClass: ['slider-arrow slider-prev slider-reviews-arrow slider-reviews-prev', 'slider-arrow slider-next slider-reviews-arrow slider-reviews-next'],
     navText: ['<span class="icon icon-arrow-left"></span>', '<span class="icon icon-arrow-right"></span>'],
     responsive: {
       576: {
         nav: true,
+        dots: false,
         navContainer: '.slider-reviews-nav',
       }
     }
@@ -368,7 +374,7 @@ $(document).ready(function () {
     });
   });
 
-  // ymaps.ready(init);
+  ymaps.ready(init);
 
   function init() {
     const myMap = new ymaps.Map("map", {

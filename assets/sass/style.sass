@@ -341,6 +341,7 @@ h6,
       position: absolute
       margin: 0
       padding: 0.2rem 0.5rem
+      font-size: 2rem
   &-body
     +xs
       padding: 1.5rem 0.75rem
@@ -381,14 +382,12 @@ button.close
   top: 0
   right: 0
   z-index: 1
-  padding: 0.1rem 0.5rem
+  padding: 1rem
   margin: 0
   font-weight: 300
-  font-size: 2em
+  font-size: 1rem
   line-height: 1
   font-family: serif
-  background-color: darken($white, 20%)
-  border-top-right-radius: $border-radius
   opacity: 0.5
 
 .fancybox-share__button
@@ -475,6 +474,12 @@ button.close
     border-radius: 0
 
 .nav
+  &-contacts
+    .nav-item
+      display: flex
+      flex-direction: column
+      &:not(:last-child)
+        margin-right: 2rem
   &-pills,
   &-tabs
     position: relative
@@ -847,6 +852,14 @@ select.form-control
   padding-right: 2.5rem
   background: transparent url(../img/svg/angle-down.svg) right 2rem center / 0.5rem no-repeat
 
+.bar
+  &-main
+    padding: 7px 0 10px
+    color: $white
+    background: $main-gradient
+    +md-down
+      display: none
+
 .card
   border-color: $border-color
   border-radius: $border-radius
@@ -1121,6 +1134,8 @@ select.form-control
     .card-body,
     .card-footer
       padding: 50px 51px 36px
+      +xs
+        padding: 20px 20px 28px
 
 .page
   &-wrapper
@@ -1154,6 +1169,10 @@ select.form-control
     background-color: $white
     +md-down
       padding-top: 2.61rem
+    &-content
+      &-inner
+        padding-top: 29px
+        padding-bottom: 32px
     &-clone
       position: absolute
       top: 0
@@ -1185,13 +1204,16 @@ select.form-control
       &:not(:last-child)
         margin-bottom: 3rem
     &-colored
-      padding: 5.7222rem 0
+      padding: 5.8333rem 0 6.6666rem
       background-color: $gray
       +md-down
         padding: 2.8611rem 0
-      &-main
-        color: $white
-        background: $main-gradient
+    &-main
+      padding: 5.6666rem 0 6.5rem
+      color: $white
+      background: $main-gradient
+      &-mini
+        padding: 31px 0 33px
     &-bg
       &-1
         background: $gray url(../img/page-bg-1.jpg) center top no-repeat
@@ -1213,8 +1235,8 @@ select.form-control
         background: $gray url(../img/page-bg-3.jpg) center top / cover no-repeat
         +md-down
           padding-top: 4.5rem
-          padding-bottom: 43%
-          background-image: url(../img/page-bg-3-tablet.png)
+          padding-bottom: 50%
+          background-image: url(../img/page-bg-3-tablet.jpg)
           background-position: center bottom
           background-size: 100% auto
       &-4
@@ -1381,6 +1403,10 @@ select.form-control
           padding-top: 100%
     &.rectangle-1x2-md
       +md-up
+        &:before
+          padding-top: 50%
+    &.rectangle-1x2-lg
+      +lg-up
         &:before
           padding-top: 50%
     &-inner
@@ -1770,6 +1796,7 @@ select.form-control
     +md-down
       background-image: url(../img/banner-1-tablet-bg.jpg)
   &-2
+    background-color: #f4f2ef
     background-image: url(../img/banner-2-bg.jpg)
     +md-down
       background-image: url(../img/banner-2-tablet-bg.jpg)
@@ -2046,6 +2073,9 @@ select.form-control
       display: flex
       flex-direction: column
       justify-content: flex-end
+      +xs
+        max-width: 200px
+        min-width: 200px
       &-header
         padding: 3rem 0
         flex-grow: 1
@@ -2061,7 +2091,11 @@ select.form-control
         &:nth-child(2)
           padding-top: 27px
     &-list
-      width: auto
+      max-width: calc(100% - 220px)
+      flex-basis: calc(100% - 220px)
+      +xs
+        max-width: calc(100% - 200px)
+        flex-basis: calc(100% - 200px)
     &-item
       position: relative
       padding-top: 1rem

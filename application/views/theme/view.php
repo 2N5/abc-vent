@@ -282,12 +282,12 @@
     </div>
   </div>
 </div>
-<section class="page-section page-section-colored page-section-colored-main">
+<section class="page-section page-section-main">
   <div class="container">
     <h2 class="h3 h3-lg mb-5 text-center text-lg-left">Получите консультацию или закажите замер</h2>
     <form method="POST">
       <div class="row justify-content-center mb-4">
-        <div class="col-sm-6 col-lg form-group">
+        <div class="col-sm-6 col-lg-5 form-group">
           <input type="text" id="callback-name" class="form-control" name="callback[name]" required>
           <label for="callback-name" class="form-control-placeholder">Ваше имя</label>
         </div>
@@ -295,10 +295,10 @@
           <input type="text" id="callback-phone" class="form-control phone" name="callback[phone]" required="required">
           <label for="callback-phone" class="form-control-placeholder">Телефон</label>
         </div>
-        <div class="col-md-5 col-lg form-group text-center">
-          <button class="btn btn-lg w-100 btn-outline" aria-label="Отправить заявку">
+        <div class="col-md-5 col-lg-auto form-group text-center">
+          <button class="btn btn-lg btn-outline d-inline-flex align-items-center justify-content-between w-100" aria-label="Отправить заявку">
             <span>Отправить заявку</span>
-            <span class="icon-angle-right"></span>
+            <small class="icon-angle-right"></small>
           </button>
         </div>
       </div>
@@ -347,7 +347,7 @@
     <div class="nav-tabs-wrap nav-tabs-wrap-card">
       <ul class="nav nav-tabs justify-content-lg-center border-bottom-0" role="tablist">
         <li class="nav-item">
-          <a class="nav-link py-3 px-4 h6 mb-0 text-nowrap" id="characteristics-tab" data-toggle="tab" href="#characteristics" role="tab" aria-controls="characteristics" aria-selected="true">Характеристики</a>
+          <a class="nav-link py-3 px-4 h6 mb-0 text-nowrap active" id="characteristics-tab" data-toggle="tab" href="#characteristics" role="tab" aria-controls="characteristics" aria-selected="true">Характеристики</a>
         </li>
         <li class="nav-item">
           <a class="nav-link py-3 px-4 h6 mb-0 text-nowrap" id="complectation-tab" data-toggle="tab" href="#complectation" role="tab" aria-controls="complectation" aria-selected="false">Комплектации</a>
@@ -361,167 +361,12 @@
         <li class="nav-item">
           <a class="nav-link py-3 px-4 h6 mb-0 text-nowrap" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Отзывы</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link py-3 px-4 h6 mb-0 text-nowrap active" id="reviews-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="false">Описание</a>
-        </li>
       </ul>
     </div>
     <div class="card">
       <div class="card-body">
         <div class="tab-content">
-          <div class="tab-pane fade" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">.1..</div>
-          <div class="tab-pane fade" id="complectation" role="tabpanel" aria-labelledby="complectation-tab">.2..</div>
-          <div class="tab-pane fade" id="install" role="tabpanel" aria-labelledby="install-tab">
-            <div class="img-proportion rectangle-1x1_8 mb-4">
-              <div class="img-proportion-inner">
-                <iframe class="w-100 h-100 rounded border-0" src="https://www.youtube.com/embed/kJQP7kiw5Fk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-            <section class="mb-5">
-              <h3 class="sr-only">Этапы установки</h3>
-              <p>Стандартный гарантийный* монтаж бризера без пыли и грязи занимает около 32 минут. </p>
-              <p>Осуществляется в три простых шага:</p>
-              <ol class="list-numbered mb-5">
-                <li class="d-flex flex-column flex-lg-row justify-content-between align-items-start">
-                  <div class="mb-4 mr-lg-5">
-                    <span class="d-flex flex-column flex-sm-row justify-content-between mb-3">
-                      <span class="h6 mb-3 mb-sm-0 font-weight-semibold">Выбор места на стене</span>
-                      <span class="font-weight-semibold mb-0">
-                        <span class="icon-time align-middle"></span>
-                        <span class="align-middle">4 минуты</span>
-                      </span>
-                    </span>
-                    <ul class="list-dashed">
-                      <li>выбор ровного участка стены (определяется визуально);</li>
-                      <li>выбор места с учетом габаритов устройства и минимальных отступов;</li>
-                      <li>проверка отсутствия в стене инженерных коммуникаций: проводов, труб отопления, водоснабжения, а так же отсутствие на наружной стене креплений кондиционеров, сливных труб и т. д. ВАЖНО!</li>
-                    </ul>
-                  </div>
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/content-img-1.jpg" class="img-responsive img-lazy flex-shrink-0" alt="Выбор места на стене">
-                </li>
-                <li class="d-flex flex-column flex-lg-row justify-content-between align-items-start">
-                  <div class="mb-4 mr-lg-5">
-                    <span class="d-flex flex-column flex-sm-row justify-content-between mb-3">
-                      <span class="h6 mb-3 mb-sm-0 font-weight-semibold">Бурение отверстия</span>
-                      <span class="font-weight-semibold mb-0">
-                        <span class="icon-time align-middle"></span>
-                        <span class="align-middle">20 минут</span>
-                      </span>
-                    </span>
-                    <ul class="list-dashed">
-                      <li>прокладка канала воздуховода с использованием установки алмазного бурения, в т. ч. и на чистовом ремонте;</li>
-                      <li>сбор продуктов бурения (воды, пыли) с помощью водосборного коллектора и промышленного пылесоса;</li>
-                      <li>соблюдение угла наклона канала воздуховода вниз на 3–5°, чтобы осадки, попадающие в канал, стекали в сторону улицы.</li>
-                    </ul>
-                  </div>
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/content-img-2.jpg" class="img-responsive img-lazy flex-shrink-0" alt="Бурение отверстия">
-                </li>
-                <li class="d-flex flex-column flex-lg-row justify-content-between align-items-start">
-                  <div class="mb-4 mr-lg-5">
-                    <span class="d-flex flex-column flex-sm-row justify-content-between mb-3">
-                      <span class="h6 mb-3 mb-sm-0 font-weight-semibold">Подключение </span>
-                      <span class="font-weight-semibold mb-0">
-                        <span class="icon-time align-middle"></span>
-                        <span class="align-middle">20 минут</span>
-                      </span>
-                    </span>
-                    <ul class="list-dashed">
-                      <li>теплошумоизоляция канала воздуховода, герметизация стыков теплошумоизоляционной трубы и стены;</li>
-                      <li>установка декоративной решетки на фасад помещения для защиты от попадания в канал воздуховода насекомых, пуха, мусора с улицы;</li>
-                      <li>навешивание бризера на анкер-болты и обеспечение плотного прижатия к стене.</li>
-                      <li>подключение к сети 220В</li>
-                      <li>настройка базовой станции, при наличии в комплекте</li>
-                    </ul>
-                  </div>
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/content-img-3.jpg" class="img-responsive img-lazy flex-shrink-0" alt="Подключение">
-                </li>
-              </ol>
-            </section>
-            <p>Все работы производятся исключительно с помощью профессиональной техники «Hilti», «Messer» «Husqvarna».</p>
-            <section class="mb-5">
-              <h3 class="h5 h5-lg font-weight-semibold mb-4">Четыре правила составляющих основу наших принципов</h3>
-              <div class="column-count-lg-2">
-                <section class="mb-4">
-                  <h4 class="h6 text-left font-weight-semibold">
-                    <span class="icon-check mr-2"></span>
-                    <span>Оперативность</span>
-                  </h4>
-                  <p>В нашей команде есть три собственные монтажные бригады, поэтому только мы предлагаем начать монтаж, через два часа после заказа. Наши мастера – профессионалы с многолетним опытом в сфере монтажа вентиляции.</p>
-                </section>
-                <section class="mb-4">
-                  <h4 class="h6 text-left font-weight-semibold">
-                    <span class="icon-check mr-2"></span>
-                    <span>Оперативность</span>
-                  </h4>
-                  <p>У нас достаточное количество крупных корпоративных клиентов. Мы устанавливаем бризеры в "Школа ремонта" на ТНТ и "Квартирном вопросе" на НТВ. Работаем с известными
-                    дизайнерами Фамилия инстаграм, Фамилия инстаграм ...</p>
-                </section>
-                <section class="mb-4">
-                  <h4 class="h6 text-left font-weight-semibold">
-                    <span class="icon-check mr-2"></span>
-                    <span>Чистота</span>
-                  </h4>
-                  <p>Наши мастера-монтажники отличаются высоким уровнем профессионализма. После монтажа в квартире не останется мусора, пыли и грязи, даже нет необходимости делать влажную уборку.</p>
-                </section>
-                <section class="mb-4">
-                  <h4 class="h6 text-left font-weight-semibold">
-                    <span class="icon-check mr-2"></span>
-                    <span>Не бросаем наших клиентов</span>
-                  </h4>
-                  <p>Мы беремся за проекты любой сложности (через балкон\лоджию)</p>
-                  <ul class="list-dashed">
-                    <li>Проход утепленным вентиляционным каналом через балкон. <a href="#">Пример работ</a></li>
-                    <li>Монтаж на «глухих» стенах. <a href="#">Пример работ</a></li>
-                    <li>Монтаж на гипсокартоне. <a href="#">Пример работ</a></li>
-                    <li>Монтаж на рыхлых и слабых стенах. <a href="#">Пример работ</a></li>
-                    <li>Сверление отверстия более 1 метра. <a href="#">Пример работ</a></li>
-                    <li>Навешивание прибора на сендвич-панель в оконный проем. <a href="#">Пример работ</a></li>
-                  </ul>
-                  <p>При этом сложность проекта не влияет на стоимость для клиента. Посмотреть на наши нестандартные решения ссылка</p>
-                </section>
-              </div>
-            </section>
-            <section class="mb-5">
-              <h3 class="h5 h5-lg font-weight-semibold mb-4">Предварительный выезд</h3>
-              <p>Закажите предварительный выезд, и специалист по монтажу приедет к Вам, чтобы:</p>
-              <ul class="list-dashed">
-                <li>помочь с выбором места для монтажа;</li>
-                <li>проверить наличие проводов и труб в месте установки бризера;</li>
-                <li>проведет анализ качества воздуха в помещении</li>
-                <li>продемонстрирует в живую работу выбранного устройства, есть возможность взять несколько приборов для сравнения.</li>
-              </ul>
-              <p>Все вышеперечисленные услуги абсолютно бесплатно</p>
-            </section>
-            <div class="p-3 mb-5 bg-main-transparent rounded">Более детальную информацию по монтажу любой приточной системы Вы сможете получить у консультанта в нашем <a href="#" class="text-uppercase">шоуруме</a> или по телефону <a href="tel:88005002191" class="link-dark font-weight-semibold">8 800 500 21 91</a></div>
-            <section class="mb-5">
-              <div class="d-flex flex-column flex-sm-row justify-content-between mb-4">
-                <h3 class="h5 h5-lg font-weight-semibold mb-2 mb-sm-0 mr-sm-3">Фото наших объектов</h3>
-                <a href="#" class="font-weight-semibold">Смотреть все</a>
-              </div>
-              <div class="slider-projects owl-carousel mb-4">
-                <figure class="mb-0">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy">
-                  <figcaption class="sr-only">Монтаж бризера Тион О2 в частном доме</figcaption>
-                </figure>
-                <figure class="mb-0">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-2.jpg" alt="Монтаж бризера Тион О2 в стоматологической клинике" class="img-responsive img-lazy">
-                  <figcaption class="sr-only">Монтаж бризера Тион О2 в стоматологической клинике</figcaption>
-                </figure>
-                <figure class="mb-0">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-3.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy">
-                  <figcaption class="sr-only">Монтаж бризера Тион О2 в частном доме</figcaption>
-                </figure>
-              </div>
-              <p>* гарантийный монтаж сохраняет все гарантийные обязательства компании производителя на оборудование</p>
-            </section>
-            <section>
-              <h3 class="h5 h5-lg font-weight-semibold mb-4">Карта наших монтажей</h3>
-              <div id="map" class="map"></div>
-            </section>
-          </div>
-          <div class="tab-pane fade" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">.4..</div>
-          <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">.5..</div>
-          <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+          <div class="tab-pane fade active show" id="characteristics" role="tabpanel" aria-labelledby="characteristics-tab">
             <section class="mb-5">
               <h3 class="h6 font-weight-semibold">Приточная вентиляция с очисткой воздуха для квартиры, дома и офиса</h3>
               <div class="bg-gray rounded p-4 mb-4">
@@ -1392,6 +1237,157 @@
               </div>
             </section>
           </div>
+          <div class="tab-pane fade" id="complectation" role="tabpanel" aria-labelledby="complectation-tab">.2..</div>
+          <div class="tab-pane fade" id="install" role="tabpanel" aria-labelledby="install-tab">
+            <div class="img-proportion rectangle-1x1_8 mb-4">
+              <div class="img-proportion-inner">
+                <iframe class="w-100 h-100 rounded border-0" src="https://www.youtube.com/embed/kJQP7kiw5Fk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <section class="mb-5">
+              <h3 class="sr-only">Этапы установки</h3>
+              <p>Стандартный гарантийный* монтаж бризера без пыли и грязи занимает около 32 минут. </p>
+              <p>Осуществляется в три простых шага:</p>
+              <ol class="list-numbered mb-5">
+                <li class="d-flex flex-column flex-lg-row justify-content-between align-items-start">
+                  <div class="mb-4 mr-lg-5">
+                    <span class="d-flex flex-column flex-sm-row justify-content-between mb-3">
+                      <span class="h6 mb-3 mb-sm-0 font-weight-semibold">Выбор места на стене</span>
+                      <span class="font-weight-semibold mb-0">
+                        <span class="icon-time align-middle"></span>
+                        <span class="align-middle">4 минуты</span>
+                      </span>
+                    </span>
+                    <ul class="list-dashed">
+                      <li>выбор ровного участка стены (определяется визуально);</li>
+                      <li>выбор места с учетом габаритов устройства и минимальных отступов;</li>
+                      <li>проверка отсутствия в стене инженерных коммуникаций: проводов, труб отопления, водоснабжения, а так же отсутствие на наружной стене креплений кондиционеров, сливных труб и т. д. ВАЖНО!</li>
+                    </ul>
+                  </div>
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/content-img-1.jpg" class="img-responsive img-lazy flex-shrink-0" alt="Выбор места на стене">
+                </li>
+                <li class="d-flex flex-column flex-lg-row justify-content-between align-items-start">
+                  <div class="mb-4 mr-lg-5">
+                    <span class="d-flex flex-column flex-sm-row justify-content-between mb-3">
+                      <span class="h6 mb-3 mb-sm-0 font-weight-semibold">Бурение отверстия</span>
+                      <span class="font-weight-semibold mb-0">
+                        <span class="icon-time align-middle"></span>
+                        <span class="align-middle">20 минут</span>
+                      </span>
+                    </span>
+                    <ul class="list-dashed">
+                      <li>прокладка канала воздуховода с использованием установки алмазного бурения, в т. ч. и на чистовом ремонте;</li>
+                      <li>сбор продуктов бурения (воды, пыли) с помощью водосборного коллектора и промышленного пылесоса;</li>
+                      <li>соблюдение угла наклона канала воздуховода вниз на 3–5°, чтобы осадки, попадающие в канал, стекали в сторону улицы.</li>
+                    </ul>
+                  </div>
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/content-img-2.jpg" class="img-responsive img-lazy flex-shrink-0" alt="Бурение отверстия">
+                </li>
+                <li class="d-flex flex-column flex-lg-row justify-content-between align-items-start">
+                  <div class="mb-4 mr-lg-5">
+                    <span class="d-flex flex-column flex-sm-row justify-content-between mb-3">
+                      <span class="h6 mb-3 mb-sm-0 font-weight-semibold">Подключение </span>
+                      <span class="font-weight-semibold mb-0">
+                        <span class="icon-time align-middle"></span>
+                        <span class="align-middle">20 минут</span>
+                      </span>
+                    </span>
+                    <ul class="list-dashed">
+                      <li>теплошумоизоляция канала воздуховода, герметизация стыков теплошумоизоляционной трубы и стены;</li>
+                      <li>установка декоративной решетки на фасад помещения для защиты от попадания в канал воздуховода насекомых, пуха, мусора с улицы;</li>
+                      <li>навешивание бризера на анкер-болты и обеспечение плотного прижатия к стене.</li>
+                      <li>подключение к сети 220В</li>
+                      <li>настройка базовой станции, при наличии в комплекте</li>
+                    </ul>
+                  </div>
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/content-img-3.jpg" class="img-responsive img-lazy flex-shrink-0" alt="Подключение">
+                </li>
+              </ol>
+            </section>
+            <p>Все работы производятся исключительно с помощью профессиональной техники «Hilti», «Messer» «Husqvarna».</p>
+            <section class="mb-5">
+              <h3 class="h5 h5-lg font-weight-semibold mb-4">Четыре правила составляющих основу наших принципов</h3>
+              <div class="column-count-lg-2">
+                <section class="mb-4">
+                  <h4 class="h6 text-left font-weight-semibold">
+                    <span class="icon-check mr-2"></span>
+                    <span>Оперативность</span>
+                  </h4>
+                  <p>В нашей команде есть три собственные монтажные бригады, поэтому только мы предлагаем начать монтаж, через два часа после заказа. Наши мастера – профессионалы с многолетним опытом в сфере монтажа вентиляции.</p>
+                </section>
+                <section class="mb-4">
+                  <h4 class="h6 text-left font-weight-semibold">
+                    <span class="icon-check mr-2"></span>
+                    <span>Оперативность</span>
+                  </h4>
+                  <p>У нас достаточное количество крупных корпоративных клиентов. Мы устанавливаем бризеры в "Школа ремонта" на ТНТ и "Квартирном вопросе" на НТВ. Работаем с известными
+                    дизайнерами Фамилия инстаграм, Фамилия инстаграм ...</p>
+                </section>
+                <section class="mb-4">
+                  <h4 class="h6 text-left font-weight-semibold">
+                    <span class="icon-check mr-2"></span>
+                    <span>Чистота</span>
+                  </h4>
+                  <p>Наши мастера-монтажники отличаются высоким уровнем профессионализма. После монтажа в квартире не останется мусора, пыли и грязи, даже нет необходимости делать влажную уборку.</p>
+                </section>
+                <section class="mb-4">
+                  <h4 class="h6 text-left font-weight-semibold">
+                    <span class="icon-check mr-2"></span>
+                    <span>Не бросаем наших клиентов</span>
+                  </h4>
+                  <p>Мы беремся за проекты любой сложности (через балкон\лоджию)</p>
+                  <ul class="list-dashed">
+                    <li>Проход утепленным вентиляционным каналом через балкон. <a href="#">Пример работ</a></li>
+                    <li>Монтаж на «глухих» стенах. <a href="#">Пример работ</a></li>
+                    <li>Монтаж на гипсокартоне. <a href="#">Пример работ</a></li>
+                    <li>Монтаж на рыхлых и слабых стенах. <a href="#">Пример работ</a></li>
+                    <li>Сверление отверстия более 1 метра. <a href="#">Пример работ</a></li>
+                    <li>Навешивание прибора на сендвич-панель в оконный проем. <a href="#">Пример работ</a></li>
+                  </ul>
+                  <p>При этом сложность проекта не влияет на стоимость для клиента. Посмотреть на наши нестандартные решения ссылка</p>
+                </section>
+              </div>
+            </section>
+            <section class="mb-5">
+              <h3 class="h5 h5-lg font-weight-semibold mb-4">Предварительный выезд</h3>
+              <p>Закажите предварительный выезд, и специалист по монтажу приедет к Вам, чтобы:</p>
+              <ul class="list-dashed">
+                <li>помочь с выбором места для монтажа;</li>
+                <li>проверить наличие проводов и труб в месте установки бризера;</li>
+                <li>проведет анализ качества воздуха в помещении</li>
+                <li>продемонстрирует в живую работу выбранного устройства, есть возможность взять несколько приборов для сравнения.</li>
+              </ul>
+              <p>Все вышеперечисленные услуги абсолютно бесплатно</p>
+            </section>
+            <div class="p-3 mb-5 bg-main-transparent rounded">Более детальную информацию по монтажу любой приточной системы Вы сможете получить у консультанта в нашем <a href="#" class="text-uppercase">шоуруме</a> или по телефону <a href="tel:88005002191" class="link-dark font-weight-semibold">8 800 500 21 91</a></div>
+            <section class="mb-5">
+              <div class="d-flex flex-column flex-sm-row justify-content-between mb-4">
+                <h3 class="h5 h5-lg font-weight-semibold mb-2 mb-sm-0 mr-sm-3">Фото наших объектов</h3>
+                <a href="#" class="font-weight-semibold">Смотреть все</a>
+              </div>
+              <div class="slider-projects owl-carousel mb-4">
+                <figure class="mb-0">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy">
+                  <figcaption class="sr-only">Монтаж бризера Тион О2 в частном доме</figcaption>
+                </figure>
+                <figure class="mb-0">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-2.jpg" alt="Монтаж бризера Тион О2 в стоматологической клинике" class="img-responsive img-lazy">
+                  <figcaption class="sr-only">Монтаж бризера Тион О2 в стоматологической клинике</figcaption>
+                </figure>
+                <figure class="mb-0">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-3.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy">
+                  <figcaption class="sr-only">Монтаж бризера Тион О2 в частном доме</figcaption>
+                </figure>
+              </div>
+              <p>* гарантийный монтаж сохраняет все гарантийные обязательства компании производителя на оборудование</p>
+            </section>
+            <section>
+              <h3 class="h5 h5-lg font-weight-semibold mb-4">Карта наших монтажей</h3>
+              <div id="map" class="map"></div>
+            </section>
+          </div>
+          <div class="tab-pane fade" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">.4..</div>
+          <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">.5..</div>
         </div>
       </div>
     </div>
@@ -1408,7 +1404,7 @@
     </div>
   </div>
 </section>
-<section class="page-section page-section-colored page-section-colored-main py-4 mb-0">
+<section class="page-section page-section-colored page-section-main page-section-main-mini mb-0">
   <div class="container">
     <div class="row justify-content-lg-between align-items-center">
       <div class="col-lg-auto mb-4 mb-lg-0">
@@ -1426,8 +1422,8 @@
               </span>
             </a>
           </div>
-          <div class="col-sm-auto text-center text-sm-left">
-            <button class="btn btn-outline d-inline-flex align-items-center justify-content-between" aria-label="Написать нам">
+          <div class="col-sm-5 text-center text-sm-left">
+            <button class="btn btn-outline btn-outline-mini w-100 d-inline-flex align-items-center justify-content-between" aria-label="Написать нам">
               <span>Написать нам</span>
               <span class="icon-angle-right"></span>
             </button>

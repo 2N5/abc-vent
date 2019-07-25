@@ -844,7 +844,7 @@
     </div>
   </div>
 </section>
-<section class="page-section page-section-colored page-section-colored-main">
+<section class="page-section page-section-main">
   <div class="container">
     <h2>Не знаете что выбрать?</h2>
     <h4>Оставьте заявку и мы перезвоним</h4>
@@ -1096,7 +1096,7 @@
     </div>
   </div>
 </section>
-<section class="page-section page-section-colored page-section-colored-main py-4 mb-0">
+<section class="page-section page-section-colored page-section-main page-section-main-mini mb-0">
   <div class="container">
     <div class="row justify-content-lg-between align-items-center">
       <div class="col-lg-auto mb-4 mb-lg-0">
