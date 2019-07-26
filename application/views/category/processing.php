@@ -52,11 +52,11 @@
           </a>
           <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
           <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
-          <span class="product-price">44 900 &#8381;</span>
+          <span class="product-price product-price-new">44 900 &#8381;</span>
           <span class="product-price-old">48 000</span>
         </div>
         <div class="card-footer">
@@ -75,11 +75,11 @@
           </a>
           <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
           <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
-          <span class="product-price">44 900 &#8381;</span>
+          <span class="product-price product-price-new">44 900 &#8381;</span>
           <span class="product-price-old">48 000</span>
         </div>
         <div class="card-footer">
@@ -98,11 +98,11 @@
           </a>
           <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
           <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
-          <span class="product-price">44 900 &#8381;</span>
+          <span class="product-price product-price-new">44 900 &#8381;</span>
           <span class="product-price-old">48 000</span>
         </div>
         <div class="card-footer">
@@ -121,11 +121,11 @@
           </a>
           <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
           <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
-          <span class="product-price">44 900 &#8381;</span>
+          <span class="product-price product-price-new">44 900 &#8381;</span>
           <span class="product-price-old">48 000</span>
         </div>
         <div class="card-footer">
@@ -144,11 +144,11 @@
           </a>
           <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
           <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
-          <span class="product-price">44 900 &#8381;</span>
+          <span class="product-price product-price-new">44 900 &#8381;</span>
           <span class="product-price-old">48 000</span>
         </div>
         <div class="card-footer">
@@ -212,11 +212,11 @@
   <div class="container">
     <h2 class="h4 font-weight-normal text-center">Принимаем к оплате</h2>
     <ul class="list-unstyled d-flex justify-content-center align-items-center mb-0">
-      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-1.png" class="img-responsive img-lazy" alt="Mastercard" title="Mastercard"></li>
-      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-2.png" class="img-responsive img-lazy" alt="Visa" title="Visa"></li>
-      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-3.png" class="img-responsive img-lazy" alt="Яндекс Деньги" title="Яндекс Деньги"></li>
-      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-4.png" class="img-responsive img-lazy" alt="WebMoney" title="WebMoney"></li>
-      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-5.png" class="img-responsive img-lazy" alt="Qiwi" title="Qiwi"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/payment-method-img-1.png" class="img-responsive img-lazy" alt="Mastercard" title="Mastercard"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/payment-method-img-2.png" class="img-responsive img-lazy" alt="Visa" title="Visa"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/payment-method-img-3.png" class="img-responsive img-lazy" alt="Яндекс Деньги" title="Яндекс Деньги"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/payment-method-img-4.png" class="img-responsive img-lazy" alt="WebMoney" title="WebMoney"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/payment-method-img-5.png" class="img-responsive img-lazy" alt="Qiwi" title="Qiwi"></li>
     </ul>
   </div>
 </section>

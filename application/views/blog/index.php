@@ -1,3 +1,21 @@
+<nav class="breadcrumb-wrap mb-4">
+  <div class="container">
+    <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+      <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="/" class="link-dark" title="Главная" itemprop="item">
+          <span itemprop="name">Главная</span>
+          <meta itemprop="position" content="1">
+        </a>
+      </li>
+      <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="" class="link-dark" title="Наши проекты" itemprop="item">
+          <span itemprop="name">Наши проекты</span>
+          <meta itemprop="position" content="2">
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <div class="container">
   <div class="row align-items-center justify-content-between mb-4">
     <div class="col-md-5 col-lg-7 mb-4 mb-md-0 text-center text-md-left">

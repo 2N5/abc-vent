@@ -38,7 +38,7 @@
             <span class="icon-plug"></span>
             <span class="img-proportion rectangle-catalog">
               <span class="img-proportion-inner">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
             </span>
             <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
@@ -51,7 +51,7 @@
             <span class="icon-plug"></span>
             <span class="img-proportion rectangle-catalog">
               <span class="img-proportion-inner">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
             </span>
             <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
@@ -64,7 +64,7 @@
             <span class="icon-plug"></span>
             <span class="img-proportion rectangle-catalog">
               <span class="img-proportion-inner">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
             </span>
             <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
@@ -77,7 +77,7 @@
             <span class="icon-plug"></span>
             <span class="img-proportion rectangle-catalog">
               <span class="img-proportion-inner">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
             </span>
             <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
@@ -98,7 +98,7 @@
             <span class="icon-energy text-muted"></span>
             <span class="img-proportion rectangle-1x2">
               <span class="img-proportion-inner">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
             </span>
             <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
@@ -111,7 +111,7 @@
             <span class="icon-energy text-muted"></span>
             <span class="img-proportion rectangle-1x2">
               <span class="img-proportion-inner">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
             </span>
             <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
@@ -124,7 +124,7 @@
             <span class="icon-energy text-muted"></span>
             <span class="img-proportion rectangle-1x2">
               <span class="img-proportion-inner">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
             </span>
             <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
@@ -137,7 +137,7 @@
             <span class="icon-energy text-muted"></span>
             <span class="img-proportion rectangle-1x2">
               <span class="img-proportion-inner">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
               </span>
             </span>
             <span class="h5 h5-lg mb-0 font-weight-normal card-catalog-title">Бризер Тион 3S</span>
@@ -161,11 +161,11 @@
           </a>
           <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
           <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
-          <span class="product-price">44 900 &#8381;</span>
+          <span class="product-price product-price-new">44 900 &#8381;</span>
           <span class="product-price-old">48 000</span>
         </div>
         <div class="card-footer">
@@ -187,7 +187,7 @@
           </a>
           <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
           <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
@@ -210,7 +210,7 @@
           </a>
           <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
           <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
@@ -235,7 +235,7 @@
           </a>
           <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
           <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
@@ -258,7 +258,7 @@
           </a>
           <a href="#" class="img-proportion rectangle-product-card">
             <span class="img-proportion-inner">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" alt="Бризер Тион 3S" class="img-responsive img-lazy">
             </span>
           </a>
           <a href="#" class="link-dark h7 card-product-title">Бризер Тион 3S</a>
@@ -323,7 +323,7 @@
       <div class="card card-colored-collapse">
         <div id="head-of-conditioning" class="card-header flex-column flex-sm-row d-flex align-items-sm-center justify-content-between">
           <div class="d-flex align-items-center mb-4 mb-sm-0 mr-sm-3">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/img-comparison-1.jpg" alt="Кондиционер" class="img-responsive img-lazy card-colored-img">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/img-comparison-1.jpg" alt="Кондиционер" class="img-responsive img-lazy card-colored-img">
             <div>
               <h4 class="h5 h5-lg text-left card-colored-title">Кондиционер</h4>
               <div class="d-flex">
@@ -372,7 +372,7 @@
       <div class="card card-colored-collapse">
         <div id="head-of-cleaner" class="card-header flex-column flex-sm-row d-flex align-items-sm-center justify-content-between">
           <div class="d-flex align-items-center mb-4 mb-sm-0 mr-sm-3">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/img-comparison-2.jpg" alt="Кондиционер" class="img-responsive img-lazy card-colored-img">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/img-comparison-2.jpg" alt="Кондиционер" class="img-responsive img-lazy card-colored-img">
             <div>
               <h4 class="h5 h5-lg text-left card-colored-title">Очиститель (мойка воздуха)</h4>
               <div class="d-flex">
@@ -444,7 +444,7 @@
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
             <span class="compare-item-place compare-item-place-1">1</span>
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Тион 3S</a>
             <span class="h5 mb-0">36 900 &#8381;</span>
           </div>
@@ -506,7 +506,7 @@
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
             <span class="compare-item-place compare-item-place-2">2</span>
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Тион Lite</a>
             <span class="h5 mb-0">19 900 &#8381;</span>
           </div>
@@ -564,7 +564,7 @@
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
             <span class="compare-item-place compare-item-place-3">3</span>
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Тион О2</a>
             <span class="h5 mb-0">22 900 &#8381;</span>
           </div>
@@ -624,7 +624,7 @@
         </div>
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Ballu Air<br>Master 2</a>
             <span class="h5 mb-0">33 490 &#8381;</span>
           </div>
@@ -682,7 +682,7 @@
         </div>
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Vakio Base</a>
             <span class="h5 mb-0">16 900 &#8381;</span>
           </div>
@@ -737,7 +737,7 @@
         </div>
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Aeropac SN</a>
             <span class="h5 mb-0">19 900 &#8381;</span>
           </div>
@@ -792,7 +792,7 @@
         </div>
         <div class="compare-table-item">
           <div class="compare-table-field compare-table-field-header">
-            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
+            <a href="#" class="compare-item-img-wrap"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/catalog-img-1.jpg" alt="Тион 3S" class="img-responsive img-lazy mx-auto"></a>
             <a href="#" class="link-dark compare-item-title font-weight-normal">Клапан<br>КИВ-125</a>
             <span class="h5 mb-0">990 &#8381;</span>
           </div>
@@ -876,56 +876,56 @@
     <div class="row">
       <div class="col-sm-6 col-lg-3 mb-5">
         <div class="advantage-item-header">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-delivery.svg" alt="Бесплатная доставка" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/svg/advantage-delivery.svg" alt="Бесплатная доставка" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
           <h3 class="mb-0">Бесплатная доставка</h3>
         </div>
         <p>Просто оставьте заявку и мы все сделаем</p>
       </div>
       <div class="col-sm-6 col-lg-3 mb-5">
         <div class="advantage-item-header">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-installment.svg" alt="Беспроцентная рассрочка" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/svg/advantage-installment.svg" alt="Беспроцентная рассрочка" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
           <h3 class="mb-0">Беспроцентная рассрочка</h3>
         </div>
         <p>0% на 4 месяца, без участия банка и переплат</p>
       </div>
       <div class="col-sm-6 col-lg-3 mb-5">
         <div class="advantage-item-header">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-truck.svg" alt="Бесплатный выезд на замер" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/svg/advantage-truck.svg" alt="Бесплатный выезд на замер" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
           <h3 class="mb-0">Бесплатный выезд на замер</h3>
         </div>
         <p>С разными моделями устройств на ваш выбор</p>
       </div>
       <div class="col-sm-6 col-lg-3 mb-5">
         <div class="advantage-item-header">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-warranty.svg" alt="Гарантия 10 лет на монтаж" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/svg/advantage-warranty.svg" alt="Гарантия 10 лет на монтаж" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
           <h3 class="mb-0">Гарантия 10 лет на монтаж</h3>
         </div>
         <p>Уникальное предложение на рынке</p>
       </div>
       <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
         <div class="advantage-item-header">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-alarm-clock.svg" alt="Монтаж в день заказа 24/7" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/svg/advantage-alarm-clock.svg" alt="Монтаж в день заказа 24/7" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
           <h3 class="mb-0">Монтаж в день заказа 24/7</h3>
         </div>
         <p>Без праздников и выходных</p>
       </div>
       <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
         <div class="advantage-item-header">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-experience.svg" alt="Более 15 лет успешного опыта" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/svg/advantage-experience.svg" alt="Более 15 лет успешного опыта" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
           <h3 class="mb-0">Более 15 лет успешного опыта</h3>
         </div>
         <p>По вентиляционным услугам</p>
       </div>
       <div class="col-sm-6 col-lg-3 mb-5 mb-sm-0">
         <div class="advantage-item-header">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-drop.svg" alt="Чистый монтаж" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/svg/advantage-drop.svg" alt="Чистый монтаж" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
           <h3 class="mb-0">Чистый<br>монтаж</h3>
         </div>
         <p>После нас нет необходимости делать уборку</p>
       </div>
       <div class="col-sm-6 col-lg-3">
         <div class="advantage-item-header">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/advantage-cogwheel.svg" alt="Оперативный ремонт техники" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/svg/advantage-cogwheel.svg" alt="Оперативный ремонт техники" class="img-responsive img-lazy advantage-item-icon" width="60" height="60">
           <h3 class="mb-0">Оперативный ремонт техники</h3>
         </div>
         <p>Заменим неисправный прибор на наш в тот же день, пока ваш будет в ремонте</p>
@@ -952,7 +952,7 @@
         <p>В нашем выставочном зале представлены только лучшие модели проветриватей, рекуператоров и клапанов. На специальных стендах, Вы сможете ознакомиться с внутренним устройством приборов, послушать уровень шума на всех скоростях работы, внешнее оформление фасадной части, выбрать подходящий дизайн, опробовать систему управления. Наши специалист помогут подобрать самый подходящий прибор.</p>
       </div>
       <div class="col-lg">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/page-img-1.png" alt="Посетите наш шоурум" class="img-responsive img-lazy mx-auto mx-lg-0">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/page-img-1.png" alt="Посетите наш шоурум" class="img-responsive img-lazy mx-auto mx-lg-0">
       </div>
     </div>
   </div>
@@ -963,15 +963,15 @@
     <h4>Более 600 выполненных проектов</h4>
     <div class="slider-works owl-carousel mb-4">
       <figure class="mb-0">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/work-img-1.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
         <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
       </figure>
       <figure class="mb-0">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-2.jpg" alt="Монтаж бризера Тион О2 в стоматологической клинике" class="img-responsive img-lazy mb-4">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/work-img-2.jpg" alt="Монтаж бризера Тион О2 в стоматологической клинике" class="img-responsive img-lazy mb-4">
         <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в стоматологической клинике</figcaption>
       </figure>
       <figure class="mb-0">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/work-img-3.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/work-img-3.jpg" alt="Монтаж бризера Тион О2 в частном доме" class="img-responsive img-lazy mb-4">
         <figcaption class="font-weight-normal">Монтаж бризера Тион О2 в частном доме</figcaption>
       </figure>
     </div>
@@ -988,20 +988,20 @@
             <div class="slider-reviews owl-carousel">
               <blockquote class="item">
                 <cite class="review-header">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/reviews-img-1.jpg" alt="Святослав Щербин" class="img-responsive img-lazy review-img">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/reviews-img-1.jpg" alt="Святослав Щербин" class="img-responsive img-lazy review-img">
                   <span>
-                    <div class="font-weight-semibold">Святослав Щербин</div>
-                    <div class="text-muted">Пермь</div>
+                    <span class="d-block font-weight-semibold">Святослав Щербин</span>
+                    <span class="d-block text-muted">Пермь</span>
                   </span>
                 </cite>
                 <q class="review-text">Если у вас сквозняки или вы боитесь «грязного» воздуха за окном - покупайте не раздумывая. Если вы мечтаете спать в тишине и свежем воздухе, это устройство вам точно не поможет. Захотите воздух посвежее (т.е. понизить уровень CO2) - оно будет орать покруче всякого шоссе под окнами - проверял программным шумомером. </q>
               </blockquote>
               <blockquote class="item">
                 <cite class="review-header">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/reviews-img-1.jpg" alt="Святослав Щербин" class="img-responsive img-lazy review-img">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/reviews-img-1.jpg" alt="Святослав Щербин" class="img-responsive img-lazy review-img">
                   <span>
-                    <div class="font-weight-semibold">Святослав Щербин</div>
-                    <div class="text-muted">Пермь</div>
+                    <span class="d-block font-weight-semibold">Святослав Щербин</span>
+                    <span class="d-block text-muted">Пермь</span>
                   </span>
                 </cite>
                 <q class="review-text">Если у вас сквозняки или вы боитесь «грязного» воздуха за окном - покупайте не раздумывая. Если вы мечтаете спать в тишине и свежем воздухе, это устройство вам точно не поможет. Захотите воздух посвежее (т.е. понизить уровень CO2) - оно будет орать покруче всякого шоссе под окнами - проверял программным шумомером. </q>
@@ -1021,28 +1021,28 @@
     <div class="slider-articles owl-carousel">
       <div class="item">
         <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/articles-img-1.jpg" alt="Какой проветриватель выбрать для детской комнаты?" class="img-responsive img-lazy mb-4">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/articles-img-1.jpg" alt="Какой проветриватель выбрать для детской комнаты?" class="img-responsive img-lazy mb-4">
           <figcaption class="h5 h5-lg mb-4">Какой проветриватель выбрать для детской комнаты?</figcaption>
         </figure>
         <a href="#" class="font-weight-normal">Читать далее</a>
       </div>
       <div class="item">
         <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/articles-img-2.jpg" alt="Как не замерзнуть зимой и не задохнуться летом? Советы по проветриванию квартиры" class="img-responsive img-lazy mb-4">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/articles-img-2.jpg" alt="Как не замерзнуть зимой и не задохнуться летом? Советы по проветриванию квартиры" class="img-responsive img-lazy mb-4">
           <figcaption class="h5 h5-lg mb-4">Как не замерзнуть зимой и не задохнуться летом? Советы по проветриванию квартиры</figcaption>
         </figure>
         <a href="#" class="font-weight-normal">Читать далее</a>
       </div>
       <div class="item">
         <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/articles-img-3.jpg" alt="Почему так важно проветривать помещение в жилых комнатах" class="img-responsive img-lazy mb-4">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/articles-img-3.jpg" alt="Почему так важно проветривать помещение в жилых комнатах" class="img-responsive img-lazy mb-4">
           <figcaption class="h5 h5-lg mb-4">Почему так важно проветривать помещение в жилых комнатах</figcaption>
         </figure>
         <a href="#" class="font-weight-normal">Читать далее</a>
       </div>
       <div class="item">
         <figure class="mb-0">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/articles-img-1.jpg" alt="Какой проветриватель выбрать для детской комнаты?" class="img-responsive img-lazy mb-4">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/articles-img-1.jpg" alt="Какой проветриватель выбрать для детской комнаты?" class="img-responsive img-lazy mb-4">
           <figcaption class="h5 h5-lg mb-4">Какой проветриватель выбрать для детской комнаты?</figcaption>
         </figure>
         <a href="#" class="font-weight-normal">Читать далее</a>
@@ -1058,10 +1058,10 @@
         <h4>Сотрудничаем с топовыми дизайнерами</h4>
         <div class="row align-items-center justify-content-center justify-content-lg-start">
           <div class="col-sm-auto mb-3 mb-sm-0 mr-sm-4">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/svg/logo.svg" alt="abc-vent" class="img-responsive img-lazy mx-auto mx-sm-0">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/svg/logo.svg" alt="abc-vent" class="img-responsive img-lazy mx-auto mx-sm-0">
           </div>
           <div class="col-sm-auto">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/brands-img-5.jpg" alt="Школы ремонта" class="img-responsive img-lazy mx-auto mx-sm-0">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/brands-img-5.jpg" alt="Школы ремонта" class="img-responsive img-lazy mx-auto mx-sm-0">
           </div>
         </div>
       </div>
@@ -1074,23 +1074,23 @@
     <h4>От частных клиентов до крупнейших госкорпораций</h4>
     <div class="slider-brands owl-carousel">
       <figure class="slider-cards-item flex-centered mb-0">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/brands-img-1.jpg" alt="Россгосстрах" class="img-responsive img-lazy">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/brands-img-1.jpg" alt="Россгосстрах" class="img-responsive img-lazy">
         <figcaption class="sr-only">Россгосстрах</figcaption>
       </figure>
       <figure class="slider-cards-item flex-centered mb-0">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/brands-img-2.jpg" alt="nexters global" class="img-responsive img-lazy">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/brands-img-2.jpg" alt="nexters global" class="img-responsive img-lazy">
         <figcaption class="sr-only">nexters global</figcaption>
       </figure>
       <figure class="slider-cards-item flex-centered mb-0">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/brands-img-3.jpg" alt="Лукойл" class="img-responsive img-lazy">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/brands-img-3.jpg" alt="Лукойл" class="img-responsive img-lazy">
         <figcaption class="sr-only">Лукойл</figcaption>
       </figure>
       <figure class="slider-cards-item flex-centered mb-0">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/brands-img-4.jpg" alt="ВТБ" class="img-responsive img-lazy">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/brands-img-4.jpg" alt="ВТБ" class="img-responsive img-lazy">
         <figcaption class="sr-only">ВТБ</figcaption>
       </figure>
       <figure class="slider-cards-item flex-centered mb-0">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/brands-img-5.jpg" alt="Школа ремонта" class="img-responsive img-lazy">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/brands-img-5.jpg" alt="Школа ремонта" class="img-responsive img-lazy">
         <figcaption class="sr-only">Школа ремонта</figcaption>
       </figure>
     </div>
@@ -1129,11 +1129,11 @@
   <div class="container">
     <h2 class="h4 font-weight-normal text-center">Принимаем к оплате</h2>
     <ul class="list-unstyled d-flex justify-content-center align-items-center mb-0">
-      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-1.png" class="img-responsive img-lazy" alt="Mastercard" title="Mastercard"></li>
-      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-2.png" class="img-responsive img-lazy" alt="Visa" title="Visa"></li>
-      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-3.png" class="img-responsive img-lazy" alt="Яндекс Деньги" title="Яндекс Деньги"></li>
-      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-4.png" class="img-responsive img-lazy" alt="WebMoney" title="WebMoney"></li>
-      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/img/payment-method-img-5.png" class="img-responsive img-lazy" alt="Qiwi" title="Qiwi"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/payment-method-img-1.png" class="img-responsive img-lazy" alt="Mastercard" title="Mastercard"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/payment-method-img-2.png" class="img-responsive img-lazy" alt="Visa" title="Visa"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/payment-method-img-3.png" class="img-responsive img-lazy" alt="Яндекс Деньги" title="Яндекс Деньги"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/payment-method-img-4.png" class="img-responsive img-lazy" alt="WebMoney" title="WebMoney"></li>
+      <li class="px-2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/payment-method-img-5.png" class="img-responsive img-lazy" alt="Qiwi" title="Qiwi"></li>
     </ul>
   </div>
 </section>
