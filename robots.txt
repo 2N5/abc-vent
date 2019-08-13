@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /
-
-Host: http://domain.com
-
-Sitemap: http://domain.com/sitemap.xml

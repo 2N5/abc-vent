@@ -1,0 +1,2386 @@
+@import "_libs"
+@import "_variables"
+@import "_fonts"
+@import "_mixins"
+
+html
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  font-size: $font-size
+  +md-down
+    &.mobile-active
+      overflow: hidden
+      .page-wrapper
+        overflow: hidden
+      .menu-content
+        transform: none
+        box-shadow: $shadow
+        visibility: visible
+      .mobile-overlay
+        opacity: 1
+        visibility: visible
+  +xs
+    font-size: 16px
+
+body
+  min-width: 320px
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  margin: 0
+  font-weight: $font-weight
+  line-height: $line-height
+  font-family: $font-family
+  color: $text
+  overflow-x: hidden
+
+img
+  max-width: 100%
+  font: $font
+  color: $text
+
+p
+  margin-bottom: 1.5rem
+  &:last-child
+    margin-bottom: 0
+
+input:focus::placeholder,
+textarea:focus::placeholder,
+  opacity: 0
+  +transition
+
+button
+  color: $text
+  &:focus
+    z-index: 1
+
+label
+  margin-bottom: 0.25rem
+
+.small,
+small
+  font-size: 88%
+
+.divider
+  margin-top: 1.66rem
+  margin-bottom: 2.55rem
+  border-color: $border-color
+
+.list
+  &-numbered
+    padding-left: 0
+    list-style-type: none
+    counter-reset: num
+    & > li
+      position: relative
+      padding-left: 1.25rem
+      &:not(:last-child)
+        margin-bottom: 2rem
+      &:before
+        counter-increment: num
+        content: counter(num) '.'
+        position: absolute
+        top: 0
+        left: 0
+        max-width: 1rem
+        font-weight: 600
+        font-size: 1.11rem
+        white-space: nowrap
+        text-overflow: ellipsis
+        overflow: hidden
+  &-dashed
+    padding-left: 0
+    list-style-type: none
+    & > li
+      position: relative
+      padding-left: 1.5rem
+      &:not(:last-child)
+        margin-bottom: 0.5rem
+      &:before
+        content: '—'
+        position: absolute
+        top: 0
+        left: 0
+        max-width: 1rem
+        white-space: nowrap
+        text-overflow: ellipsis
+        overflow: hidden
+
+a,
+.link,
+.link.h1,
+.link.h2,
+.link.h3,
+.link.h4,
+.link.h5,
+.link.h6
+  color: $link
+  text-decoration: none
+  text-overflow: ellipsis
+  &:hover,
+  &:focus
+    color: $text
+    text-decoration: none
+  &:focus
+    position: relative
+    z-index: 1
+  &:active
+    color: $text
+    text-decoration: none
+
+.text
+  &-main
+    color: $link
+  &-access
+    color: $green !important
+  &-danger
+    color: $red !important
+  &-muted
+    color: inherit !important
+    opacity: 0.7
+
+.font
+  &-weight
+    &-semibold
+      font-weight: 600 !important
+
+.bg
+  &-main
+    background: $main-gradient
+    &-transparent
+      background-image: linear-gradient(to left, transparentize(#5d91f1,0.9), transparentize(#29bfb6,0.9))
+  &-gray
+    background-color: $gray
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.h7
+  margin-bottom: 1rem
+  font-weight: 400
+  line-height: 1.25
+  text-overflow: ellipsis
+
+h1,
+.h1
+  margin-bottom: 3.38rem
+  font-size: 3.88rem
+  font-weight: 600
+  +md-down
+    font-size: 2.77rem
+  +xs
+    font-size: 1.875rem
+
+h2,
+.h2
+  margin-bottom: 1rem
+  font-size: 2.77rem
+  +md-down
+    margin-bottom: 1.125rem
+    font-size: 2.22rem
+    text-align: center
+  +xs
+    font-size: 1.75rem
+
+h3,
+.h3
+  margin-bottom: 2.5rem
+  font-size: 1.66rem
+  +md-down
+    font-size: 1.33rem
+  +xs
+    margin-bottom: 1.625rem
+  &-lg
+    +md-down
+      font-size: 1.66rem
+    +xs
+      font-size: 1.5rem
+
+h4,
+.h4
+  margin-bottom: 2.3888rem
+  font-weight: 300
+  font-size: 1.44rem
+  +md-down
+    font-size: 1.22em
+    text-align: center
+  +xs
+    font-size: 1.25rem
+
+h5,
+.h5
+  font-size: 1.33rem
+  +md-down
+    font-size: 1rem
+  &-lg
+    +md-down
+      font-size: 1.33rem
+    +xs
+      font-size: 1.25rem
+
+h6,
+.h6
+  font-size: 1.22rem
+
+.h7
+  font-size: 1rem
+  +xs
+    font-size: 1.11rem
+
+[class*=" border-"],
+[class^=border-]
+  border-color: $border-color !important
+
+.rounded
+  border-radius: $border-radius !important
+
+.flex-centered
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.container
+  max-width: 1231px
+  padding-right: 1.66rem
+  padding-left: 1.66rem
+  +xs
+    padding-right: 1.11rem
+    padding-left: 1.11rem
+
+.row
+  +md-down
+    margin-right: -0.55rem
+    margin-left: -0.55rem
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+  +md-down
+    padding-right: 0.55rem
+    padding-left: 0.55rem
+
+.col-xl-2_4
+  +xl-up
+    flex: 0 0 20%
+    max-width: 20%
+
+.column
+  &-count
+    &-lg
+      +lg-up
+        &-2
+          column-count: 2
+
+.sitemap
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+    margin-bottom: 0
+  ul
+    padding-left: 1rem
+    +xs
+      font-size: 0.75rem
+
+.modal
+  display: block
+  visibility: hidden
+  +inertial-scroll
+  &-full
+    .modal-dialog
+      max-width: 100%
+      flex-direction: column
+      padding: 0
+    .modal-content
+      flex-grow: 1
+      background-color: $lining
+      border-radius: 0
+  &-dialog
+    min-height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    padding: 1.5rem
+    +xs
+      padding: 0.5rem
+  &-content
+    height: auto
+    border: none
+    +transition
+  &-xl
+    +md-down
+      max-width: 100%
+  &-header,
+  &-body,
+  &-footer
+    padding: 2rem
+    border: none
+    +md-down
+      padding: 1.5rem
+    +xs
+      padding: 0.75rem
+  &-header
+    position: relative
+    padding-bottom: 0
+    .close
+      position: absolute
+      margin: 0
+      padding: 0.2rem 0.5rem
+      font-size: 2rem
+  &-body
+    +xs
+      padding: 1.5rem 0.75rem
+  &-footer
+    padding-top: 0
+  .alert-heading
+    margin-bottom: 0
+  .alert
+    color: $text
+    background-color: $white
+    border: none
+    border-radius: $border-radius
+    +transition
+    &-dismissible
+      padding-right: 1.25rem
+      .close
+        padding: 0.1rem 0.5rem
+    hr
+      border-color: $border-color
+  &.fade
+    opacity: 1
+    &:not(.show)
+      .modal-dialog
+        transform: none
+      .modal-content,
+      .alert
+        opacity: 0
+        transform: scale(1.05)
+  &.show
+    visibility: visible
+    .modal-content,
+    .alert
+      opacity: 1
+      transform: scale(1)
+
+button.close
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 1
+  padding: 1rem
+  margin: 0
+  font-weight: 300
+  font-size: 1rem
+  line-height: 1
+  font-family: serif
+  opacity: 0.5
+
+.fancybox-share__button
+  &:hover
+    color: $white
+
+.table
+  color: $text
+  &-wrap
+    display: block
+    overflow: auto
+    max-width: 100%
+    +inertial-scroll
+  tr
+    &:nth-of-type(odd):first-child
+      background-color: transparent
+      td,
+      th
+    &:not(:first-child)
+      th,
+      td
+        border: none
+  th,
+  td
+    padding: 0.5rem
+    vertical-align: middle
+    border-top: none
+    border-bottom: 1px solid $border-color
+    &:not(:first-child)
+      text-align: center
+  th
+    font-weight: 500
+  .text-muted
+    opacity: 0.2
+  &-striped
+    tbody
+      tr
+        &:nth-of-type(odd)
+          background-color: #f4f6f7
+
+
+.object
+  display: block
+  width: 100%
+  height: 100%
+  &-fill
+    object-fit: fill
+  &-contain
+    object-fit: contain
+  &-cover
+    object-fit: cover
+  &-none
+    object-fit: none
+  &-scale-down
+    object-fit: scale-down
+
+.sticky
+  position: sticky
+  top: 0
+
+.overflow-overlay
+  position: relative
+  overflow: hidden
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    right: -1px
+    bottom: 0
+    width: 3.33rem
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), $white)
+    pointer-events: none
+  +md-down
+    &:after
+      width: 5rem
+
+.pagination
+  max-width: 100%
+  display: block
+  padding: 0 0 0.5rem
+  overflow-x: auto
+  overflow-y: hidden
+  +md-down
+    white-space: nowrap
+  +xs
+    text-align: center
+  &-wrap
+    @extend .overflow-overlay
+    position: relative
+    max-width: 100%
+    &:after
+      background-image: linear-gradient(to right, rgba(245, 246, 248, 0), $white)
+    +lg-up
+      &:after
+        display: none
+
+.map
+  min-height: 27.22rem
+  height: 100%
+  background-color: $gray
+  border-radius: $border-radius
+  overflow: hidden
+  +md-down
+    min-height: 23.33rem
+  +xs
+    min-height: 18.75rem
+
+.navbar
+  &-toggler
+    font-size: 1rem
+    border: none
+    border-radius: 0
+
+.nav
+  &-contacts
+    .nav-item
+      display: flex
+      flex-direction: column
+      &:not(:last-child)
+        margin-right: 2rem
+  &-pills,
+  &-tabs
+    position: relative
+    flex-wrap: nowrap
+    width: 100%
+    max-width: 100%
+    padding: 0
+    overflow-x: auto
+    overflow-y: hidden
+    +inertial-scroll
+    &-wrap
+      @extend .overflow-overlay
+      position: relative
+      z-index: 1
+      max-width: 100%
+      +lg-up
+        &:after
+          display: none
+      &-card
+        padding: 0 0.6rem
+        margin-bottom: -1px
+    .nav-item
+      margin-right: -1px
+      &:last-child
+        .nav-link
+            &:after
+              display: none
+      &.show
+        .nav-link
+          color: $text
+          border-color: $border-color
+    .nav-link
+      position: relative
+      border-radius: $border-radius $border-radius 0 0
+      &:after
+        content: ''
+        position: absolute
+        top: 0
+        right: -1px
+        bottom: 0
+        width: 1px
+        margin: auto
+        height: 1.25rem
+        background-color: $border-color
+      &:hover,
+      &:focus
+        border-color: $border-color
+      &.active
+        color: $text
+        border-color: $border-color
+
+.dropdown
+  &-toggle
+    &:after
+      margin-left: 0.5rem
+  &-menu
+    z-index: 2
+    border-radius: 0
+  &-item
+    @extend .link-dark
+    @extend .text-truncate
+    max-width: 100%
+    padding-left: 0.75rem
+    padding-right: 0.75rem
+
+.btn
+  max-width: 100%
+  min-width: 11.11rem
+  padding: 1.2222rem 1.3333rem
+  font-weight: 600
+  line-height: 1
+  color: $text
+  white-space: nowrap
+  text-overflow: ellipsis
+  border: none
+  border-radius: $border-radius
+  overflow: hidden
+  &:hover,
+  &:focus
+    color: $link
+  &:focus
+    box-shadow: none
+  &:active
+    outline: none
+    box-shadow: $shadow-active
+  +xs
+    font-size: 1.11rem
+  &-lg
+    padding: 1.22rem
+    font-size: 1.33rem
+  &-main
+    position: relative
+    z-index: 0
+    color: $white
+    background-image: $main-gradient
+    border: none
+    &:hover,
+    &:focus
+      color: $link
+      &:after
+        background: $white
+    &:after
+      content: ''
+      position: absolute
+      z-index: -1
+      top: 1px
+      right: 1px
+      bottom: 1px
+      left: 1px
+      background: $main-gradient
+      border-radius: $border-radius - 0.1rem
+      +transition
+    [class*=" icon-"],
+    [class^=icon-]
+      font-size: 0.77rem
+  &-link
+    padding: 0
+    font-weight: 600
+    background-color: transparent
+    border: none
+  &-outline
+    min-width: 16.7222rem
+    font-weight: 400
+    color: $white
+    background-color: transparent
+    border: 2px solid $white
+    &:hover,
+    &:focus
+      color: $white
+      background-color: transparentize($white, 0.7)
+      border-color: $white
+    &:active
+      color: $main
+      background-color: darken($white, 5%)
+      border-color: $white
+    [class*=" icon-"],
+    [class^=icon-]
+      font-size: 0.77rem
+    &-mini
+      min-width: auto
+    &-main
+      min-width: 7.77rem
+      padding-top: 0.88rem
+      padding-bottom: 0.88rem
+      color: $link
+      background-color: transparent
+      border: 1px solid
+      &:hover,
+      &:focus
+        color: $white
+        background-color: $link
+        border-color: $link
+      &:active
+        color: $white
+        background-color: darken($link, 5%)
+        border-color: $link
+
+.link
+  &-dashed
+    border-bottom: 1px dashed
+    &:hover,
+    &:focus
+      border-color: transparent
+  &-light
+    color: $white
+    &:hover,
+    &:focus,
+    &:active
+      color: darken($white, 5%)
+      text-decoration: none
+  &-dark
+    color: $text
+    &:hover,
+    &:focus,
+    &:active
+      color: $link
+      text-decoration: none
+  &-lg
+    font-size: 1.25rem
+  &-truncate
+    display: inline-block
+    max-width: 100%
+    vertical-align: top
+    white-space: nowrap
+    text-overflow: ellipsis
+    overflow: hidden
+
+.form
+  &-group
+    position: relative
+    margin-bottom: 2.22rem
+  &-control
+    height: auto
+    padding: 1.11rem 0
+    font-size: 1.22rem
+    line-height: 1
+    color: inherit
+    white-space: nowrap
+    text-overflow: ellipsis
+    background-color: transparent
+    border: none
+    border-bottom: 2px solid
+    border-radius: 0
+    overflow: hidden
+    appearance: none
+    &[type=number]
+      appearance: textfield
+    &:focus
+      position: relative
+      z-index: 0
+      color: inherit
+      background: transparent
+      border-color: inherit
+      box-shadow: none
+    &:focus,
+    &:valid
+      & + .form-control-placeholder
+        padding: 0.5rem 0
+        transform: translateY(-80%) scale(0.8)
+    &-placeholder
+      position: absolute
+      top: 0
+      padding: 1.22rem 0
+      margin: 0
+      font-weight: 400
+      font-size: 1.33rem
+      line-height: 1
+      transition: 0.15s
+      transform-origin: left
+  &-mark
+    position: relative
+    display: inline-flex
+    align-items: center
+    &-input
+      position: absolute
+      bottom: 0
+      left: -99999px
+      &:checked
+        & ~ .form-mark-label
+          color: $text
+    &:hover
+      .form-mark-label
+        color: $main
+    &-input
+      &:hover
+        & ~ .form-mark-label
+          color: $text
+    &-label
+      display: block
+      margin-bottom: 0
+      font-size: 1.25rem
+      color: $main
+      text-shadow: $shadow
+      -webkit-background-clip: text
+      -moz-background-clip: text
+      background-clip: text
+      &:hover
+        color: $main
+        &:not(& ~ .form-mark-label)
+          color: $main
+
+.custom
+  &-control
+    min-height: 0
+    padding-left: 2.5rem
+    font-weight: 400
+    &-label
+      &:before,
+      &:after
+        top: 50%
+        left: -2.5rem
+        width: 1.4rem
+        height: 1.4rem
+        transform: translateY(-50%)
+      &:before
+        border-color: $border-color
+    &-input
+      &:disabled
+        & ~ .custom-control-label
+          &:before
+            background-color: lighten($border-color, 5%)
+      &:checked
+        & ~ .custom-control-label
+          &:before
+            color: $link
+            border-color: $border-color
+            background-color: $white
+      &:focus
+        & ~ .custom-control-label
+          &:before
+            box-shadow: none
+      &:not(:disabled):active
+        & ~ .custom-control-label
+          &:before
+            color: $link
+            border-color: $link
+            background-color: $white
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='1024' height='1024' viewBox='0 0 1024 1024'%3E%3Ctitle%3E%3C/title%3E%3Cg id='icomoon-ignore'%3E%3C/g%3E%3Cpath fill='%2378a8ed' d='M950.992 143.016c-18.996 0.621-35.993 8.695-48.255 21.373l-0.019 0.019c-174.246 174.623-360.76 374.716-534.849 551.305l-248.499-204.616c-12.655-12.408-30.008-20.067-49.149-20.067-38.783 0-70.223 31.439-70.223 70.223 0 23.941 11.981 45.083 30.272 57.758l0.233 0.153 298.418 245.756c12.055 10.028 27.697 16.116 44.761 16.116 19.359 0 36.889-7.834 49.592-20.506l-0.002 0.002c188.68-189.084 393.477-410.628 579.282-596.836 13.231-12.788 21.444-30.692 21.444-50.516 0-38.783-31.439-70.223-70.223-70.223-0.981 0-1.954 0.021-2.925 0.060l0.139-0.005z'%3E%3C/path%3E%3C/svg%3E%0A")
+
+.input
+  &-quantity
+    &-field
+      text-align: center
+  &-group
+    +xs
+      flex-direction: column
+    & > .input-group
+      &-prepend,
+      &-append
+        & > .btn
+          min-width: auto
+          color: $main
+          border: 1px solid $border-color
+          &:hover,
+          &:focus
+            color: $text
+          +xs
+            width: 100%
+      &-prepend
+        +xs
+          margin-right: 0
+          margin-bottom: -1px
+        & > .btn
+          +xs
+            border-radius: $border-radius $border-radius 0 0
+      &-append
+        +xs
+          margin-left: 0
+          margin-top: -1px
+        & > .btn
+          +xs
+            border-radius: 0 0 $border-radius $border-radius
+    & > .form-control,
+    & > .custom-select,
+    & > .custom-file,
+    & > .form-control-plaintext
+      padding: 1.22rem
+      font-size: 1rem
+      color: $text
+      border: 1px solid $border-color
+      border-radius: 0.55rem
+      +xs
+        width: 100%
+        &:first-child
+          border-radius: $border-radius $border-radius 0 0
+        &:last-child
+          border-radius: 0 0 $border-radius $border-radius
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+textarea.form-control
+  min-height: 5rem
+  max-height: 15rem
+
+select.form-control
+  padding-right: 2.5rem
+  background: transparent url(../img/svg/angle-down.svg) right 2rem center / 0.5rem no-repeat
+
+.bar
+  &-main
+    padding: 7px 0 10px
+    color: $white
+    background: $main-gradient
+    +md-down
+      display: none
+
+.card
+  border-color: $border-color
+  border-radius: $border-radius
+  & > *
+    &:first-child
+      border-top-left-radius: $border-radius
+      border-top-right-radius: $border-radius
+    &:last-child
+      border-bottom-left-radius: $border-radius
+      border-bottom-right-radius: $border-radius
+  &-header,
+  &-body,
+  &-footer
+    padding: 1.66rem
+    +md-down
+      padding: 1rem
+  &-badge
+    width: 4.71rem
+    height: 4.71rem
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0.35rem
+    line-height: 1
+    pointer-events: none
+    &-wrap
+      position: relative
+      overflow: hidden
+    &-top-left
+      position: absolute
+      top: 0
+      left: 0
+      align-items: flex-end
+      justify-content: center
+      transform: translate(-50%, -50%) rotate(-45deg)
+    &-top-right
+      position: absolute
+      top: 0
+      right: 0
+      align-items: flex-end
+      justify-content: center
+      transform: translate(50%, -50%) rotate(45deg)
+    &-main
+      color: $white
+      background-image: $main-gradient
+    &-second
+      color: $white
+      background-image: $second-gradient
+    &-third
+      color: $white
+      background-image: $third-gradient
+  &-catalog
+    position: relative
+    z-index: 0
+    height: 100%
+    color: $text
+    text-align: center
+    border: none
+    background-color: $gray
+    box-shadow: none
+    overflow: hidden
+    +transition
+    &:hover,
+    &:focus
+      &:after
+        opacity: 0.85
+      .card-catalog-title
+        position: relative
+        z-index: 1
+        color: $white
+    &:active
+      &:after
+        transform: scale(1.2)
+    &:after
+      content: '\e909'
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: 400
+      font-size: 1.86rem
+      line-height: 1
+      font-family: icomoon!important
+      color: $white
+      text-align: center
+      speak: none
+      background-image: $main-gradient
+      border-radius: $border-radius
+      opacity: 0
+      +transition
+    .card-header,
+    .card-body,
+    .card-footer
+      padding: 25px 25px 34px
+    [class*=" icon-"],
+    [class^=icon-]
+      font-size: 1.55rem
+      opacity: 0.2
+  &-product
+    max-width: 15rem
+    height: 100%
+    border: 1px solid $border-color
+    box-shadow: none
+    +transition
+    +lg-up
+      &:hover
+        border-color: transparent
+        box-shadow: $shadow-hover
+        .card-product-btn
+          position: relative
+          z-index: 0
+          color: $white
+          background-image: $main-gradient
+          border: none
+          &:hover,
+          &:focus
+            color: $link
+            &:after
+              background: $white
+          &:after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 1px
+            right: 1px
+            bottom: 1px
+            left: 1px
+            background: $main-gradient
+            border-radius: 0 0 $border-radius $border-radius
+            +transition
+    +xs
+      max-width: 16.875rem
+    &-title
+      margin-bottom: 3px
+    &-btn
+      min-width: auto
+      width: 100%
+      padding: 18px 18px 23px
+      color: $link
+      border-radius: 0 0 $border-radius $border-radius
+      &:after
+        border-radius: 0 0 $border-radius $border-radius
+    &-icon
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      width: 2.2222rem
+      height: 2.2222rem
+      font-size: 0.885rem
+      background-color: $gray
+      border-radius: 50%
+    .card-header,
+    .card-footer,
+    .card-body
+      padding: 0.5rem 0.5rem 17px
+      background-color: $white
+    .card-body
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+    .card-footer
+      padding: 0
+  &-colored
+    &-collapse
+      overflow: hidden
+      box-shadow: none
+      border: 1px solid $border-color
+      +xs
+        border: none
+        border-radius: 0
+        & > *
+          &:first-child,
+          &:last-child
+            border-radius: 0
+      .card-header
+        position: relative
+        padding: 19px 30px 19px 29px
+        border-bottom: none
+        background-color: transparent
+      .card-body
+        padding-bottom: 1.2222rem
+      .btn-collapse-toggler
+        display: flex
+        align-items: center
+        flex-shrink: 0
+        &:focus
+          position: static
+        &:after
+          content: ''
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          background-image: linear-gradient(to left, transparentize(#5d91f1,0.9), transparentize(#29bfb6,0.9))
+          border-radius: $border-radius
+          opacity: 1
+          pointer-events: none
+          +transition
+        +xs
+          &:after
+            border-radius: 0
+        &-show,
+        &-hide
+          margin-right: 10px
+          +xs
+            display: none
+        &-hide
+          display: none
+        [class*=" icon-"],
+        [class^=icon-]
+          transition: transform 0.35s
+        &:not(.collapsed)
+          color: #c1c6cb
+          +md-up
+            .btn-collapse-toggler-show
+              display: none
+            .btn-collapse-toggler-hide
+              display: inline
+          &:after
+            opacity: 0
+          [class*=" icon-"],
+          [class^=icon-]
+            transform: rotate(-180deg)
+        &:hover,
+        &:focus
+          color: $text
+    &-section
+      +xs
+        margin-left: -1.11rem
+        margin-right: -1.11rem
+    &-title
+      margin-bottom: 6px
+    &-img
+      margin-right: 1.5555rem
+      +xs
+        flex-shrink: 0
+        width: 50px
+        height: 50px
+        object-fit: cover
+  &-green,
+  &-red
+    position: relative
+    box-shadow: none
+    border: 1px solid
+    .card-body
+      padding: 23px 40px 31px 28px
+    [class*=" icon-"],
+    [class^=icon-]
+      position: absolute
+    .icon-plus
+      top: 10px
+      right: 8px
+    .icon-minus
+      top: 9px
+      right: 18px
+  &-green
+    color: $green
+    border-color: transparentize($green, 0.4)
+    [class*=" icon-"],
+    [class^=icon-]
+      color: transparentize($green, 0.4)
+  &-red
+    color: $red
+    border-color: transparentize($red, 0.4)
+    [class*=" icon-"],
+    [class^=icon-]
+      color: transparentize($red, 0.4)
+  &-bordered
+    position: relative
+    z-index: 0
+    box-shadow: none
+    &:after
+      content: ''
+      position: absolute
+      z-index: -1
+      top: 0.55rem
+      left: 12px
+      width: 100%
+      height: 100%
+      background-color: transparent
+      border: 1px solid $white
+      border-radius: $border-radius
+    .card-header,
+    .card-body,
+    .card-footer
+      padding: 50px 51px 36px
+      +xs
+        padding: 20px 20px 28px
+
+.page
+  &-wrapper
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    background-color: $lining
+    overflow-x: hidden
+  &-main
+  &-sidebar
+    +md-down
+      position: fixed
+      z-index: 4
+      top: 0
+      right: 0
+      width: 18rem
+      height: 100%
+      padding: 1rem
+      background-color: $white
+      transform: translateX(100%)
+      visibility: hidden
+      overflow-y: auto
+      overflow-x: hidden
+      +transition
+      +inertial-scroll
+  &-header
+    position: relative
+    z-index: 3
+    max-width: 100%
+    width: 100%
+    background-color: $white
+    +md-down
+      padding-top: 2.61rem
+    &-content
+      &-inner
+        padding-top: 29px
+        padding-bottom: 32px
+    &-clone
+      position: absolute
+      top: 0
+      width: 100%
+      visibility: hidden
+      &.relative
+        position: relative
+      +md-down
+        display: none
+    &-sticky
+      +lg-up
+        position: fixed
+        bottom: 100%
+        transition: transform 0.35s ease
+      &-in
+        +lg-up
+          transform: translateY(100%)
+  &-main
+    overflow: hidden
+  &-footer
+    padding: 2rem 0
+    margin-top: auto
+    +md-down
+      font-size: 0.875rem
+  &-section
+    &:not(:last-child)
+      margin-bottom: 5.7222rem
+    +md-down
+      &:not(:last-child)
+        margin-bottom: 3rem
+    &-colored
+      padding: 5.8333rem 0 6.6666rem
+      background-color: $gray
+      +md-down
+        padding: 2.8611rem 0
+    &-main
+      padding: 5.6666rem 0 6.5rem
+      color: $white
+      background: $main-gradient
+      &-mini
+        padding: 31px 0 33px
+    &-bg
+      &-1
+        background: $gray url(../img/page-bg-1.jpg) center top no-repeat
+        +md-down
+          padding-bottom: 70.72%
+          background-image: url(../img/page-bg-1-tablet.jpg)
+          background-position: center bottom
+          background-size: 100% auto
+      &-2
+        min-height: 950px
+        background: $gray url(../img/page-bg-2.jpg) center top no-repeat
+        +md-down
+          min-height: auto
+          padding-bottom: 64%
+          background-color: #eceef2
+          background-image: url(../img/page-bg-2-tablet.jpg)
+          background-position: center bottom
+          background-size: 100% auto
+      &-3
+        padding-top: 8.88rem
+        background: $gray url(../img/page-bg-3.jpg) center top / cover no-repeat
+        +md-down
+          padding-top: 4.5rem
+          padding-bottom: 50%
+          background-image: url(../img/page-bg-3-tablet.jpg)
+          background-position: center bottom
+          background-size: 100% auto
+      &-4
+        padding-top: 7.66rem
+        background: $gray url(../img/page-bg-4.jpg) center top no-repeat
+        +md-down
+          padding-top: 4.5rem
+          padding-bottom: 73%
+          background-image: url(../img/page-bg-4-tablet.jpg)
+          background-position: center bottom
+          background-size: 100% auto
+    &-title
+      margin-bottom: 2.8888rem
+    &-subtitle
+      margin: 0
+      padding: 0 1.66rem
+      margin-left: -1.66rem
+      font-weight: 600
+      font-size: 0.88em
+      letter-spacing: 1.6px
+      text-transform: uppercase
+      background-color: $white
+      +md-down
+        margin-left: 0
+      &-wrap
+        position: relative
+        display: flex
+        z-index: 0
+        margin-bottom: 1.5555rem
+        &:after,
+          content: ""
+          position: absolute
+          z-index: -1
+          top: 50%
+          left: 50%
+          width: 10000px
+          height: 1px
+          background-color: $border-color
+          transform: translate(-50%)
+        +md-down
+          justify-content: center
+          margin-bottom: 1.66rem
+          text-align: center
+  &-item
+    display: inline-block
+    &.active
+      .page-link
+        color: $main
+        background-color: transparent
+    &.disabled
+      .page-link
+        color: $text
+        background-color: transparent
+        opacity: 0.7
+  &-link
+    @extend .text-truncate
+    font-weight: 600
+    color: $text
+    text-align: center
+    text-overflow: ellipsis
+    background-color: transparent
+    border: none
+    overflow: hidden
+    &:hover
+      color: $main
+      background-color: transparent
+    &:focus
+      color: $main
+      background-color: transparent
+      box-shadow: none
+    &:active
+      color: $text
+    &.disabled
+      color: $text
+      background-color: transparent
+      opacity: 0.7
+    +xs
+
+.breadcrumb
+  max-width: 100%
+  display: block
+  padding: 0 0 0.25rem
+  margin-bottom: 0
+  background-color: rgba(0,0,0,0)
+  overflow-x: auto
+  overflow-y: hidden
+  font-size: 0.777rem
+  +md-down
+    white-space: nowrap
+  &-wrap
+    @extend .overflow-overlay
+    position: relative
+    max-width: 100%
+    padding: 0.5rem 0 0.25rem
+    margin-bottom: 1rem
+    background-color: $gray
+    &:after
+      background-image: linear-gradient(to right, rgba(245, 246, 248, 0), $gray)
+    +lg-up
+      &:after
+        display: none
+  &-item
+    display: inline-block
+    &:not(:last-child)
+      margin-right: 0.5rem
+    & + .breadcrumb-item
+      padding-left: 0
+      &:before
+        content: '|'
+        padding-right: 0
+        margin-right: 0.5rem
+        vertical-align: top
+
+.logo
+  display: inline-block
+  vertical-align: top
+
+.img
+  &-responsive
+    display: block
+    max-width: 100%
+    max-height: 100%
+  &-proportion
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    &:before
+      content: ""
+      display: block
+      width: 100%
+      height: 0
+      border: none
+    &.square
+      &:before
+        padding-top: 100%
+    &.rectangle-product-card
+      margin-bottom: 19px
+      &:before
+        padding-top: 80.5%
+    &.rectangle-catalog
+      &:before
+        padding-top: 88%
+    &.rectangle-1x1_8
+      &:before
+        padding-top: 55.963%
+    &.rectangle-1x2
+      &:before
+        padding-top: 50%
+    &.rectangle-1x5
+      &:before
+        padding-top: 20%
+    &.square-sm
+      +sm-up
+        &:before
+          padding-top: 100%
+    &.rectangle-1x2-sm
+      +sm-up
+        &:before
+          padding-top: 50%
+    &.square-md
+      +md-up
+        &:before
+          padding-top: 100%
+    &.rectangle-1x2-md
+      +md-up
+        &:before
+          padding-top: 50%
+    &.rectangle-1x2-lg
+      +lg-up
+        &:before
+          padding-top: 50%
+    &-inner
+      position: absolute
+      top: 0
+      left: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 100%
+
+.menu
+  display: flex
+  padding: 17px 0 24px
+  margin-right: 1.5rem
+  margin-bottom: 0
+  list-style-type: none
+  +md-down
+    flex-direction: column
+    height: auto
+    padding: 0
+    margin-right: 0
+  &-wrap
+    border-top: 1px solid $border-color
+    border-bottom: 1px solid $border-color
+  &-content
+    position: relative
+    display: flex
+    justify-content: space-between
+    +md-down
+      position: fixed
+      z-index: 4
+      top: 0
+      left: 0
+      display: block
+      width: 18rem
+      height: 100%
+      padding: 1.25rem 1rem
+      background-color: $lining
+      transform: translateX(-100%)
+      visibility: hidden
+      overflow-y: auto
+      overflow-x: hidden
+      +transition
+    +xs
+      width: 100%
+  &-item
+    position: relative
+    z-index: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-right: 25px
+    margin-right: 23px
+    &:after
+      content: ''
+      position: absolute
+      z-index:
+      top: 5px
+      bottom: 0
+      right: 0
+      width: 1px
+      background-color: $border-color
+    &:last-child
+      padding-right: 0
+      margin-right: 0
+      &:after
+        display: none
+    +md-down
+      margin-right: 0
+      margin-bottom: 0.75rem
+      padding-right: 0
+      &:after
+        display: none
+  &-link
+    display: block
+    width: 100%
+    max-width: 100%
+    font-weight: 600
+    font-size: 20px
+    color: $text
+    text-align: left
+    text-overflow: ellipsis
+    overflow: hidden
+    &:hover,
+    &:focus
+      position: relative
+      z-index: 1
+      color: $link
+      text-decoration: none
+    &:active,
+    &.active
+      text-decoration: none
+    +md-down
+      font-weight: 400
+      font-size: 1.25rem
+
+.cart
+  &-box
+    padding-left: 0
+    margin-bottom: 0
+    list-style-type: none
+    &-item
+      display: flex
+      align-items: center
+      justify-content: space-between
+      &:not(:last-child)
+        padding-bottom: 1.5rem
+        margin-bottom: 1.5rem
+        border-bottom: 1px solid darken($white, 10%)
+      +xs
+        position: relative
+        flex-wrap: wrap
+      & > *:not(:last-child)
+        margin-right: 0.5rem
+      & > *:not(:last-child)
+        margin-right: 0
+      &-img
+        &-wrap
+          max-width: 10%
+          flex-basis: 10%
+          +xs
+            max-width: 20%
+            flex-basis: 20%
+            margin-bottom: 1rem
+      &-title
+        max-width: 30%
+        flex-basis: 30%
+        +xs
+          max-width: 65%
+          flex-basis: 65%
+          margin-bottom: 1rem
+      &-input
+        &-quantity
+          flex-wrap: nowrap
+          justify-content: center
+          max-width: 20%
+          flex-basis: 20%
+          +xs
+            max-width: 50%
+            flex-basis: 50%
+            justify-content: flex-start
+            order: 4
+      &-price
+        &-wrap
+          font-weight: 500
+          font-size: 1.25rem
+          text-align: center
+          white-space: nowrap
+          text-overflow: ellipsis
+          overflow: hidden
+          +xs
+            max-width: 50%
+            flex-basis: 50%
+            text-align: right
+            order: 5
+      .btn-action-remove
+        +xs
+          order: 3
+          margin-bottom: 1rem
+  &-opener
+    &-btn,
+    &-link
+      display: flex
+      align-items: center
+      padding: 0
+      font-weight: 400
+      font-size: 0.88rem
+      text-align: left
+      border: none
+      +lg-down
+        font-size: 1rem
+    &-icon
+      font-size: 2.7rem
+  &-check
+    padding: 1rem
+    background-color: lighten($main, 45%)
+    border-radius: $border-radius
+    &-digits,
+    &-currency
+      font-weight: 600
+
+.row-column-sm
+  +sm-down
+    display: block
+    column-count: 2
+    margin: 0
+    & > [class*="col"]
+      display: inline-block
+      max-width: 100%
+      padding: 0
+      -webkit-column-break-inside: avoid
+      page-break-inside: avoid
+      break-inside: avoid
+
+.owl
+  &-carousel
+    .owl-item
+      img
+        width: auto
+
+.slider
+  &-arrow
+    position: absolute
+    top: 50%
+    padding: 0
+    font-size: 1.86rem
+    background: none
+    border: none
+    transform: translateY(-50%)
+    pointer-events: auto
+    opacity: 0.4
+    +transition
+    &:hover,
+    &:focus
+      opacity: 1
+    +xs
+      font-size: 2.125rem
+    &.disabled
+      opacity: 0.2
+    [class*=" icon-"],
+    [class^=icon-]
+      &:only-child
+        display: block
+  &-prev
+    left: -8.54%
+  &-next
+    right: -8.54%
+  &-dots
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 2rem
+    &.disabled
+      display: none
+  &-dot
+    opacity: 0.3
+    +transition
+    &:not(:last-child)
+      margin-right: 0.55rem
+    &.active
+      opacity: 1
+    span
+      display: block
+      width: 0.27rem
+      height: 0.27rem
+      border-radius: 50%
+      background-color: $text
+  &-stage
+    &-flex
+      display: flex
+  &-banner
+    &-prev
+      left: 2rem
+      +xxl
+        left: 7.81%
+    &-next
+      right: 2rem
+      +xxl
+        right: 7.81%
+    &-dots
+      position: absolute
+      left: 0
+      bottom: 8%
+      width: 100%
+      margin-top: 0
+  &-cards
+    margin-top: -1.5rem
+    +md-down
+      margin-top: 0
+    &-stage
+      +md-down
+        left: -79px
+      +xs
+        left: 0
+      &-outer
+        @extend .overflow-overlay
+        width: calc(100% + 3.22rem)
+        padding: 1.66rem
+        margin-left: -1.66rem
+        +lg-up
+          &:after
+            display: none
+        +md-down
+          width: calc(100% + 2.22rem)
+          padding: 1.11rem
+          margin-left: -1.11rem
+    .owl-item
+      flex-shrink: 0
+    &-item
+      height: 100%
+  &-compare
+    &-arrow
+      position: static
+      transform: none
+      &:not(:last-child)
+        margin-right: 2rem
+    &-nav
+      &.disabled
+        display: none
+  &-reviews
+    &-nav
+      position: absolute
+      z-index: 1
+      top: 40px
+      right: 29px
+      display: flex
+      &.disabled
+        display: none
+    &-arrow
+      position: static
+      transform: none
+      &:not(:last-child)
+        margin-right: 15px
+  &-view
+    &-controls
+      +lg-down
+        padding: 0 2rem
+      &-arrow
+        color: $link
+        font-size: 0.77rem
+        opacity: 1
+        &:hover,
+        &:focus
+          color: $text
+        [class*=" icon-"],
+        [class^=icon-]
+          font-weight: 700
+      &-prev
+        left: 0
+      &-next
+        right: 0
+      &-stage
+        max-width: none
+        overflow: hidden
+      .owl-item
+        flex-shrink: 0
+  &-imgs
+    &-prev
+      left: 0
+    &-next
+      right: 0
+  &-thumbnails
+    padding: 0 22%
+  &-thumbnail
+    position: relative
+    padding: 0.25rem
+    border-radius: $border-radius / 2
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-image: $main-gradient
+      opacity: 0
+      +transition
+    &:hover,
+    &.active
+      &:after
+        opacity: 0.6
+  &-form
+    &-nav
+      display: flex
+
+.banner
+  padding-top: 7.61954808%
+  padding-bottom: 7.60416667%
+  background-color: #e2e6e9
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  +md-down
+    padding-top: 60%
+    padding-bottom: 13.28%
+    text-align: center
+    background-position: center top
+    background-size: 100% auto
+  +xs
+    padding-bottom: 24.37%
+  &-1
+    background-image: url(../img/banner-1-bg.jpg)
+    +md-down
+      background-image: url(../img/banner-1-tablet-bg.jpg)
+  &-2
+    background-color: #f4f2ef
+    background-image: url(../img/banner-2-bg.jpg)
+    +md-down
+      background-image: url(../img/banner-2-tablet-bg.jpg)
+  &-inner
+    max-width: 46.46%
+    +lg-down
+      max-width: 60%
+    +md-down
+      max-width: 100%
+  &-title
+    margin-bottom: 1.5rem
+    line-height: 1
+    +md-down
+      max-width: 70%
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 1.83rem
+    +xs
+      max-width: 100%
+  &-subtitle
+    margin-bottom: 2.33rem
+    font-weight: 300
+    +md-down
+      font-size: 1.11rem
+      margin-bottom: 1.44rem
+
+.product
+  &-badge
+    @extend .text-truncate
+    position: absolute
+    top: -0.125rem
+    right: -0.125rem
+    width: 1.11rem
+    height: 1.11rem
+    padding: 0.255rem 0.1rem
+    color: $white
+    font-weight: 900
+    font-size: 0.55rem
+    line-height: 1
+    text-align: center
+    background-image: $third-gradient
+    border-radius: 50%
+    &-wrap
+      position: relative
+  &-price
+    font-weight: 600
+    font-size: 1.5555rem
+    +xs
+      font-size: 1.75rem
+    &-new
+      color: #fd716c
+    &-old
+      position: relative
+      font-weight: 400
+      line-height: 1
+      color: #b8bdc4
+      &:after
+        content: ''
+        position: absolute
+        top: 50%
+        left: -0.25rem
+        right: -0.25rem
+        border-bottom: 1px solid
+        transform: translateY(-50%) rotate(-10deg)
+      +xs
+        font-size: 1.11rem
+
+.search
+  display: flex
+  &-input
+    position: absolute
+    z-index: 1
+    top: 0
+    right: 0
+    width: 3.64rem
+    height: 100%
+    padding-left: 0
+    padding-right: 0
+    color: $text
+    border-bottom: none
+    cursor: pointer
+    opacity: 0
+    +transition
+    &:focus,
+    &:valid
+      position: absolute
+      width: 100%
+      padding-left: 4.37rem
+      padding-right: 3.87rem
+      color: $text
+      background-color: $white
+      border-bottom: none
+      cursor: text
+      box-shadow: 0 0.5rem 2rem transparentize($black, 0.85)
+      opacity: 1
+      &:hover
+        & ~ .search-btn
+          color: $text
+      & ~ .search-btn
+        position: absolute
+        top: 0
+        right: 100%
+        transform: translateX(100%)
+        border-color: transparent
+        pointer-events: auto
+      & ~ .search-reset
+        opacity: 1
+        visibility: visible
+        pointer-events: auto
+    &:focus
+      &::placeholder
+        opacity: 1
+    &:hover
+      & ~ .search-btn
+        color: $link
+  &-reset,
+  &-btn
+    position: absolute
+    z-index: 1
+    top: 0
+    right: 0
+    display: block
+    min-width: auto
+    height: 100%
+    padding: 1.38rem
+    line-height: 1
+    border-right: 1px solid transparent
+    border-left: 1px solid transparent
+    border-radius: 0
+    pointer-events: none
+    +transition
+  &-reset
+    opacity: 0
+    visibility: hidden
+  &-btn
+    border-color: $border-color
+  &-mobile
+    height: 100%
+    .search-input,
+    .search-btn,
+    .search-reset
+      width: calc(25% - 1px)
+      color: $white
+    .search-input
+      text-align: left
+      &:focus,
+      &:valid
+        right: 25%
+        width: 50%
+        padding-left: 1rem
+        padding-right: 1rem
+        color: $white
+        background-color: $main
+        &:hover
+          & ~ .search-btn
+            color: $white
+            background-color: $main
+        & ~ .search-btn,
+        & ~ .search-reset
+          width: 25%
+          color: $white
+          background-color: $main
+          border-color: darken($main, 2%)
+          &:hover,
+          &:focus
+            color: $white
+            background-color: darken($main, 2%)
+        & ~ .search-btn
+          border-right: 1px solid
+        & ~ .search-reset
+          border-left: 1px solid
+      &:hover
+        & ~ .search-btn
+          color: $white
+          background-color: transparentize($black, 0.75)
+      &::placeholder
+        color: $white
+
+.chart
+  position: relative
+  &-outer
+    overflow-x: auto
+    padding-bottom: 0.75rem
+    +inertial-scroll
+  &-wrap
+    @extend .overflow-overlay
+    &:after
+      background-image: linear-gradient(to right, rgba(245, 246, 248, 0), $gray)
+    +lg-up
+      &:after
+        display: none
+  &-bar
+    position: absolute
+    top: 77px
+    left: 0
+    min-width: 60rem
+    width: 100%
+    height: 0.55rem
+    border-radius: 0.25rem
+    background-color: #bbae96
+    background-image: linear-gradient(to right, #70d686 0%, #70d686 17%, #ddd35f 38%, #ff8383 100%)
+  &-header
+    margin-bottom: 50px
+    font-weight: 600
+    text-align: left
+    +md-down
+      font-size: 2.77rem
+    +xs
+      font-size: 2.5rem
+  &-steps
+    display: flex
+  &-step
+    &:not(:last-child)
+      padding-right: 1rem
+    &-1
+      min-width: 6.7777rem
+    &-2
+      min-width: 7rem
+    &-3
+      min-width: 13.8888rem
+    &-4
+      min-width: 16.7777rem
+    &-5
+      min-width: 15rem
+      flex-grow: 1
+
+.compare
+  &-section
+    +sm-down
+      background-color: $white
+  &-status
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    &:not(:last-child)
+      margin-bottom: 12px
+    &-item
+      width: 14px
+      height: 5px
+      background-color: $border-color
+      &:not(:last-child)
+        margin-right: 1px
+    &-perfectly
+      .compare-status-item
+        background-color: #70d686
+    &-good
+      .compare-status-item
+        background-color: #a9dc67
+    &-well
+      .compare-status-item
+        background-color: #ddd35f
+    &-passably
+      .compare-status-item
+        background-color: #f1a66f
+    &-low
+      .compare-status-item
+        background-color: #ff8383
+  &-table
+    display: flex
+    padding: 2.22rem 2.7222rem 3.3333rem 3.33rem
+    background-color: $white
+    border-radius: $border-radius
+    overflow: hidden
+    +sm-down
+      padding: 0
+    +xs
+      margin-left: -1.11rem
+      margin-right: -1.11rem
+    &-characteristics
+      max-width: 220px
+      min-width: 220px
+      flex-basis: 220px
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      +xs
+        max-width: 200px
+        min-width: 200px
+      &-header
+        padding: 3rem 0
+        flex-grow: 1
+        +xs
+          padding-left: 1rem
+          padding-right: 1rem
+      .compare-table-field
+        @extend .text-truncate
+        justify-content: flex-start
+        align-items: flex-start
+        padding-top: 17px
+        text-align: left
+        &:nth-child(2)
+          padding-top: 27px
+    &-list
+      max-width: calc(100% - 220px)
+      flex-basis: calc(100% - 220px)
+      +xs
+        max-width: calc(100% - 200px)
+        flex-basis: calc(100% - 200px)
+    &-item
+      position: relative
+      padding-top: 1rem
+    &-field
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      height: 53px
+      line-height: 1
+      text-align: center
+      border-top: 1px solid $border-color
+      &:nth-child(2)
+        height: 83px
+        border-color: transparentize($text, 0.5)
+      +xs
+        padding-left: 1rem
+        padding-right: 1rem
+      &-header
+        height: auto
+        padding: 0 11px 24px
+        border: none
+      &-size
+        &-lg
+          height: 73px
+      &-disabled
+        color: $border-color
+  &-item
+    &-place
+      position: absolute
+      z-index: 2
+      top: 0
+      left: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 27px
+      height: 27px
+      font-weight: 700
+      font-size: 20px
+      transform: translateX(-50%)
+      background-color: $white
+      border: 3px solid $border-color
+      border-radius: 50%
+      &:before,
+      &:after
+        position: absolute
+        top: 50%
+        font-weight: 400
+        font-size: 1.66rem
+        font-family: icomoon!important
+        line-height: 1
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+        speak: none
+        transform: translateY(-50%)
+      &:before
+        content: '\e900'
+        right: 100%
+      &:after
+        content: '\e901'
+        left: 100%
+      &-1
+        color: $white
+        background-color: darken(#fecf53, 10%)
+        border-color: #ffd52e
+        &:before,
+        &:after
+          color: #fecf53
+      &-2
+        color: $white
+        background-color: darken(#c1cacd, 10%)
+        border-color: #c1cacd
+        &:before,
+        &:after
+          color: #c1cacd
+      &-3
+        color: $white
+        background-color: darken(#ffa888, 10%)
+        border-color: #ffa888
+        &:before,
+        &:after
+          color: #ffa888
+    &-img
+      &-wrap
+        display: block
+        width: 5.5555rem
+        height: 5.5555rem
+        margin-bottom: 15px
+        padding: 1rem
+        background-color: $gray
+        border-radius: $border-radius
+    &-title
+      height: 40px
+      margin-bottom: 6px
+      line-height: 1.23
+      overflow: hidden
+
+.advantage
+  &-item
+    &-header
+      display: flex
+      flex-direction: column
+      align-items: start
+      margin-bottom: 1.5rem
+      +md-down
+        flex-direction: row
+        align-items: center
+        margin-bottom: 1rem
+    &-icon
+      margin-bottom: 1rem
+      flex-shrink: 0
+      +md-down
+        margin-bottom: 0
+        margin-right: 1rem
+
+.badge
+  padding: 0.22rem 0.44rem
+  font-weight: 300
+  font-size: 85%
+  line-height: 1
+  &-danger
+    background-color: #f07575
+  &-success
+    background-color: #65c279
+  &-warning
+    background-color: #efd619
+
+.review
+  &-header
+    display: flex
+    align-items: center
+    margin-bottom: 22px
+    font-style: normal
+  &-img
+    margin-right: 24px
+  &-text
+    &:before,
+    &:after
+      display: none
+
+.mobile
+  &-controls
+    position: fixed
+    z-index: 3
+    top: 0
+    right: 0
+    left: 0
+    background: $main-gradient
+    box-shadow: $shadow
+    +lg-up
+      display: none
+    &-list
+      &-item
+        position: static
+        &:not(:last-child)
+          border-right: 1px solid transparentize($border-color, 0.6)
+  &-control
+    @extend .link-truncate
+    display: block
+    width: 100%
+    height: 100%
+    padding: 0.75rem 0.5rem
+    font-size: 1rem
+    line-height: 1
+    color: $white
+    text-align: center
+    background: none
+    border: none
+    [class*='icon']
+      font-weight: 700
+  &-overlay
+    +lg-up
+      display: none
+    +md-down
+      position: fixed
+      z-index: 3
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: transparentize(black, 0.5)
+      visibility: hidden
+      opacity: 0
+      border: none
+      +transition
+      &:hover,
+      &:focus
+        background-color: transparentize(black, 0.6)
+      &:focus
+        box-shadow: inset 0 0 0.25rem 0.25rem transparentize($main, 0.25)
+
+a.mobile-control,
+button.mobile-control
+  &:hover,
+  &:focus
+    color: $white
+    background-color: transparentize($black, .75)
+
+.view
+  &-control
+    position: relative
+    z-index: 0
+    display: flex
+    align-items: center
+    padding: 12px 8px
+    font-weight: 400
+    background: $border-color
+    border-radius: $border-radius
+    &:after
+      content: ''
+      position: absolute
+      z-index: -1
+      top: 1px
+      right: 1px
+      bottom: 1px
+      left: 1px
+      background: $white
+      border-radius: calc(0.25rem + 4px)
+    &:hover,
+    &.active
+      background: $main-gradient
+      .view-control-icon-wrap
+        color: $white
+        background-image: $main-gradient
+    +xs
+      justify-content: center
+      padding: 0.5rem 0
+      background: none
+      &:hover,
+      &.active
+        background: none
+      &:after
+        display: none
+    &-icon
+      &-wrap
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 2.22rem
+        height: 2.22rem
+        flex-shrink: 0
+        margin-right: 0.77rem
+        background-color: $gray
+        border-radius: 50%
+    &-title
+      font-size: 0.77rem
+      text-transform: uppercase
+    &-colored
+      .view-control-icon-wrap
+        color: $white
+        background-image: $second-gradient
