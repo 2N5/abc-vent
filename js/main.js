@@ -289,6 +289,10 @@ $(document).ready(function () {
       },
       1200: {
         nav: false,
+        mouseDrag: false,
+        touchDrag: false,
+        freeDrag: false,
+        pullDrag: false,
         items: 7
       }
     }
