@@ -45,8 +45,8 @@
               <li class="col px-0 mobile-controls-list-item">
                 <button class="navbar-toggler mobile-control" type="button" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Открыть главное меню"><span class="icon-bars"></span></button>
               </li>
-              <li class="col px-0 mobile-controls-list-item"><a href="#" class="mobile-control" aria-label="Позвонить нам"><span class="icon-call-ring"></span></a></li>
-              <li class="col px-0 mobile-controls-list-item"><a href="#" class="mobile-control" aria-label="Перейти в корзину"><span class="icon-cart"></span></a></li>
+              <li class="col px-0 mobile-controls-list-item"><a href="#modal-callback" class="mobile-control" data-toggle="modal" aria-label="Открыть форму обратного звонка"><span class="icon-call-ring"></span></a></li>
+              <li class="col px-0 mobile-controls-list-item"><a href="#modal-cart" class="mobile-control" data-toggle="modal" aria-label="Открыть корзину"><span class="icon-cart"></span></a></li>
               <li class="col px-0 mobile-controls-list-item">
                 <form class="search search-mobile">
                   <input type="text" name="search" placeholder="Поиск" class="search-input form-control mobile-control" aria-label="Поиск" required>
@@ -123,6 +123,7 @@
               </button>
               <div class="d-lg-none mb-4">
                 <span>Продажа и монтаж бризеров в</span>
+                <br>
                 <div class="d-inline-block dropdown align-top">
                   <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-link link">Москве и МО</button>
                   <ul class="dropdown-menu">
@@ -1937,7 +1938,94 @@
         </div>
       </footer>
     </div>
-
+    <div id="modal-cart" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header d-block">
+            <h3 class="modal-title mb-0">Корзина</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть окно с корзиной">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="cart-box">
+              <li class="cart-box-item">
+                <a href="/" class="cart-box-item-img-wrap img-proportion square"><span class="img-proportion-inner"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" class="img-responsive img-lazy" alt="Бризер Тион 3S"></span></a>
+                <a href="/" class="cart-box-item-title">Бризер Тион 3S</a>
+                <div class="input-group input-group-quantity cart-box-item-input-quantity">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-action btn-action-reduce" onclick="$(this).parent().next()[0].stepDown();$(this).next().trigger('input');" aria-label="Убрать один товар">
+                      <svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem">
+                        <path d="M.806 8.75h17.48c.56 0 .713.336.713.75s-.197.75-.72.75H.81c-.668 0-.81-.336-.81-.75s.142-.75.806-.75z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <input type="number" class="form-control" step="1" min="1" max="20" value="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-action btn-action-increase" onclick="$(this).parent().prev()[0].stepUp();$(this).prev().trigger('input');" aria-label="Добавить один товар">
+                      <svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem">
+                        <path d="M10 9h8.5a.5.5 0 0 1 0 1H10v8.5a.5.5 0 1 1-1 0V10H.5a.5.5 0 1 1 0-1H9V.5a.5.5 0 0 1 1 0V9z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="cart-box-item-price-wrap"><span class="cart-box-item-price">44 900</span><span class="cart-box-item-price-currency"> &#8381;</span></div>
+                <button class="btn btn-action btn-action-delete" aria-label="Убрать товар из корзины"><span aria-hidden="true">&times;</span></button>
+              </li>
+              <li class="cart-box-item">
+                <a href="/" class="cart-box-item-img-wrap img-proportion square"><span class="img-proportion-inner"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" class="img-responsive img-lazy" alt="Бризер Тион 3S"></span></a>
+                <span class="cart-box-item-title">Стандартный Монтаж Бризера Тион 3S</span>
+                <div class="input-group input-group-quantity cart-box-item-input-quantity">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-action btn-action-reduce" onclick="$(this).parent().next()[0].stepDown();$(this).next().trigger('input');" aria-label="Убрать один товар">
+                      <svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem">
+                        <path d="M.806 8.75h17.48c.56 0 .713.336.713.75s-.197.75-.72.75H.81c-.668 0-.81-.336-.81-.75s.142-.75.806-.75z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <input type="number" class="form-control" step="1" min="1" max="20" value="1">
+                  <div class="input-group-append">
+                    <button class="btn btn-action btn-action-increase" onclick="$(this).parent().prev()[0].stepUp();$(this).prev().trigger('input');" aria-label="Добавить один товар">
+                      <svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem">
+                        <path d="M10 9h8.5a.5.5 0 0 1 0 1H10v8.5a.5.5 0 1 1-1 0V10H.5a.5.5 0 1 1 0-1H9V.5a.5.5 0 0 1 1 0V9z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="cart-box-item-price-wrap"><a href="#" class="small">добавить монтаж</a></div>
+                <button class="btn btn-action btn-action-delete" aria-label="Убрать товар из корзины"><span aria-hidden="true">&times;</span></button>
+              </li>
+              <li class="cart-box-item">
+                <a href="/" class="cart-box-item-img-wrap img-proportion square"><span class="img-proportion-inner"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/product-img-1.jpg" class="img-responsive img-lazy" alt="Бризер Тион 3S"></span></a>
+                <span class="cart-box-item-title">Базовая станция Tion MagicAir</span>
+                <div class="input-group input-group-quantity cart-box-item-input-quantity">
+                  <p class="form-control-plaintext">1</p>
+                </div>
+                <div class="cart-box-item-price-wrap text-third">
+                  <span class="icon-giftbox"></span>
+                  <span>Подарок</span>
+                </div>
+                <button class="btn btn-action btn-action-delete" aria-label="Убрать товар из корзины"><span aria-hidden="true">&times;</span></button>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer d-block">
+            <div class="row justify-content-between align-items-end">
+              <div class="col-sm-auto d-none d-md-block"><button type="button" class="btn" data-dismiss="modal">Прододжить покупки</button></div>
+              <div class="col-md-6 col-lg-5">
+                <div class="cart-check">
+                  <div class="d-flex align-items-end justify-content-between mb-3">
+                    <span class="cart-check-label">Сумма к оплате:</span>
+                    <span class="cart-check-price">2340434 &#8381;</span>
+                  </div>
+                  <a href="#" class="btn btn-main d-block w-100">Оформить заказ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="modal-callback" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">

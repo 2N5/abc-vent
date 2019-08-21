@@ -58,6 +58,10 @@ button
 label
   margin-bottom: 0.25rem
 
+[class^="icon-"],
+[class*=" icon-"]
+  vertical-align: middle
+
 .small,
 small
   font-size: 88%
@@ -132,6 +136,8 @@ a,
 .text
   &-main
     color: $link
+  &-third
+    color: $third
   &-access
     color: $green !important
   &-danger
@@ -320,7 +326,7 @@ h6,
     border: none
     +transition
   &-xl
-    +md-down
+    +lg-down
       max-width: 100%
   &-header,
   &-body,
@@ -330,7 +336,7 @@ h6,
     +md-down
       padding: 1.5rem
     +xs
-      padding: 0.75rem
+      padding: 1rem
   &-header
     position: relative
     padding-bottom: 0
@@ -339,11 +345,6 @@ h6,
       margin: 0
       padding: 0.2rem 0.5rem
       font-size: 2rem
-  &-body
-    +xs
-      padding: 1.5rem 0.75rem
-  &-footer
-    padding-top: 0
   .alert-heading
     margin-bottom: 0
   .alert
@@ -569,6 +570,8 @@ button.close
     max-width: 100%
     padding-left: 0.75rem
     padding-right: 0.75rem
+    &:active
+      background-color: darken($white, 5%)
 
 .btn
   max-width: 100%
@@ -577,6 +580,7 @@ button.close
   font-weight: 600
   line-height: 1
   color: $text
+  fill: $text
   white-space: nowrap
   text-overflow: ellipsis
   border: none
@@ -585,6 +589,7 @@ button.close
   &:hover,
   &:focus
     color: $link
+    fill: $link
   &:focus
     box-shadow: none
   &:active
@@ -661,6 +666,29 @@ button.close
         color: $white
         background-color: darken($link, 5%)
         border-color: $link
+  &-action
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: auto
+    padding: 0.45rem 0.75rem
+    font: 300 1.5rem / 1 serif
+    background-color: transparent
+    border: none
+    overflow: hidden
+    &-delete
+      color: $red
+      opacity: 0.5
+      &:hover,
+      &:focus
+        color: $red
+        opacity: 1
+    svg
+      width: 1rem
+      height: 1rem
+      +sm-down
+        width: 0.5rem
+        height: 0.5rem
 
 .link
   &-dashed
@@ -739,6 +767,7 @@ button.close
       line-height: 1
       transition: 0.15s
       transform-origin: left
+      pointer-events: none
   &-mark
     position: relative
     display: inline-flex
@@ -774,16 +803,16 @@ button.close
 .custom
   &-control
     min-height: 0
-    padding-left: 2.5rem
+    padding-left: 2rem
     font-weight: 400
     &-label
+      position: static
       &:before,
       &:after
-        top: 50%
-        left: -2.5rem
+        top: 0
+        left: 0
         width: 1.4rem
         height: 1.4rem
-        transform: translateY(-50%)
       &:before
         border-color: $border-color
     &-input
@@ -797,8 +826,14 @@ button.close
             color: $link
             border-color: $border-color
             background-color: $white
+        & ~ .form-collapse
+          display: block
+      &:not(:checked)
+        & ~ .form-collapse
+          display: none
       &:focus
         & ~ .custom-control-label
+          display: block
           &:before
             box-shadow: none
       &:not(:disabled):active
@@ -811,10 +846,10 @@ button.close
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='1024' height='1024' viewBox='0 0 1024 1024'%3E%3Ctitle%3E%3C/title%3E%3Cg id='icomoon-ignore'%3E%3C/g%3E%3Cpath fill='%2378a8ed' d='M950.992 143.016c-18.996 0.621-35.993 8.695-48.255 21.373l-0.019 0.019c-174.246 174.623-360.76 374.716-534.849 551.305l-248.499-204.616c-12.655-12.408-30.008-20.067-49.149-20.067-38.783 0-70.223 31.439-70.223 70.223 0 23.941 11.981 45.083 30.272 57.758l0.233 0.153 298.418 245.756c12.055 10.028 27.697 16.116 44.761 16.116 19.359 0 36.889-7.834 49.592-20.506l-0.002 0.002c188.68-189.084 393.477-410.628 579.282-596.836 13.231-12.788 21.444-30.692 21.444-50.516 0-38.783-31.439-70.223-70.223-70.223-0.981 0-1.954 0.021-2.925 0.060l0.139-0.005z'%3E%3C/path%3E%3C/svg%3E%0A")
 
+.custom-radio .custom-control-input:checked~.custom-control-label::after
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%236a86ff'/%3e%3c/svg%3e")
+
 .input
-  &-quantity
-    &-field
-      text-align: center
   &-group
     +xs
       flex-direction: column
@@ -823,7 +858,9 @@ button.close
       &-append
         & > .btn
           min-width: auto
+          font-size: 1rem
           color: $main
+          background-color: $white
           border: 1px solid $border-color
           &:hover,
           &:focus
@@ -851,6 +888,7 @@ button.close
       padding: 1.22rem
       font-size: 1rem
       color: $text
+      background-color: $white
       border: 1px solid $border-color
       border-radius: 0.55rem
       +xs
@@ -859,6 +897,44 @@ button.close
           border-radius: $border-radius $border-radius 0 0
         &:last-child
           border-radius: 0 0 $border-radius $border-radius
+        &:only-child
+          border-radius: $border-radius
+    &-quantity
+      +xs
+        flex-direction: row
+      & > .input-group
+        &-prepend,
+        &-append
+          & > .btn
+            +xs
+              width: auto
+        &-prepend
+          +xs
+            margin-right: -1px
+            margin-bottom: 0
+          & > .btn
+            +xs
+              border-radius: $border-radius 0 0 $border-radius
+        &-append
+          +xs
+            margin-left: -1px
+            margin-top: 0
+          & > .btn
+            +xs
+              border-radius: 0 $border-radius $border-radius 0
+      & > .form-control,
+      & > .custom-select,
+      & > .custom-file,
+      & > .form-control-plaintext
+        padding: 0.5rem 0.5rem
+        text-align: center
+        +xs
+          &:first-child
+            border-top-left-radius: $border-radius
+            border-top-right-radius: $border-radius
+          &:last-child
+            border-bottom-left-radius: $border-radius
+            border-bottom-right-radius: $border-radius
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button
@@ -872,6 +948,8 @@ textarea.form-control
 select.form-control
   padding-right: 2.5rem
   background: transparent url(../img/svg/angle-down.svg) right 2rem center / 0.5rem no-repeat
+  &:focus
+    background: transparent url(../img/svg/angle-down.svg) right 2rem center / 0.5rem no-repeat
 
 .bar
   &-main
@@ -1559,25 +1637,20 @@ select.form-control
         padding-bottom: 1.5rem
         margin-bottom: 1.5rem
         border-bottom: 1px solid darken($white, 10%)
-      +xs
+      +sm-down
         position: relative
         flex-wrap: wrap
-      & > *:not(:last-child)
-        margin-right: 0.5rem
-      & > *:not(:last-child)
-        margin-right: 0
       &-img
         &-wrap
-          max-width: 10%
-          flex-basis: 10%
-          +xs
+          max-width: 5rem
+          flex-basis: 5rem
+          +sm-down
             max-width: 20%
-            flex-basis: 20%
             margin-bottom: 1rem
       &-title
-        max-width: 30%
-        flex-basis: 30%
-        +xs
+        max-width: 25%
+        flex-basis: 25%
+        +sm-down
           max-width: 65%
           flex-basis: 65%
           margin-bottom: 1rem
@@ -1585,28 +1658,28 @@ select.form-control
         &-quantity
           flex-wrap: nowrap
           justify-content: center
-          max-width: 20%
-          flex-basis: 20%
-          +xs
+          width: 10rem
+          +sm-down
             max-width: 50%
-            flex-basis: 50%
+            flex-basis: 10rem
             justify-content: flex-start
+            padding-right: 1rem
             order: 4
       &-price
         &-wrap
+          @extend .text-truncate
+          max-width: 20%
+          flex-basis: 20%
           font-weight: 500
           font-size: 1.25rem
           text-align: center
-          white-space: nowrap
-          text-overflow: ellipsis
-          overflow: hidden
-          +xs
+          +sm-down
             max-width: 50%
             flex-basis: 50%
             text-align: right
             order: 5
-      .btn-action-remove
-        +xs
+      .btn-action-delete
+        +sm-down
           order: 3
           margin-bottom: 1rem
   &-opener
@@ -1619,14 +1692,21 @@ select.form-control
       font-size: 0.88rem
       text-align: left
       border: none
+      overflow: hidden
       +lg-down
         font-size: 1rem
     &-icon
       font-size: 2.7rem
   &-check
-    padding: 1rem
-    background-color: lighten($main, 45%)
-    border-radius: $border-radius
+    &-label
+      margin-right: 0.5rem
+    &-price
+      @extend .text-truncate
+      font-weight: 500
+      font-size: 1.5rem
+      line-height: 1.2
+      vertical-align: bottom
+      color: $main
     &-digits,
     &-currency
       font-weight: 600
