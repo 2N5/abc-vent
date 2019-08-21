@@ -1863,9 +1863,9 @@ select.form-control
         [class^=icon-]
           font-weight: 700
       &-prev
-        left: 0
+        left: -1rem
       &-next
-        right: 0
+        right: -1rem
       &-stage
         max-width: none
         overflow: hidden
@@ -1873,9 +1873,9 @@ select.form-control
         flex-shrink: 0
   &-imgs
     &-prev
-      left: 0
+      left: -1rem
     &-next
-      right: 0
+      right: -1rem
   &-thumbnails
     padding: 0 22%
   &-thumbnail
@@ -2358,6 +2358,9 @@ select.form-control
     font-style: normal
   &-img
     margin-right: 24px
+    width: 4rem !important
+    height: 4rem !important
+    object-fit: cover
   &-text
     &:before,
     &:after
