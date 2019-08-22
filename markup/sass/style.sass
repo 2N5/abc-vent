@@ -453,9 +453,6 @@ button.close
     width: 3.33rem
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), $white)
     pointer-events: none
-  +md-down
-    &:after
-      width: 5rem
 
 .pagination
   max-width: 100%
@@ -503,7 +500,6 @@ button.close
         margin-right: 2rem
   &-pills,
   &-tabs
-    position: relative
     flex-wrap: nowrap
     width: 100%
     max-width: 100%
@@ -521,9 +517,10 @@ button.close
           display: none
       &-card
         padding: 0 0.6rem
-        margin-bottom: -1px
+        margin-bottom: -2px
     .nav-item
       margin-right: -1px
+      margin-bottom: -1px
       &:last-child
         .nav-link
             &:after
@@ -542,8 +539,8 @@ button.close
         right: -1px
         bottom: 0
         width: 1px
-        margin: auto
         height: 1.25rem
+        margin: auto
         background-color: $border-color
       &:hover,
       &:focus
@@ -888,6 +885,8 @@ button.close
           border-radius: 0 0 $border-radius $border-radius
         &:only-child
           border-radius: $border-radius
+    & > .custom-select
+      padding-right: 2.5rem
     &-quantity
       +xs
         flex-direction: row
@@ -912,10 +911,8 @@ button.close
             +xs
               border-radius: 0 $border-radius $border-radius 0
       & > .form-control,
-      & > .custom-select,
-      & > .custom-file,
       & > .form-control-plaintext
-        padding: 0.5rem 0.5rem
+        padding: 0.5rem
         text-align: center
         +xs
           &:first-child
@@ -936,9 +933,9 @@ textarea.form-control
 
 select.form-control
   padding-right: 2.5rem
-  background: transparent url(../img/svg/angle-down.svg) right 2rem center / 0.5rem no-repeat
+  background: transparent url(../img/svg/angle-down.svg) right 1.22rem center / 0.5rem no-repeat
   &:focus
-    background: transparent url(../img/svg/angle-down.svg) right 2rem center / 0.5rem no-repeat
+    background: transparent url(../img/svg/angle-down.svg) right 1.22rem center / 0.5rem no-repeat
 
 .bar
   &-main
@@ -1358,8 +1355,8 @@ select.form-control
       margin-bottom: 2.8888rem
     &-subtitle
       margin: 0
-      padding: 0 1.66rem
       margin-left: -1.66rem
+      padding: 0 1.66rem
       font-weight: 600
       font-size: 0.88em
       letter-spacing: 1.6px
@@ -1422,8 +1419,8 @@ select.form-control
 .breadcrumb
   max-width: 100%
   display: block
-  padding: 0 0 0.25rem
   margin-bottom: 0
+  padding: 0 0 0.25rem
   background-color: rgba(0,0,0,0)
   overflow-x: auto
   overflow-y: hidden
@@ -1435,8 +1432,8 @@ select.form-control
     @extend .overflow-overlay
     position: relative
     max-width: 100%
-    padding: 0.5rem 0 0.25rem
     margin-bottom: 1rem
+    padding: 0.5rem 0 0.25rem
     background-color: $gray
     &:after
       background-image: linear-gradient(to right, rgba(245, 246, 248, 0), $gray)
@@ -1451,8 +1448,8 @@ select.form-control
       padding-left: 0
       &:before
         content: '|'
-        padding-right: 0
         margin-right: 0.5rem
+        padding-right: 0
         vertical-align: top
 
 .logo
@@ -1527,15 +1524,15 @@ select.form-control
 
 .menu
   display: flex
-  padding: 17px 0 24px
   margin-right: 1.5rem
   margin-bottom: 0
+  padding: 17px 0 24px
   list-style-type: none
   +md-down
     flex-direction: column
     height: auto
-    padding: 0
     margin-right: 0
+    padding: 0
   &-wrap
     border-top: 1px solid $border-color
     border-bottom: 1px solid $border-color
@@ -1566,8 +1563,8 @@ select.form-control
     display: flex
     align-items: center
     justify-content: center
-    padding-right: 25px
     margin-right: 23px
+    padding-right: 25px
     &:after
       content: ''
       position: absolute
@@ -1583,9 +1580,9 @@ select.form-control
       &:after
         display: none
     +md-down
+      padding-right: 0
       margin-right: 0
       margin-bottom: 0.75rem
-      padding-right: 0
       &:after
         display: none
   &-link
@@ -1612,16 +1609,16 @@ select.form-control
 
 .cart
   &-box
-    padding-left: 0
     margin-bottom: 0
+    padding-left: 0
     list-style-type: none
     &-item
       display: flex
       align-items: center
       justify-content: space-between
       &:not(:last-child)
-        padding-bottom: 1.5rem
         margin-bottom: 1.5rem
+        padding-bottom: 1.5rem
         border-bottom: 1px solid darken($white, 10%)
       +sm-down
         position: relative
@@ -1761,8 +1758,8 @@ select.form-control
       display: block
       width: 0.27rem
       height: 0.27rem
-      border-radius: 50%
       background-color: $text
+      border-radius: 50%
   &-stage
     &-flex
       display: flex
@@ -1839,8 +1836,8 @@ select.form-control
         justify-content: center
         width: 2rem
         height: 2rem
-        color: $link
         font-size: 0.77rem
+        color: $link
         opacity: 1
         &:hover,
         &:focus
@@ -1944,10 +1941,10 @@ select.form-control
     width: 1.11rem
     height: 1.11rem
     padding: 0
-    color: $white
     font-weight: 900
     font-size: 0.55rem
     line-height: 1.15rem
+    color: $white
     text-align: center
     background-image: $third-gradient
     border-radius: 50%
@@ -2001,9 +1998,9 @@ select.form-control
       color: $text
       background-color: $white
       border-bottom: none
-      cursor: text
       box-shadow: 0 0.5rem 2rem transparentize($black, 0.85)
       opacity: 1
+      cursor: text
       &:hover
         & ~ .search-btn
           color: $text
@@ -2011,8 +2008,8 @@ select.form-control
         position: absolute
         top: 0
         right: 100%
-        transform: translateX(100%)
         border-color: transparent
+        transform: translateX(100%)
         pointer-events: auto
       & ~ .search-reset
         opacity: 1
@@ -2179,12 +2176,12 @@ select.form-control
       margin-left: -1.11rem
       margin-right: -1.11rem
     &-characteristics
-      max-width: 220px
-      min-width: 220px
-      flex-basis: 220px
       display: flex
       flex-direction: column
       justify-content: flex-end
+      flex-basis: 220px
+      max-width: 220px
+      min-width: 220px
       +xs
         max-width: 200px
         min-width: 200px
@@ -2296,8 +2293,8 @@ select.form-control
         display: block
         width: 5.5555rem
         height: 5.5555rem
-        margin-bottom: 15px
         padding: 1rem
+        margin-bottom: 15px
         background-color: $gray
         border-radius: $border-radius
     &-title
@@ -2343,9 +2340,9 @@ select.form-control
     margin-bottom: 22px
     font-style: normal
   &-img
-    margin-right: 24px
     width: 4rem !important
     height: 4rem !important
+    margin-right: 24px
     object-fit: cover
   &-text
     &:before,
@@ -2450,9 +2447,9 @@ button.mobile-control
         display: flex
         align-items: center
         justify-content: center
+        flex-shrink: 0
         width: 2.22rem
         height: 2.22rem
-        flex-shrink: 0
         margin-right: 0.77rem
         background-color: $gray
         border-radius: 50%
