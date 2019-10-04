@@ -36,7 +36,6 @@ $(document).ready(function () {
     effect: 'fadeIn',
     effectTime: 200,
     visibleOnly: false,
-    threshold: 0,
     chainable: false
   });
 

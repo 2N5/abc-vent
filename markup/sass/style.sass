@@ -2427,12 +2427,17 @@ button.mobile-control
       left: 1px
       background: $white
       border-radius: calc(0.25rem + 4px)
-    &:hover,
     &.active
       background: $main-gradient
       .view-control-icon-wrap
         color: $white
         background-image: $main-gradient
+    +lg-up
+      &:hover
+        background: $main-gradient
+        .view-control-icon-wrap
+          color: $white
+          background-image: $main-gradient
     +xs
       justify-content: center
       padding: 0.5rem 0
